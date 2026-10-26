@@ -25,19 +25,24 @@ There are no ready-made labels, so most of the work is an auto-labelling pipelin
 
 The result is split into two parts:
 
-| Part | Where | What's inside | Size    |
-|---|---|---|---------|
+| Part | Where | What's inside | Size |
+|---|---|---|---|
 | **1. Code and results** | this repository | pipeline code and config; metric tables, stats and logs of every stage; detections and tracks (`*.parquet`); images with labels; trained model weights; eval labels after my review; result videos: auto labels, eval labels, model, "three views" | ~0.6 GB |
-| **2. Data and intermediate material** | archive on [Google Drive](https://drive.google.com/open?id=163_on3Jn_WM82-ih17FeXchNMKZXFMMM) | source videos, frames, dataset tiles, CVAT tasks, videos of the intermediate stages 04 and 04c, a few videos over 50 MB, COCO model weights | ~24 GB  |
+| **2. Data and intermediate material** | archive `aerial-vehicle-detector-pipeline.tar` on [Google Drive](https://drive.google.com/open?id=163_on3Jn_WM82-ih17FeXchNMKZXFMMM) | source videos, frames, dataset tiles, CVAT tasks, videos of the intermediate stages 04 and 04c, a few videos over 50 MB, COCO model weights | ~22 GB |
 
-The first part is enough to read the README, look at all tables, images and result videos, and take the weights. The second part is needed to re-run the pipeline or look at the intermediate stages. A script in the repository root downloads it and puts every file in place:
+The first part is enough to read the README, look at all tables, images and result videos, and take the weights. The second part is needed to re-run the pipeline or look at the intermediate stages. To get it:
+
+1. Download the archive from [Google Drive](https://drive.google.com/open?id=163_on3Jn_WM82-ih17FeXchNMKZXFMMM) in a browser (~23 GB). For a file this big Google says it can't scan it for viruses — click "Download anyway".
+2. Put `aerial-vehicle-detector-pipeline.tar` into the repository root.
+3. Unpack it with the script in the repository root:
 
 ```bash
-bash download_data.sh              # ~24 GB from Google Drive, leaves the files from git untouched
-bash download_data.sh --check-only # how many files are still missing
+bash restore_data.sh                  # puts every file in place, leaves the files from git untouched
+bash restore_data.sh --check-only     # how many files are still missing
+bash restore_data.sh --delete-archive # the same, then deletes the archive
 ```
 
-If the download breaks off, just run the script again and it continues where it stopped. Files of the second part are marked ⬇ in this README, and the full list is in `data_manifest.txt`. All paths are relative to the repository root.
+Before unpacking, the script checks that the archive is complete (its size), so a half-finished browser download is not unpacked. Files of the second part are marked ⬇ in this README, and the full list is in `data_manifest.txt`. All paths are relative to the repository root.
 
 **What the task asked for and where it is:**
 
@@ -68,7 +73,7 @@ outputs/NN_<stage>/            one folder per stage: log, config snapshot, stats
 pipeline/                      sNN_*.py — stages; common.py, geometry.py, detectors.py, viz.py — shared code
 scripts/fuse_ablation.py       NWD ablation in the fusion (4.3)
 run_all.sh                     the whole pipeline in order
-download_data.sh               downloads from Google Drive the files that are not in git
+restore_data.sh                unpacks the archive: puts the files that are not in git in place
 data_manifest.txt              the list of those files
 yolo26n.pt; yolo26x.pt, rtdetr-x.pt ⬇   COCO weights; Ultralytics looks for them in the root and downloads them if missing
 ```
@@ -78,7 +83,7 @@ yolo26n.pt; yolo26x.pt, rtdetr-x.pt ⬇   COCO weights; Ultralytics looks for th
 ```bash
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128   # match your CUDA
 pip install -r requirements.txt
-bash download_data.sh      # the pipeline needs the source videos
+bash restore_data.sh       # after downloading the archive: the pipeline needs the source videos
 bash run_all.sh
 ```
 

@@ -24,3 +24,4 @@ outputs/04c_analysis/viz/*.mp4
 /outputs/09_eval/eval/n_step6/viz/story_14313658.mp4
 /rtdetr-x.pt
 /yolo26x.pt
+aerial-vehicle-detector-pipeline.tar
