@@ -1,0 +1,257 @@
+{
+  "yolo26x": {
+    "clips": {
+      "13215276": {
+        "frames": 228,
+        "boxes": 118,
+        "boxes_per_frame": 0.5,
+        "boxes_per_frame_above_vote_conf": 0.5,
+        "sec_per_frame_median": 0.098
+      },
+      "14313658": {
+        "frames": 297,
+        "boxes": 1,
+        "boxes_per_frame": 0.0,
+        "boxes_per_frame_above_vote_conf": 0.0,
+        "sec_per_frame_median": 0.097
+      },
+      "19851623": {
+        "frames": 178,
+        "boxes": 11581,
+        "boxes_per_frame": 65.1,
+        "boxes_per_frame_above_vote_conf": 51.2,
+        "sec_per_frame_median": 0.102
+      },
+      "30404666": {
+        "frames": 326,
+        "boxes": 8001,
+        "boxes_per_frame": 24.5,
+        "boxes_per_frame_above_vote_conf": 13.4,
+        "sec_per_frame_median": 0.1
+      },
+      "30973709": {
+        "frames": 67,
+        "boxes": 234,
+        "boxes_per_frame": 3.5,
+        "boxes_per_frame_above_vote_conf": 3.0,
+        "sec_per_frame_median": 0.1
+      },
+      "32179597": {
+        "frames": 918,
+        "boxes": 2562,
+        "boxes_per_frame": 2.8,
+        "boxes_per_frame_above_vote_conf": 2.6,
+        "sec_per_frame_median": 0.099
+      },
+      "32814755": {
+        "frames": 224,
+        "boxes": 131,
+        "boxes_per_frame": 0.6,
+        "boxes_per_frame_above_vote_conf": 0.4,
+        "sec_per_frame_median": 0.097
+      },
+      "3405804": {
+        "frames": 245,
+        "boxes": 15423,
+        "boxes_per_frame": 63.0,
+        "boxes_per_frame_above_vote_conf": 34.1,
+        "sec_per_frame_median": 0.104
+      },
+      "5382494": {
+        "frames": 250,
+        "boxes": 5479,
+        "boxes_per_frame": 21.9,
+        "boxes_per_frame_above_vote_conf": 13.1,
+        "sec_per_frame_median": 0.101
+      },
+      "8457857": {
+        "frames": 135,
+        "boxes": 4388,
+        "boxes_per_frame": 32.5,
+        "boxes_per_frame_above_vote_conf": 28.3,
+        "sec_per_frame_median": 0.101
+      },
+      "8968356": {
+        "frames": 192,
+        "boxes": 6451,
+        "boxes_per_frame": 33.6,
+        "boxes_per_frame_above_vote_conf": 23.9,
+        "sec_per_frame_median": 0.033
+      }
+    },
+    "est_full_run_min": {
+      "configured_steps": 4.9,
+      "every_frame": 14.1
+    }
+  },
+  "rtdetr_x": {
+    "clips": {
+      "13215276": {
+        "frames": 228,
+        "boxes": 2146,
+        "boxes_per_frame": 9.4,
+        "boxes_per_frame_above_vote_conf": 0.5,
+        "sec_per_frame_median": 0.116
+      },
+      "14313658": {
+        "frames": 297,
+        "boxes": 1779,
+        "boxes_per_frame": 6.0,
+        "boxes_per_frame_above_vote_conf": 0.0,
+        "sec_per_frame_median": 0.116
+      },
+      "19851623": {
+        "frames": 178,
+        "boxes": 73662,
+        "boxes_per_frame": 413.8,
+        "boxes_per_frame_above_vote_conf": 61.2,
+        "sec_per_frame_median": 0.122
+      },
+      "30404666": {
+        "frames": 326,
+        "boxes": 127107,
+        "boxes_per_frame": 389.9,
+        "boxes_per_frame_above_vote_conf": 13.1,
+        "sec_per_frame_median": 0.124
+      },
+      "30973709": {
+        "frames": 67,
+        "boxes": 2625,
+        "boxes_per_frame": 39.2,
+        "boxes_per_frame_above_vote_conf": 3.0,
+        "sec_per_frame_median": 0.117
+      },
+      "32179597": {
+        "frames": 918,
+        "boxes": 28119,
+        "boxes_per_frame": 30.6,
+        "boxes_per_frame_above_vote_conf": 2.4,
+        "sec_per_frame_median": 0.117
+      },
+      "32814755": {
+        "frames": 224,
+        "boxes": 2238,
+        "boxes_per_frame": 10.0,
+        "boxes_per_frame_above_vote_conf": 0.4,
+        "sec_per_frame_median": 0.117
+      },
+      "3405804": {
+        "frames": 245,
+        "boxes": 187599,
+        "boxes_per_frame": 765.7,
+        "boxes_per_frame_above_vote_conf": 38.8,
+        "sec_per_frame_median": 0.13
+      },
+      "5382494": {
+        "frames": 250,
+        "boxes": 132571,
+        "boxes_per_frame": 530.3,
+        "boxes_per_frame_above_vote_conf": 13.7,
+        "sec_per_frame_median": 0.125
+      },
+      "8457857": {
+        "frames": 135,
+        "boxes": 16532,
+        "boxes_per_frame": 122.5,
+        "boxes_per_frame_above_vote_conf": 30.4,
+        "sec_per_frame_median": 0.119
+      },
+      "8968356": {
+        "frames": 192,
+        "boxes": 79345,
+        "boxes_per_frame": 413.3,
+        "boxes_per_frame_above_vote_conf": 35.8,
+        "sec_per_frame_median": 0.048
+      }
+    },
+    "est_full_run_min": {
+      "configured_steps": 5.9,
+      "every_frame": 17.0
+    }
+  },
+  "gdino_base": {
+    "clips": {
+      "13215276": {
+        "frames": 228,
+        "boxes": 193,
+        "boxes_per_frame": 0.8,
+        "boxes_per_frame_above_vote_conf": 0.5,
+        "sec_per_frame_median": 1.173
+      },
+      "14313658": {
+        "frames": 297,
+        "boxes": 17,
+        "boxes_per_frame": 0.1,
+        "boxes_per_frame_above_vote_conf": 0.0,
+        "sec_per_frame_median": 1.179
+      },
+      "19851623": {
+        "frames": 178,
+        "boxes": 16583,
+        "boxes_per_frame": 93.2,
+        "boxes_per_frame_above_vote_conf": 69.6,
+        "sec_per_frame_median": 1.199
+      },
+      "30404666": {
+        "frames": 326,
+        "boxes": 8301,
+        "boxes_per_frame": 25.5,
+        "boxes_per_frame_above_vote_conf": 12.4,
+        "sec_per_frame_median": 1.187
+      },
+      "30973709": {
+        "frames": 67,
+        "boxes": 468,
+        "boxes_per_frame": 7.0,
+        "boxes_per_frame_above_vote_conf": 4.6,
+        "sec_per_frame_median": 1.181
+      },
+      "32179597": {
+        "frames": 918,
+        "boxes": 4756,
+        "boxes_per_frame": 5.2,
+        "boxes_per_frame_above_vote_conf": 3.4,
+        "sec_per_frame_median": 1.182
+      },
+      "32814755": {
+        "frames": 224,
+        "boxes": 261,
+        "boxes_per_frame": 1.2,
+        "boxes_per_frame_above_vote_conf": 0.6,
+        "sec_per_frame_median": 1.18
+      },
+      "3405804": {
+        "frames": 245,
+        "boxes": 27429,
+        "boxes_per_frame": 112.0,
+        "boxes_per_frame_above_vote_conf": 51.0,
+        "sec_per_frame_median": 1.198
+      },
+      "5382494": {
+        "frames": 250,
+        "boxes": 8530,
+        "boxes_per_frame": 34.1,
+        "boxes_per_frame_above_vote_conf": 14.7,
+        "sec_per_frame_median": 1.185
+      },
+      "8457857": {
+        "frames": 135,
+        "boxes": 5406,
+        "boxes_per_frame": 40.0,
+        "boxes_per_frame_above_vote_conf": 29.2,
+        "sec_per_frame_median": 1.187
+      },
+      "8968356": {
+        "frames": 192,
+        "boxes": 10976,
+        "boxes_per_frame": 57.2,
+        "boxes_per_frame_above_vote_conf": 33.6,
+        "sec_per_frame_median": 0.375
+      }
+    },
+    "est_full_run_min": {
+      "configured_steps": 57.8,
+      "every_frame": 167.6
+    }
+  }
+}

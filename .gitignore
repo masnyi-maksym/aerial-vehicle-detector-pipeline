@@ -1,0 +1,26 @@
+# Files listed below are not in git: they live in the project archive on Google Drive, and
+# `bash download_data.sh` restores them (full list: data_manifest.txt).
+
+# local environment
+.venv/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
+
+# bulk data: small files, huge in total
+datasets/frames/
+datasets/yolo/
+datasets/sources/
+outputs/05_triage/cvat/*.zip
+outputs/04_track/viz/*.mp4
+outputs/04c_analysis/viz/*.mp4
+
+# single files over 50 MB
+/outputs/05_triage/viz/14313658.mp4
+/outputs/06_import/viz/14313658_gt.mp4
+/outputs/09_eval/eval/n_step6/viz/14313658_n_step6.mp4
+/outputs/09_eval/eval/n_step6/viz/story_13215276.mp4
+/outputs/09_eval/eval/n_step6/viz/story_14313658.mp4
+/rtdetr-x.pt
+/yolo26x.pt

@@ -1,0 +1,15 @@
+19:36:30 INFO pipeline: Stage 04_track -> outputs/04_track (seed=42)
+19:36:30 WARNING pipeline.s04_track: 14313658: no boxes (empty scene, or stage 02 did not run on it)
+19:36:34 INFO pipeline.s04_track: 13215276: 228 frames, 7 tracks {'flicker': 6, 'stable_static': 1}, camera fallback 0.0%, shift px {'p10': 6.4, 'p50': 27.56, 'p90': 33.01}
+19:36:41 INFO pipeline.s04_track: 14313658: 297 frames, 0 tracks {}, camera fallback 0.0%, shift px {'p10': 46.65, 'p50': 70.29, 'p90': 89.06}
+19:36:45 INFO pipeline.s04_track: 19851623: 178 frames, 379 tracks {'flicker': 174, 'stable_static': 124, 'short': 51, 'stable_moving': 30}, camera fallback 0.0%, shift px {'p10': 0.03, 'p50': 0.06, 'p90': 0.1}
+19:36:52 INFO pipeline.s04_track: 30404666: 326 frames, 745 tracks {'flicker': 521, 'stable_static': 129, 'stable_moving': 51, 'short': 44}, camera fallback 0.0%, shift px {'p10': 4.81, 'p50': 6.91, 'p90': 12.1}
+19:36:53 INFO pipeline.s04_track: 30973709: 67 frames, 32 tracks {'flicker': 15, 'stable_moving': 10, 'stable_static': 5, 'short': 2}, camera fallback 0.0%, shift px {'p10': 8.58, 'p50': 12.2, 'p90': 14.53}
+19:37:06 INFO pipeline.s04_track: 32179597: 918 frames, 155 tracks {'flicker': 116, 'stable_moving': 20, 'short': 11, 'stable_static': 8}, camera fallback 0.0%, shift px {'p10': 1.42, 'p50': 10.16, 'p90': 24.37}
+19:37:09 INFO pipeline.s04_track: 32814755: 224 frames, 21 tracks {'flicker': 11, 'stable_moving': 7, 'short': 2, 'stable_static': 1}, camera fallback 0.0%, shift px {'p10': 3.61, 'p50': 31.88, 'p90': 36.85}
+19:37:17 INFO pipeline.s04_track: 3405804: 245 frames, 1313 tracks {'flicker': 794, 'stable_static': 247, 'stable_moving': 184, 'short': 88}, camera fallback 0.0%, shift px {'p10': 0.14, 'p50': 0.47, 'p90': 1.55}
+19:37:21 INFO pipeline.s04_track: 5382494: 250 frames, 563 tracks {'flicker': 334, 'stable_static': 127, 'stable_moving': 60, 'short': 42}, camera fallback 0.0%, shift px {'p10': 0.97, 'p50': 1.37, 'p90': 2.09}
+19:37:24 INFO pipeline.s04_track: 8457857: 135 frames, 276 tracks {'flicker': 89, 'stable_moving': 86, 'short': 57, 'stable_static': 44}, camera fallback 0.0%, shift px {'p10': 21.2, 'p50': 27.61, 'p90': 32.64}
+19:37:28 INFO pipeline.s04_track: 8968356: 192 frames, 399 tracks {'stable_moving': 152, 'flicker': 139, 'short': 61, 'stable_static': 47}, camera fallback 0.0%, shift px {'p10': 0.04, 'p50': 0.1, 'p90': 0.16}
+19:37:28 INFO pipeline: Stats: outputs/04_track/stats.json
+19:38:38 INFO pipeline.s04_track: Viz videos -> outputs/04_track/viz

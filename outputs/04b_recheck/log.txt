@@ -1,0 +1,47 @@
+19:38:39 INFO pipeline: Stage 04b_recheck -> outputs/04b_recheck (seed=42)
+19:38:39 INFO pipeline.s04b_recheck: 3890 tracks, 7637 crops x 2 models
+19:39:23 INFO pipeline.s04b_recheck: 500 / 1600 frames, 43 s
+19:39:59 INFO pipeline.s04b_recheck: 1000 / 1600 frames, 79 s
+19:40:40 INFO pipeline.s04b_recheck: 1500 / 1600 frames, 120 s
+19:40:46 INFO pipeline.s04b_recheck: 30548 checks on 1600 frames, 126 s
+19:40:46 INFO pipeline.s04b_recheck: Vehicle share per rotation, stable_moving tracks (orientation x long side px):
+                     rc_vehicle_r0  rc_vehicle_r90  tracks
+orient     size_bin                                       
+horizontal <32               0.756           0.091     108
+           32-64             0.450           0.167     124
+           64-128            0.344           0.168      96
+           >128              0.631           0.417      56
+square     <32               0.506           0.319      80
+           32-64             0.616           0.308      33
+           64-128            0.705           0.485      22
+           >128              0.439           0.273      11
+vertical   <32               0.292           0.512      28
+           32-64             0.429           0.286       7
+           64-128            0.685           0.571      14
+           >128              0.754           0.683      21
+19:40:46 INFO pipeline.s04b_recheck: Vehicle share per rotation, all tracks (orientation x long side px):
+                     rc_vehicle_r0  rc_vehicle_r90  tracks
+orient     size_bin                                       
+horizontal <32               0.466           0.070     552
+           32-64             0.341           0.110     951
+           64-128            0.352           0.169     651
+           >128              0.471           0.308     353
+square     <32               0.357           0.202     514
+           32-64             0.444           0.273     285
+           64-128            0.530           0.402     136
+           >128              0.452           0.367      81
+vertical   <32               0.321           0.248     136
+           32-64             0.400           0.359      99
+           64-128            0.539           0.335      67
+           >128              0.577           0.499      65
+19:40:46 INFO pipeline: Stats: outputs/04b_recheck/stats.json
+19:40:46 INFO pipeline.s04b_recheck: Mean verdict shares per track flag:
+               rc_vehicle  rc_two_wheeler  rc_none  rc_vehicle_conf
+flag                                                               
+flicker             0.338           0.066    0.596            0.101
+short               0.602           0.052    0.346            0.268
+stable_moving       0.579           0.068    0.354            0.265
+stable_static       0.518           0.057    0.425            0.221
+19:40:46 INFO pipeline.s04b_recheck: Two-wheeler majority tracks per clip: {'3405804': 352, '30404666': 22, '5382494': 5, '19851623': 3, '30973709': 2, '32179597': 2, '13215276': 1}
+19:40:46 INFO pipeline.s04b_recheck: Tracks no check called a vehicle, per flag: {'flicker': 876, 'stable_static': 119, 'stable_moving': 64, 'short': 57}
+19:40:48 INFO pipeline.s04b_recheck: Viz -> outputs/04b_recheck/viz

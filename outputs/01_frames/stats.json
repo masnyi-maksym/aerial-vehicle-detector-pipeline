@@ -1,0 +1,142 @@
+{
+  "clips": {
+    "8968356": {
+      "role": "train",
+      "slot": "A",
+      "file": "sources/train/videos/8968356-hd_1920_1080_30fps.mp4",
+      "resolution": "1920x1080",
+      "fps": "30000/1001",
+      "n_frames": 576,
+      "duration_s": 19.219,
+      "f_px": 1104.4,
+      "car_px_at_200m": 24.8,
+      "car_px_at_400m": 12.4
+    },
+    "5382494": {
+      "role": "val",
+      "slot": "B",
+      "file": "sources/train/videos/5382494-uhd_3840_2160_24fps.mp4",
+      "resolution": "3840x2160",
+      "fps": "24/1",
+      "n_frames": 750,
+      "duration_s": 31.25,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    },
+    "8457857": {
+      "role": "train",
+      "slot": "C",
+      "file": "sources/train/videos/8457857-uhd_3840_2160_24fps.mp4",
+      "resolution": "3840x2160",
+      "fps": "24000/1001",
+      "n_frames": 405,
+      "duration_s": 16.892,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    },
+    "3405804": {
+      "role": "train",
+      "slot": "D",
+      "file": "sources/train/videos/3405804-uhd_3840_2160_30fps.mp4",
+      "resolution": "3840x2160",
+      "fps": "30000/1001",
+      "n_frames": 734,
+      "duration_s": 24.491,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    },
+    "32179597": {
+      "role": "eval",
+      "slot": "eval",
+      "file": "sources/eval/videos/13722965_2160_3840_30fps.mp4",
+      "resolution": "2160x3840",
+      "fps": "30/1",
+      "n_frames": 918,
+      "duration_s": 30.6,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    },
+    "19851623": {
+      "role": "eval",
+      "slot": "eval_far_dense",
+      "file": "sources/eval/videos/19851623-uhd_3840_2160_25fps.mp4",
+      "resolution": "3840x2160",
+      "fps": "25/1",
+      "n_frames": 534,
+      "duration_s": 21.36,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    },
+    "30973709": {
+      "role": "eval",
+      "slot": "eval_far",
+      "file": "sources/eval/videos/13241790_3840_2160_60fps.mp4",
+      "resolution": "3840x2160",
+      "fps": "60/1",
+      "n_frames": 401,
+      "duration_s": 6.683,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    },
+    "14313658": {
+      "role": "eval",
+      "slot": "eval_empty",
+      "file": "sources/eval/videos/14313658-uhd_3840_2160_60fps.mp4",
+      "resolution": "3840x2160",
+      "fps": "60000/1001",
+      "n_frames": 1781,
+      "duration_s": 29.713,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    },
+    "13215276": {
+      "role": "eval",
+      "slot": "eval_single",
+      "file": "sources/eval/videos/13215276-uhd_3840_2160_60fps.mp4",
+      "resolution": "3840x2160",
+      "fps": "60000/1001",
+      "n_frames": 1366,
+      "duration_s": 22.789,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    },
+    "32814755": {
+      "role": "eval",
+      "slot": "eval_sparse",
+      "file": "sources/eval/videos/13987175_3840_2160_24fps.mp4",
+      "resolution": "3840x2160",
+      "fps": "24000/1001",
+      "n_frames": 448,
+      "duration_s": 18.685,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    },
+    "30404666": {
+      "role": "eval",
+      "slot": "eval_far_canal",
+      "file": "sources/eval/videos/13030579_3840_2160_30fps.mp4",
+      "resolution": "3840x2160",
+      "fps": "30000/1001",
+      "n_frames": 976,
+      "duration_s": 32.566,
+      "f_px": 2208.7,
+      "car_px_at_200m": 49.7,
+      "car_px_at_400m": 24.8
+    }
+  },
+  "total_frames": 8889,
+  "frames_by_role": {
+    "eval": 6424,
+    "train": 1715,
+    "val": 750
+  }
+}

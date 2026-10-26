@@ -1,0 +1,370 @@
+{
+  "threshold": 0.26,
+  "minutes": 2.71,
+  "frames": 6424,
+  "all": {
+    "label_boxes": 52284,
+    "detections": 70143,
+    "detection_rate": 0.7504,
+    "precision": 0.5593,
+    "f1": 0.6409,
+    "false_alarms": 30911,
+    "fa_per_min": 288.71,
+    "fa_per_min_real": 11420.53,
+    "map50": 0.6548,
+    "vehicles": 183,
+    "ttfd_s": {
+      "mean": 0.35,
+      "median": 0.0,
+      "p90": 0.36,
+      "never_detected": 0.115
+    },
+    "ci95": {
+      "detection_rate": [
+        0.6841,
+        0.816
+      ],
+      "ttfd_mean_s": [
+        0.1479,
+        0.6263
+      ],
+      "precision": [
+        0.5183,
+        0.5885
+      ],
+      "fa_per_min": [
+        219.486,
+        367.2618
+      ]
+    }
+  },
+  "0-200": {
+    "label_boxes": 44705,
+    "detections": 59284,
+    "detection_rate": 0.7978,
+    "precision": 0.6016,
+    "f1": 0.6859,
+    "false_alarms": 23619,
+    "fa_per_min": 220.6,
+    "fa_per_min_real": 8726.39,
+    "map50": 0.7086,
+    "vehicles": 140,
+    "ttfd_s": {
+      "mean": 0.21,
+      "median": 0.0,
+      "p90": 0.08,
+      "never_detected": 0.043
+    },
+    "ci95": {
+      "detection_rate": [
+        0.7297,
+        0.8627
+      ],
+      "ttfd_mean_s": [
+        0.0759,
+        0.3779
+      ],
+      "precision": [
+        0.5558,
+        0.6327
+      ],
+      "fa_per_min": [
+        167.0103,
+        275.6412
+      ]
+    }
+  },
+  "200-400": {
+    "label_boxes": 7051,
+    "detections": 8725,
+    "detection_rate": 0.5018,
+    "precision": 0.4055,
+    "f1": 0.4485,
+    "false_alarms": 5187,
+    "fa_per_min": 48.45,
+    "fa_per_min_real": 1916.41,
+    "map50": 0.3571,
+    "vehicles": 34,
+    "ttfd_s": {
+      "mean": 1.15,
+      "median": 0.0,
+      "p90": 0.55,
+      "never_detected": 0.324
+    },
+    "ci95": {
+      "detection_rate": [
+        0.3147,
+        0.6847
+      ],
+      "ttfd_mean_s": [
+        0.0646,
+        2.6488
+      ],
+      "precision": [
+        0.3682,
+        0.4383
+      ],
+      "fa_per_min": [
+        36.3546,
+        62.8287
+      ]
+    }
+  },
+  ">400": {
+    "label_boxes": 528,
+    "detections": 2134,
+    "detection_rate": 0.0549,
+    "precision": 0.0136,
+    "f1": 0.0218,
+    "false_alarms": 2105,
+    "fa_per_min": 19.66,
+    "fa_per_min_real": 777.72,
+    "map50": 0.0037,
+    "vehicles": 9,
+    "ttfd_s": {
+      "mean": 0.58,
+      "median": 0.2,
+      "p90": 1.52,
+      "never_detected": 0.444
+    }
+  },
+  "f1_macro_bands": [
+    "0-200",
+    "200-400"
+  ],
+  "f1_macro": 0.5672,
+  "per_clip": {
+    "13215276": {
+      "frames": 1366,
+      "vehicles": 1,
+      "label_boxes": 679,
+      "detection_rate": 1.0,
+      "false_alarms": 827,
+      "fa_per_min": 36.33,
+      "fa_per_min_real": 2177.32
+    },
+    "14313658": {
+      "frames": 1781,
+      "vehicles": 0,
+      "label_boxes": 0,
+      "detection_rate": null,
+      "false_alarms": 3,
+      "fa_per_min": 0.1,
+      "fa_per_min_real": 6.06
+    },
+    "19851623": {
+      "frames": 534,
+      "vehicles": 99,
+      "label_boxes": 36198,
+      "detection_rate": 0.8418,
+      "false_alarms": 16973,
+      "fa_per_min": 1907.08,
+      "fa_per_min_real": 47676.97
+    },
+    "30404666": {
+      "frames": 976,
+      "vehicles": 56,
+      "label_boxes": 11654,
+      "detection_rate": 0.3751,
+      "false_alarms": 3381,
+      "fa_per_min": 207.85,
+      "fa_per_min_real": 6229.22
+    },
+    "30973709": {
+      "frames": 401,
+      "vehicles": 8,
+      "label_boxes": 1040,
+      "detection_rate": 0.9971,
+      "false_alarms": 459,
+      "fa_per_min": 68.68,
+      "fa_per_min_real": 4120.7
+    },
+    "32179597": {
+      "frames": 918,
+      "vehicles": 15,
+      "label_boxes": 2541,
+      "detection_rate": 0.9874,
+      "false_alarms": 9091,
+      "fa_per_min": 594.18,
+      "fa_per_min_real": 17825.49
+    },
+    "32814755": {
+      "frames": 448,
+      "vehicles": 4,
+      "label_boxes": 172,
+      "detection_rate": 0.9477,
+      "false_alarms": 177,
+      "fa_per_min": 23.71,
+      "fa_per_min_real": 568.36
+    }
+  },
+  "run": "n_step6",
+  "iou_only_detection_rate": {
+    "all": 0.7566,
+    "0-200": 0.8028,
+    "200-400": 0.5154
+  },
+  "errors": [
+    {
+      "what": "detection",
+      "pass": "full",
+      "outcome": "fp_background",
+      "band": "0-200",
+      "n": 1262
+    },
+    {
+      "what": "detection",
+      "pass": "full",
+      "outcome": "fp_background",
+      "band": "200-400",
+      "n": 17
+    },
+    {
+      "what": "detection",
+      "pass": "full",
+      "outcome": "fp_overlap",
+      "band": "0-200",
+      "n": 786
+    },
+    {
+      "what": "detection",
+      "pass": "full",
+      "outcome": "fp_overlap",
+      "band": "200-400",
+      "n": 25
+    },
+    {
+      "what": "detection",
+      "pass": "full",
+      "outcome": "tp",
+      "band": "0-200",
+      "n": 2695
+    },
+    {
+      "what": "detection",
+      "pass": "full",
+      "outcome": "tp",
+      "band": "200-400",
+      "n": 2
+    },
+    {
+      "what": "detection",
+      "pass": "tile",
+      "outcome": "fp_background",
+      "band": "0-200",
+      "n": 18639
+    },
+    {
+      "what": "detection",
+      "pass": "tile",
+      "outcome": "fp_background",
+      "band": "200-400",
+      "n": 4812
+    },
+    {
+      "what": "detection",
+      "pass": "tile",
+      "outcome": "fp_background",
+      "band": ">400",
+      "n": 2105
+    },
+    {
+      "what": "detection",
+      "pass": "tile",
+      "outcome": "fp_overlap",
+      "band": "0-200",
+      "n": 2932
+    },
+    {
+      "what": "detection",
+      "pass": "tile",
+      "outcome": "fp_overlap",
+      "band": "200-400",
+      "n": 333
+    },
+    {
+      "what": "detection",
+      "pass": "tile",
+      "outcome": "tp",
+      "band": "0-200",
+      "n": 32970
+    },
+    {
+      "what": "detection",
+      "pass": "tile",
+      "outcome": "tp",
+      "band": "200-400",
+      "n": 3536
+    },
+    {
+      "what": "detection",
+      "pass": "tile",
+      "outcome": "tp",
+      "band": ">400",
+      "n": 29
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "hit",
+      "band": "0-200",
+      "n": 35665
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "hit",
+      "band": "200-400",
+      "n": 3538
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "hit",
+      "band": ">400",
+      "n": 29
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_none",
+      "band": "0-200",
+      "n": 7334
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_none",
+      "band": "200-400",
+      "n": 3389
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_none",
+      "band": ">400",
+      "n": 494
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_overlap",
+      "band": "0-200",
+      "n": 1706
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_overlap",
+      "band": "200-400",
+      "n": 124
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_overlap",
+      "band": ">400",
+      "n": 5
+    }
+  ]
+}

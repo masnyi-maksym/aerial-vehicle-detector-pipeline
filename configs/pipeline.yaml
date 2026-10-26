@@ -1,0 +1,176 @@
+# Single config for all pipeline stages. Paths are relative to the repo root.
+seed: 42
+
+paths:
+  datasets: datasets                     # root for relative paths in clips.yaml and the catalog
+  clips: datasets/meta/clips.yaml        # hand-written clip registry
+  frames: datasets/frames                # extracted frames: frames/{clip_id}/{clip_id}_{idx:06d}.jpg
+  catalog: datasets/meta/frames.parquet  # one row per frame (written by stage 01)
+  outputs: outputs                       # per-stage logs, stats and intermediate data
+
+frames:                                  # stage 01
+  jpeg_qscale: 2                         # ffmpeg -q:v for JPEG (2 = best quality)
+
+predict:                                 # stage 02
+  device: 0                              # CUDA index or "cpu"
+  train_frame_step: 3                    # train / val clips: keep frames with frame_idx % step == 0; others: every
+                                         # frame unless the clip sets its own frame_step in clips.yaml
+  tile_overlap: 0.2                      # tile size is per model (= its native input size, so no internal rescale)
+  edge_margin_px: 3                      # drop tile boxes touching an inner tile edge (cut objects)
+  full_frame_pass: true                  # extra pass on the whole frame for large near vehicles
+  nms_iou: 0.5                           # class-agnostic NMS over tile + full-frame boxes of one model
+  viz_frames: 10                         # random (seeded) frames rendered with all models' boxes
+  models:
+    yolo26x:
+      type: yolo
+      weights: yolo26x.pt
+      tile: 640
+      batch: 32
+      conf: 0.05                         # low on purpose: filtering happens in stage 03
+      vote_conf: 0.15                    # tested: 0.25 -> 0.15 adds confirmations, almost no lone boxes
+      classes: [2, 5, 7]                 # COCO: car, bus, truck
+      quantize: 16                       # FP16 compute
+    rtdetr_x:
+      type: rtdetr
+      weights: rtdetr-x.pt
+      tile: 640
+      batch: 32
+      conf: 0.05
+      vote_conf: 0.4                     # tested: 0.3 -> 0.4 = -22..33% lone boxes, -8..11% confirmed
+      classes: [2, 5, 7]
+      quantize: 16                       # FP16 compute
+    gdino_base:
+      type: grounding_dino
+      weights: IDEA-Research/grounding-dino-base
+      tile: 800
+      batch: 16
+      dtype: float32                     # bfloat16 autocast is ~30% faster; kept fp32 as the exact reference
+      prompt: "car. truck. bus. van."    # target classes: only boxes labelled with one of these are kept
+      decoys: []                         # none on full frames: look-alike labels cut far-car votes ~3x (decoys only in 03b)
+      conf: 0.2                          # GDINO box threshold (its score scale differs from YOLO/RT-DETR)
+      text_threshold: 0.2
+      vote_conf: 0.3
+
+fuse:                                    # stage 03 (vote thresholds = predict.models.*.vote_conf)
+  predict_dir: outputs/02_predict
+  bands_m: [0, 200, 400]                 # distance band edges; boxes beyond the last edge get band ">400"
+  near_max_m: 200                        # a pair closer than this (mean of both) is matched by IoU, farther by NWD
+  iou_thr: 0.3
+  nwd_thr: 0.5
+  nwd_c: 12.8                            # NWD constant, px (paper default)
+  container_frac: 0.9                    # box B is inside A if >= 90% of B lies in A
+  container_min: 2                       # A containing >= 2 other boxes = group / truck+trailer -> flag for review
+  drop_nested_lone: true                 # drop k=1 boxes lying inside a k>=2 non-container box (truck cab, trailer, duplicate)
+  viz_frames: 10
+
+zoom:                                    # stage 03b: zoom-in re-check of doubtful small boxes (no new boxes created)
+  fused_path: outputs/03_fuse/fused.parquet
+  max_k: 2                               # re-check boxes with k <= max_k
+  target_px: 40                         # upscale so the box long side becomes ~40 px (COCO-like object size) ...
+  max_scale: 2.5                        # ... at most 2.5x (2.5x confirmed more than 4x) ...
+  min_scale: 1.5                         # ... and skip boxes that are already big enough (< 1.5x needed)
+  models: [yolo26x, rtdetr_x, gdino_base] # each crop is resized to the model's own input size (tile)
+  decoys: [motorcycle, traffic cone, road barrier, traffic sign, roof, swimming pool]  # GDINO only, on crops:
+                                         # compete with "car" for the box; a decoy label = evidence against a vehicle
+  viz_crops: 24
+
+track:                                   # stage 04: tracks, gap filling, moving vs static
+  input_path: outputs/03b_zoom/fused_zoom.parquet
+  iou_thr: 0.1                           # association is looser than fusion: objects move between frames
+  nwd_thr: 0.2
+  max_gap: 3                             # frames a track may miss before it ends; shorter gaps get interpolated
+  min_track_s: 0.5                       # tracks shorter than this are "short" ("flicker" if every box has k=1)
+  static_speed: 0.5                      # own speed (car lengths / s, camera motion removed) below = static
+  homography_max_side: 960               # frames are downscaled to this for ORB + RANSAC camera motion
+  viz_seconds: 0                         # length of the per-clip viz video, 0 = whole clip
+
+recheck:                                 # stage 04b: context crops of every track, two-wheeler classes added
+  input_path: outputs/04_track/tracked.parquet
+  models: [yolo26x, rtdetr_x]            # Ultralytics models (fast); weights / tile / batch from predict.models
+  classes: [1, 2, 3, 5, 7]               # COCO: bicycle, car, motorcycle, bus, truck
+  groups: {vehicle: [car, bus, truck], two_wheeler: [bicycle, motorcycle]}
+  conf: 0.1
+  crops_per_track: 3                     # evenly spaced observed boxes of the track
+  context: 3.0                           # crop side = 3x the box long side ...
+  max_scale: 2.5                         # ... but a tiny box is upscaled at most 2.5x (bigger boxes are downscaled)
+  rotations: [0, 90]                     # each crop is also checked turned 90 deg (COCO cars are mostly horizontal)
+  viz_per_row: 10
+
+analysis:                                # stage 04c: track quality report (no decisions, feeds triage rules)
+  input_path: outputs/04_track/tracked.parquet
+  recheck_path: outputs/04b_recheck/recheck.parquet   # optional: re-check verdicts per track
+  size_window_s: 1.0                     # anchors (confirmed moving tracks) within +-1 s give the expected size
+  size_min_fit: 6                        # >= 6 anchors: size ~ position plane fit (perspective); fewer: median
+  score_bins: 8                          # quantile bins of track score in the crop sheet
+  crops_per_row: 10
+  video: true                            # whole-clip videos coloured by track score
+
+triage:                                  # stage 05: track tier -> CVAT label (vehicle / suspect / two_wheeler)
+  input_path: outputs/04_track/tracked.parquet
+  recheck_path: outputs/04b_recheck/recheck.parquet
+  export_roles: [eval]                   # CVAT review only for eval (ground truth); train / val use auto labels
+  video: true                            # whole-clip videos: kept tracks by tier over removed ones
+  two_wheeler_share: 0.5                 # re-check says bicycle / motorcycle this often -> two_wheeler (40/40 crops right)
+  score_sure: 0.34                       # >= : vehicle, any size (crops: 10/10 vehicles)
+  score_likely: 0.18                     # >= : vehicle if the size is plausible (~ two models agree)
+  size_range: [0.68, 2.5]                # size / expected size; > 2x: houses, roofs (20/20 crops); < 0.68x: 66/72
+                                         # hand-checked hard tracks were junk or two-wheelers
+  rescue_share: 0.67                     # below score_likely: vehicle if the re-check says vehicle this often ...
+  rescue_conf: 0.3                       # ... with this mean confidence, and the size is plausible
+
+import:                                  # stage 06: reviewed CVAT exports -> eval ground truth
+  exports_dir: datasets/annotations/cvat_eval   # CVAT export zips (for video 1.1 + for images 1.1), an outer zip is fine
+  keep_labels: [vehicle]                 # suspect / two_wheeler left in a task are not ground truth
+  roles: [eval]
+  triage_tracks: outputs/05_triage/tracks.parquet   # optional: pre-label tiers -> how many survived review
+  gt_path: datasets/annotations/eval_gt.parquet
+  duplicate_iou: 0.5                     # two GT boxes in one frame overlapping more = one vehicle (stacked duplicates)
+  part_inside: 0.8                       # a box this much inside another = a part of it (cab in a truck box) or a group box
+  video: true                            # whole-clip videos of the final ground truth (outputs/06_import/viz)
+
+dataset:                                 # stage 07: YOLO dataset, 640 tiles at native resolution (like auto-labelling)
+  boxes_path: outputs/04_track/tracked.parquet
+  tiers_path: outputs/05_triage/tracks.parquet
+  vehicle_tiers: [A_sure, B_likely, C_rescued]
+  out_dir: datasets/yolo
+  tile: 640
+  overlap: 0.2
+  min_visible: 0.4                       # a box cut by the tile border is kept if >= 40% of it is inside
+  empty_tile_share: 0.15                 # share of tiles without vehicles kept as negatives (seeded per tile)
+  train_steps: [3, 6, 9]                 # frame_idx % step == 0; tiles cut once, one list per step
+  val_step: 3
+  rotate_cycle: true                     # k-th frame of each train list turned by (k mod 4) x 90 deg: 0, 90, 180, 270, 0 ...
+  jpeg_quality: 95
+
+train:                                   # stage 08: Ultralytics training on the tiles; TensorBoard logs in each run
+  data_dir: datasets/yolo
+  device: 0
+  imgsz: 640
+  batch: 32
+  workers: 8
+  base_epochs: 20                        # epochs at step 3; step s trains base_epochs * s / 3 (20 / 40 / 60) -> same number of updates
+  patience: 0                            # fixed budget, no early stop; best.pt = best val fitness (tiles of the val clip)
+  augment: {fliplr: 0.5, flipud: 0.5, degrees: 0.0, mosaic: 1.0, scale: 0.5, close_mosaic: 5}
+  runs:                                  # name: COCO-pretrained weights + frame step of the train list
+    n_step3: {model: yolo26n.pt, step: 3}
+    n_step6: {model: yolo26n.pt, step: 6}
+    n_step9: {model: yolo26n.pt, step: 9}
+
+evaluate:                                # stage 09: sliced inference of the trained models + metrics per band
+  tile: 640                              # same slicing as auto-labelling and the tile dataset
+  tile_overlap: 0.2
+  edge_margin_px: 3
+  full_frame_pass: true
+  nms_iou: 0.5
+  batch: 32
+  conf: 0.05                             # keep low: the threshold is chosen on val
+  quantize: 16
+  match_iou: 0.3                         # detection <-> label for DR / precision / FA / TTFD, pairs nearer than fuse.near_max_m
+  match_nwd: 0.5                         # ... farther pairs by NWD, as in the auto-labelling (null = IoU only); mAP: IoU 0.5
+  select_bands: ["0-200", "200-400"]     # val: threshold and run = best F1 averaged over these bands (equal weight)
+  select_min_boxes: 200                  # a band with fewer val label boxes is left out of the average (logged)
+  select_tie: 0.01                       # runs within this F1_macro of the best -> the better 200-400 F1 wins
+  viz:                                   # eval only, at the val threshold: GT and detections overlaid
+    video_clips: ["32179597"]            # whole-clip videos (the task's eval clip)
+    example_clips: ["32179597", "30404666"]   # stills, evenly spaced over frames with GT (not picked by hand)
+    examples_per_clip: 3

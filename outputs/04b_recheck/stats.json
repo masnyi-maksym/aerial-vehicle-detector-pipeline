@@ -1,0 +1,178 @@
+{
+  "tracks": 3890,
+  "mean_shares_by_flag": {
+    "flicker": {
+      "rc_vehicle": 0.338,
+      "rc_two_wheeler": 0.066,
+      "rc_none": 0.596,
+      "rc_vehicle_conf": 0.101
+    },
+    "short": {
+      "rc_vehicle": 0.602,
+      "rc_two_wheeler": 0.052,
+      "rc_none": 0.346,
+      "rc_vehicle_conf": 0.268
+    },
+    "stable_moving": {
+      "rc_vehicle": 0.579,
+      "rc_two_wheeler": 0.068,
+      "rc_none": 0.354,
+      "rc_vehicle_conf": 0.265
+    },
+    "stable_static": {
+      "rc_vehicle": 0.518,
+      "rc_two_wheeler": 0.057,
+      "rc_none": 0.425,
+      "rc_vehicle_conf": 0.221
+    }
+  },
+  "two_wheeler_majority_by_clip": {
+    "3405804": 352,
+    "30404666": 22,
+    "5382494": 5,
+    "19851623": 3,
+    "30973709": 2,
+    "32179597": 2,
+    "13215276": 1
+  },
+  "no_vehicle_at_all_by_flag": {
+    "flicker": 876,
+    "stable_static": 119,
+    "stable_moving": 64,
+    "short": 57
+  },
+  "per_model_vehicle_share": {
+    "0": {
+      "rtdetr_x": 0.625,
+      "yolo26x": 0.238
+    },
+    "90": {
+      "rtdetr_x": 0.345,
+      "yolo26x": 0.083
+    }
+  },
+  "rotation_stable_moving": {
+    "horizontal <32": {
+      "rc_vehicle_r0": 0.756,
+      "rc_vehicle_r90": 0.091,
+      "tracks": 108.0
+    },
+    "horizontal 32-64": {
+      "rc_vehicle_r0": 0.45,
+      "rc_vehicle_r90": 0.167,
+      "tracks": 124.0
+    },
+    "horizontal 64-128": {
+      "rc_vehicle_r0": 0.344,
+      "rc_vehicle_r90": 0.168,
+      "tracks": 96.0
+    },
+    "horizontal >128": {
+      "rc_vehicle_r0": 0.631,
+      "rc_vehicle_r90": 0.417,
+      "tracks": 56.0
+    },
+    "square <32": {
+      "rc_vehicle_r0": 0.506,
+      "rc_vehicle_r90": 0.319,
+      "tracks": 80.0
+    },
+    "square 32-64": {
+      "rc_vehicle_r0": 0.616,
+      "rc_vehicle_r90": 0.308,
+      "tracks": 33.0
+    },
+    "square 64-128": {
+      "rc_vehicle_r0": 0.705,
+      "rc_vehicle_r90": 0.485,
+      "tracks": 22.0
+    },
+    "square >128": {
+      "rc_vehicle_r0": 0.439,
+      "rc_vehicle_r90": 0.273,
+      "tracks": 11.0
+    },
+    "vertical <32": {
+      "rc_vehicle_r0": 0.292,
+      "rc_vehicle_r90": 0.512,
+      "tracks": 28.0
+    },
+    "vertical 32-64": {
+      "rc_vehicle_r0": 0.429,
+      "rc_vehicle_r90": 0.286,
+      "tracks": 7.0
+    },
+    "vertical 64-128": {
+      "rc_vehicle_r0": 0.685,
+      "rc_vehicle_r90": 0.571,
+      "tracks": 14.0
+    },
+    "vertical >128": {
+      "rc_vehicle_r0": 0.754,
+      "rc_vehicle_r90": 0.683,
+      "tracks": 21.0
+    }
+  },
+  "rotation_all": {
+    "horizontal <32": {
+      "rc_vehicle_r0": 0.466,
+      "rc_vehicle_r90": 0.07,
+      "tracks": 552.0
+    },
+    "horizontal 32-64": {
+      "rc_vehicle_r0": 0.341,
+      "rc_vehicle_r90": 0.11,
+      "tracks": 951.0
+    },
+    "horizontal 64-128": {
+      "rc_vehicle_r0": 0.352,
+      "rc_vehicle_r90": 0.169,
+      "tracks": 651.0
+    },
+    "horizontal >128": {
+      "rc_vehicle_r0": 0.471,
+      "rc_vehicle_r90": 0.308,
+      "tracks": 353.0
+    },
+    "square <32": {
+      "rc_vehicle_r0": 0.357,
+      "rc_vehicle_r90": 0.202,
+      "tracks": 514.0
+    },
+    "square 32-64": {
+      "rc_vehicle_r0": 0.444,
+      "rc_vehicle_r90": 0.273,
+      "tracks": 285.0
+    },
+    "square 64-128": {
+      "rc_vehicle_r0": 0.53,
+      "rc_vehicle_r90": 0.402,
+      "tracks": 136.0
+    },
+    "square >128": {
+      "rc_vehicle_r0": 0.452,
+      "rc_vehicle_r90": 0.367,
+      "tracks": 81.0
+    },
+    "vertical <32": {
+      "rc_vehicle_r0": 0.321,
+      "rc_vehicle_r90": 0.248,
+      "tracks": 136.0
+    },
+    "vertical 32-64": {
+      "rc_vehicle_r0": 0.4,
+      "rc_vehicle_r90": 0.359,
+      "tracks": 99.0
+    },
+    "vertical 64-128": {
+      "rc_vehicle_r0": 0.539,
+      "rc_vehicle_r90": 0.335,
+      "tracks": 67.0
+    },
+    "vertical >128": {
+      "rc_vehicle_r0": 0.577,
+      "rc_vehicle_r90": 0.499,
+      "tracks": 65.0
+    }
+  }
+}

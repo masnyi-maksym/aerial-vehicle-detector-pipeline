@@ -1,0 +1,12 @@
+19:44:54 INFO pipeline: Stage 08_train -> outputs/08_train (seed=42)
+19:44:54 INFO pipeline.s08_train: n_step3: yolo26n.pt, step 3, 8181 train tiles, 20 epochs
+19:50:09 INFO pipeline.s08_train: n_step3 done: {'run': 'n_step3', 'model': 'yolo26n.pt', 'step': 3, 'epochs': 20, 'train_tiles': 8181, 'minutes': 5.2, 'weights': 'outputs/08_train/n_step3/weights/best.pt', 'mAP50_val_tiles_best': 0.1346, 'mAP50-95_val_tiles_best': 0.0974}
+19:50:09 INFO pipeline.s08_train: n_step6: yolo26n.pt, step 6, 4097 train tiles, 40 epochs
+19:56:16 INFO pipeline.s08_train: n_step6 done: {'run': 'n_step6', 'model': 'yolo26n.pt', 'step': 6, 'epochs': 40, 'train_tiles': 4097, 'minutes': 6.1, 'weights': 'outputs/08_train/n_step6/weights/best.pt', 'mAP50_val_tiles_best': 0.238, 'mAP50-95_val_tiles_best': 0.1537}
+19:56:16 INFO pipeline.s08_train: n_step9: yolo26n.pt, step 9, 2731 train tiles, 60 epochs
+20:03:18 INFO pipeline.s08_train: n_step9 done: {'run': 'n_step9', 'model': 'yolo26n.pt', 'step': 9, 'epochs': 60, 'train_tiles': 2731, 'minutes': 7.0, 'weights': 'outputs/08_train/n_step9/weights/best.pt', 'mAP50_val_tiles_best': 0.1562, 'mAP50-95_val_tiles_best': 0.1067}
+20:03:18 INFO pipeline.s08_train: Runs:
+    run      model  step  epochs  train_tiles  minutes                                  weights  mAP50_val_tiles_best  mAP50-95_val_tiles_best
+n_step3 yolo26n.pt     3      20         8181      5.2 outputs/08_train/n_step3/weights/best.pt                0.1346                   0.0974
+n_step6 yolo26n.pt     6      40         4097      6.1 outputs/08_train/n_step6/weights/best.pt                0.2380                   0.1537
+n_step9 yolo26n.pt     9      60         2731      7.0 outputs/08_train/n_step9/weights/best.pt                0.1562                   0.1067

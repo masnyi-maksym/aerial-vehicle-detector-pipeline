@@ -1,0 +1,221 @@
+[
+  {
+    "name": "vehicle",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "auto",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false"
+        ]
+      },
+      {
+        "name": "tier",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      },
+      {
+        "name": "k",
+        "mutable": true,
+        "input_type": "number",
+        "default_value": "0",
+        "values": [
+          "0",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "name": "k_zoom",
+        "mutable": true,
+        "input_type": "number",
+        "default_value": "0",
+        "values": [
+          "0",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "name": "models",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      },
+      {
+        "name": "flag",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      },
+      {
+        "name": "decoy",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "name": "suspect",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "auto",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false"
+        ]
+      },
+      {
+        "name": "tier",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      },
+      {
+        "name": "k",
+        "mutable": true,
+        "input_type": "number",
+        "default_value": "0",
+        "values": [
+          "0",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "name": "k_zoom",
+        "mutable": true,
+        "input_type": "number",
+        "default_value": "0",
+        "values": [
+          "0",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "name": "models",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      },
+      {
+        "name": "flag",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      },
+      {
+        "name": "decoy",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "name": "two_wheeler",
+    "type": "rectangle",
+    "attributes": [
+      {
+        "name": "auto",
+        "mutable": true,
+        "input_type": "checkbox",
+        "default_value": "false",
+        "values": [
+          "false"
+        ]
+      },
+      {
+        "name": "tier",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      },
+      {
+        "name": "k",
+        "mutable": true,
+        "input_type": "number",
+        "default_value": "0",
+        "values": [
+          "0",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "name": "k_zoom",
+        "mutable": true,
+        "input_type": "number",
+        "default_value": "0",
+        "values": [
+          "0",
+          "3",
+          "1"
+        ]
+      },
+      {
+        "name": "models",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      },
+      {
+        "name": "flag",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      },
+      {
+        "name": "decoy",
+        "mutable": true,
+        "input_type": "text",
+        "default_value": "",
+        "values": [
+          ""
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+19:42:08 INFO pipeline: Stage 05_triage -> outputs/05_triage (seed=42)
+19:42:08 INFO pipeline.s05_triage: 13215276 (eval): 228 frames, tracks {'suspect': 5, 'A_sure': 1, 'two_wheeler': 1}, vehicle by band {'0-200': 1}
+19:42:09 INFO pipeline.s05_triage: 14313658 (eval): 297 frames, tracks {}, vehicle by band {}
+19:42:10 INFO pipeline.s05_triage: 19851623 (eval): 178 frames, tracks {'suspect': 245, 'A_sure': 60, 'B_likely': 58, 'C_rescued': 13, 'two_wheeler': 3}, vehicle by band {'0-200': 123, '200-400': 7, '>400': 1}
+19:42:10 INFO pipeline.s05_triage: 30404666 (eval): 326 frames, tracks {'suspect': 620, 'B_likely': 49, 'A_sure': 41, 'two_wheeler': 22, 'C_rescued': 13}, vehicle by band {'0-200': 52, '200-400': 33, '>400': 18}
+19:42:10 INFO pipeline.s05_triage: 30973709 (eval): 67 frames, tracks {'suspect': 20, 'A_sure': 9, 'two_wheeler': 2, 'C_rescued': 1}, vehicle by band {'0-200': 10}
+19:42:11 INFO pipeline.s05_triage: 32179597 (eval): 918 frames, tracks {'suspect': 128, 'A_sure': 13, 'B_likely': 9, 'C_rescued': 3, 'two_wheeler': 2}, vehicle by band {'0-200': 25}
+19:42:11 INFO pipeline.s05_triage: 32814755 (eval): 224 frames, tracks {'suspect': 16, 'A_sure': 4, 'B_likely': 1}, vehicle by band {'0-200': 5}
+19:42:11 INFO pipeline.s05_triage: 3405804 (train): 245 frames, tracks {'suspect': 821, 'two_wheeler': 352, 'A_sure': 58, 'B_likely': 51, 'C_rescued': 31}, vehicle by band {'0-200': 137, '200-400': 3} (no export)
+19:42:11 INFO pipeline.s05_triage: 5382494 (val): 250 frames, tracks {'suspect': 460, 'A_sure': 46, 'B_likely': 34, 'C_rescued': 18, 'two_wheeler': 5}, vehicle by band {'0-200': 36, '200-400': 42, '>400': 20} (no export)
+19:42:11 INFO pipeline.s05_triage: 8457857 (train): 135 frames, tracks {'suspect': 123, 'A_sure': 99, 'B_likely': 35, 'C_rescued': 19}, vehicle by band {'0-200': 122, '200-400': 30, '>400': 1} (no export)
+19:42:11 INFO pipeline.s05_triage: 8968356 (train): 192 frames, tracks {'suspect': 197, 'A_sure': 130, 'B_likely': 61, 'C_rescued': 11}, vehicle by band {'0-200': 22, '200-400': 142, '>400': 38} (no export)
+19:42:11 INFO pipeline: Stats: outputs/05_triage/stats.json
+19:42:11 INFO pipeline.s05_triage: Tracks by role:
+tier   A_sure  B_likely  C_rescued  suspect  two_wheeler
+role                                                    
+eval      128       117         30     1034           30
+train     287       147         61     1141          352
+val        46        34         18      460            5
+19:42:11 INFO pipeline.s05_triage: CVAT tasks -> outputs/05_triage/cvat
+19:43:21 INFO pipeline.s05_triage: Videos (green A, yellow B, cyan C kept; thin red removed, magenta two-wheeler) -> outputs/05_triage/viz

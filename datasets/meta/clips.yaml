@@ -1,0 +1,94 @@
+camera:
+  hfov_deg: 82.0          # assumption: typical DJI wide lens
+  fov_axis: long_side     # HFOV applies to the sensor's long side (eval clip is portrait)
+  ref_length_m: 4.5       # average passenger car
+
+clips:
+  - clip_id: "8968356"
+    role: train
+    slot: A
+    scene: highway interchange
+    url: https://www.pexels.com/video/8968356/
+    file: sources/train/videos/8968356-hd_1920_1080_30fps.mp4
+
+  # val = one whole train-slot clip (no near-duplicate frames leak between train and val).
+  # 5382494 has the most even band mix of the four: ~58 / 55 / 52 auto tracks at 0-200 / 200-400 / >400 m.
+  - clip_id: "5382494"
+    role: val
+    slot: B
+    scene: rural highway, sparse traffic
+    url: https://www.pexels.com/video/5382494/
+    file: sources/train/videos/5382494-uhd_3840_2160_24fps.mp4
+
+  - clip_id: "8457857"
+    role: train
+    slot: C
+    scene: simple highway, top-down
+    url: https://www.pexels.com/video/8457857/
+    file: sources/train/videos/8457857-uhd_3840_2160_24fps.mp4
+
+  - clip_id: "3405804"
+    role: train
+    slot: D
+    scene: urban intersection
+    url: https://www.pexels.com/video/3405804/
+    file: sources/train/videos/3405804-uhd_3840_2160_30fps.mp4
+
+  - clip_id: "32179597"
+    role: eval
+    slot: eval
+    scene: city highway, daytime
+    url: https://www.pexels.com/video/aerial-view-of-cars-on-city-highway-32179597/
+    file: sources/eval/videos/13722965_2160_3840_30fps.mp4  # Pexels file ID differs from page ID
+
+  # extra eval clips (reviewed): the task's eval clip has almost no vehicles at 200-400 m.
+  # frame_step keeps ~10 fps (25->3, 24->2, 30->3, 60->6): less inference and review;
+  # the reviewed labels are interpolated to every frame, metrics use every frame (stage 09).
+  - clip_id: "19851623"
+    role: eval
+    slot: eval_far_dense
+    scene: big urban highway, dense traffic (hard)
+    url: https://www.pexels.com/video/an-aerial-view-of-a-highway-with-cars-driving-on-it-19851623/
+    file: sources/eval/videos/19851623-uhd_3840_2160_25fps.mp4
+    frame_step: 3
+
+  - clip_id: "30973709"
+    role: eval
+    slot: eval_far
+    scene: highway between trees, moderate distance (easy)
+    url: https://www.pexels.com/video/drone-aerial-view-of-cars-on-highway-in-nature-30973709/
+    file: sources/eval/videos/13241790_3840_2160_60fps.mp4  # Pexels file ID differs from page ID
+    frame_step: 6
+
+  - clip_id: "14313658"
+    role: eval
+    slot: eval_empty
+    scene: countryside road, forest/field, no vehicles (pure false-alarm test)
+    url: https://www.pexels.com/video/aerial-view-of-a-road-in-the-countryside-14313658/
+    file: sources/eval/videos/14313658-uhd_3840_2160_60fps.mp4
+    frame_step: 6
+
+  - clip_id: "13215276"
+    role: eval
+    slot: eval_single
+    scene: country road, cyclist + one car for 11+ s (cyclist is not a vehicle)
+    url: https://www.pexels.com/video/drone-view-of-a-cyclist-on-a-country-road-13215276/
+    file: sources/eval/videos/13215276-uhd_3840_2160_60fps.mp4
+    frame_step: 6
+
+  - clip_id: "32814755"
+    role: eval
+    slot: eval_sparse
+    scene: road through forest, a car at the start and at the end
+    url: https://www.pexels.com/video/aerial-view-of-road-through-lush-green-forest-32814755/
+    file: sources/eval/videos/13987175_3840_2160_24fps.mp4  # Pexels file ID differs from page ID
+    frame_step: 2
+
+  # added for the far band: the eval clips above gave only ~11 auto tracks at 200-400 m, this one ~50
+  - clip_id: "30404666"
+    role: eval
+    slot: eval_far_canal
+    scene: highway beside a canal (hard, very telling)
+    url: https://www.pexels.com/video/aerial-view-of-highway-beside-a-canal-30404666/
+    file: sources/eval/videos/13030579_3840_2160_30fps.mp4  # Pexels file ID differs from page ID
+    frame_step: 3

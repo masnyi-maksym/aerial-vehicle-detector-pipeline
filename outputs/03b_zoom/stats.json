@@ -1,0 +1,249 @@
+{
+  "all": {
+    "n": 7072,
+    "gained_vote": 0.175,
+    "confirmed_any": 0.538,
+    "decoy": 0.01,
+    "confirmed_yolo26x": 0.14,
+    "confirmed_rtdetr_x": 0.278,
+    "confirmed_gdino_base": 0.346,
+    "decoy_labels": {
+      "swimming pool": 64,
+      "motorcycle": 4
+    }
+  },
+  "by_k": {
+    "k1": {
+      "n": 4404,
+      "gained_vote": 0.198,
+      "confirmed_any": 0.388,
+      "decoy": 0.007,
+      "confirmed_yolo26x": 0.121,
+      "confirmed_rtdetr_x": 0.219,
+      "confirmed_gdino_base": 0.182,
+      "decoy_labels": {
+        "swimming pool": 30,
+        "motorcycle": 2
+      }
+    },
+    "k2": {
+      "n": 2668,
+      "gained_vote": 0.138,
+      "confirmed_any": 0.785,
+      "decoy": 0.013,
+      "confirmed_yolo26x": 0.172,
+      "confirmed_rtdetr_x": 0.375,
+      "confirmed_gdino_base": 0.617,
+      "decoy_labels": {
+        "swimming pool": 34,
+        "motorcycle": 2
+      }
+    }
+  },
+  "by_band": {
+    "0-200": {
+      "n": 14,
+      "gained_vote": 0.357,
+      "confirmed_any": 0.643,
+      "decoy": 0.0,
+      "confirmed_yolo26x": 0.286,
+      "confirmed_rtdetr_x": 0.643,
+      "confirmed_gdino_base": 0.286,
+      "decoy_labels": {}
+    },
+    "200-400": {
+      "n": 2455,
+      "gained_vote": 0.281,
+      "confirmed_any": 0.624,
+      "decoy": 0.026,
+      "confirmed_yolo26x": 0.211,
+      "confirmed_rtdetr_x": 0.35,
+      "confirmed_gdino_base": 0.503,
+      "decoy_labels": {
+        "swimming pool": 64,
+        "motorcycle": 1
+      }
+    },
+    ">400": {
+      "n": 4603,
+      "gained_vote": 0.118,
+      "confirmed_any": 0.491,
+      "decoy": 0.001,
+      "confirmed_yolo26x": 0.101,
+      "confirmed_rtdetr_x": 0.238,
+      "confirmed_gdino_base": 0.263,
+      "decoy_labels": {
+        "motorcycle": 3
+      }
+    }
+  },
+  "by_clip": {
+    "19851623": {
+      "k1": {
+        "n": 842,
+        "gained_vote": 0.078,
+        "confirmed_any": 0.536,
+        "decoy": 0.0,
+        "confirmed_yolo26x": 0.031,
+        "confirmed_rtdetr_x": 0.508,
+        "confirmed_gdino_base": 0.011,
+        "decoy_labels": {}
+      },
+      "k2": {
+        "n": 253,
+        "gained_vote": 0.0,
+        "confirmed_any": 0.87,
+        "decoy": 0.0,
+        "confirmed_yolo26x": 0.0,
+        "confirmed_rtdetr_x": 0.87,
+        "confirmed_gdino_base": 0.004,
+        "decoy_labels": {}
+      }
+    },
+    "30404666": {
+      "k1": {
+        "n": 468,
+        "gained_vote": 0.269,
+        "confirmed_any": 0.455,
+        "decoy": 0.002,
+        "confirmed_yolo26x": 0.348,
+        "confirmed_rtdetr_x": 0.269,
+        "confirmed_gdino_base": 0.038,
+        "decoy_labels": {
+          "motorcycle": 1
+        }
+      },
+      "k2": {
+        "n": 128,
+        "gained_vote": 0.219,
+        "confirmed_any": 0.719,
+        "decoy": 0.008,
+        "confirmed_yolo26x": 0.469,
+        "confirmed_rtdetr_x": 0.438,
+        "confirmed_gdino_base": 0.383,
+        "decoy_labels": {
+          "motorcycle": 1
+        }
+      }
+    },
+    "32179597": {
+      "k1": {
+        "n": 22,
+        "gained_vote": 0.0,
+        "confirmed_any": 0.0,
+        "decoy": 0.0,
+        "confirmed_yolo26x": 0.0,
+        "confirmed_rtdetr_x": 0.0,
+        "confirmed_gdino_base": 0.0,
+        "decoy_labels": {}
+      }
+    },
+    "32814755": {
+      "k1": {
+        "n": 27,
+        "gained_vote": 0.0,
+        "confirmed_any": 0.037,
+        "decoy": 0.0,
+        "confirmed_yolo26x": 0.037,
+        "confirmed_rtdetr_x": 0.0,
+        "confirmed_gdino_base": 0.0,
+        "decoy_labels": {}
+      }
+    },
+    "3405804": {
+      "k1": {
+        "n": 308,
+        "gained_vote": 0.065,
+        "confirmed_any": 0.357,
+        "decoy": 0.0,
+        "confirmed_yolo26x": 0.029,
+        "confirmed_rtdetr_x": 0.166,
+        "confirmed_gdino_base": 0.175,
+        "decoy_labels": {}
+      },
+      "k2": {
+        "n": 10,
+        "gained_vote": 0.1,
+        "confirmed_any": 0.7,
+        "decoy": 0.1,
+        "confirmed_yolo26x": 0.0,
+        "confirmed_rtdetr_x": 0.4,
+        "confirmed_gdino_base": 0.4,
+        "decoy_labels": {
+          "motorcycle": 1
+        }
+      }
+    },
+    "5382494": {
+      "k1": {
+        "n": 763,
+        "gained_vote": 0.118,
+        "confirmed_any": 0.191,
+        "decoy": 0.0,
+        "confirmed_yolo26x": 0.139,
+        "confirmed_rtdetr_x": 0.064,
+        "confirmed_gdino_base": 0.059,
+        "decoy_labels": {}
+      },
+      "k2": {
+        "n": 218,
+        "gained_vote": 0.408,
+        "confirmed_any": 0.683,
+        "decoy": 0.0,
+        "confirmed_yolo26x": 0.509,
+        "confirmed_rtdetr_x": 0.459,
+        "confirmed_gdino_base": 0.477,
+        "decoy_labels": {}
+      }
+    },
+    "8457857": {
+      "k1": {
+        "n": 60,
+        "gained_vote": 0.183,
+        "confirmed_any": 0.367,
+        "decoy": 0.0,
+        "confirmed_yolo26x": 0.183,
+        "confirmed_rtdetr_x": 0.033,
+        "confirmed_gdino_base": 0.35,
+        "decoy_labels": {}
+      },
+      "k2": {
+        "n": 13,
+        "gained_vote": 0.385,
+        "confirmed_any": 0.769,
+        "decoy": 0.0,
+        "confirmed_yolo26x": 0.615,
+        "confirmed_rtdetr_x": 0.231,
+        "confirmed_gdino_base": 0.692,
+        "decoy_labels": {}
+      }
+    },
+    "8968356": {
+      "k1": {
+        "n": 1914,
+        "gained_vote": 0.293,
+        "confirmed_any": 0.4,
+        "decoy": 0.016,
+        "confirmed_yolo26x": 0.112,
+        "confirmed_rtdetr_x": 0.16,
+        "confirmed_gdino_base": 0.343,
+        "decoy_labels": {
+          "swimming pool": 30,
+          "motorcycle": 1
+        }
+      },
+      "k2": {
+        "n": 2046,
+        "gained_vote": 0.119,
+        "confirmed_any": 0.79,
+        "decoy": 0.017,
+        "confirmed_yolo26x": 0.136,
+        "confirmed_rtdetr_x": 0.302,
+        "confirmed_gdino_base": 0.722,
+        "decoy_labels": {
+          "swimming pool": 34
+        }
+      }
+    }
+  }
+}

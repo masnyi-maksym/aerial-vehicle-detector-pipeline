@@ -1,0 +1,14 @@
+18:17:04 INFO pipeline: Stage 01_frames -> outputs/01_frames (seed=42)
+18:17:06 INFO pipeline.s01_frames: 8968356 train 1920x1080 @ 30000/1001 fps: 576 frames, car at 200/400 m = 25/12 px
+18:17:22 INFO pipeline.s01_frames: 5382494 val   3840x2160 @ 24/1 fps: 750 frames, car at 200/400 m = 50/25 px
+18:17:29 INFO pipeline.s01_frames: 8457857 train 3840x2160 @ 24000/1001 fps: 405 frames, car at 200/400 m = 50/25 px
+18:17:44 INFO pipeline.s01_frames: 3405804 train 3840x2160 @ 30000/1001 fps: 734 frames, car at 200/400 m = 50/25 px
+18:18:00 INFO pipeline.s01_frames: 32179597 eval  2160x3840 @ 30/1 fps: 918 frames, car at 200/400 m = 50/25 px
+18:18:09 INFO pipeline.s01_frames: 19851623 eval  3840x2160 @ 25/1 fps: 534 frames, car at 200/400 m = 50/25 px
+18:18:17 INFO pipeline.s01_frames: 30973709 eval  3840x2160 @ 60/1 fps: 401 frames, car at 200/400 m = 50/25 px
+18:18:45 INFO pipeline.s01_frames: 14313658 eval  3840x2160 @ 60000/1001 fps: 1781 frames, car at 200/400 m = 50/25 px
+18:19:07 INFO pipeline.s01_frames: 13215276 eval  3840x2160 @ 60000/1001 fps: 1366 frames, car at 200/400 m = 50/25 px
+18:19:25 INFO pipeline.s01_frames: 32814755 eval  3840x2160 @ 24000/1001 fps: 448 frames, car at 200/400 m = 50/25 px
+18:20:06 INFO pipeline.s01_frames: 30404666 eval  3840x2160 @ 30000/1001 fps: 976 frames, car at 200/400 m = 50/25 px
+18:20:06 INFO pipeline.s01_frames: Catalog: datasets/meta/frames.parquet (8889 frames)
+18:20:06 INFO pipeline: Stats: outputs/01_frames/stats.json

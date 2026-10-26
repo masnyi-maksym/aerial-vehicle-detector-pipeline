@@ -1,0 +1,109 @@
+20:40:44 INFO pipeline: Stage 09_eval/val -> outputs/09_eval/val (seed=42)
+20:40:45 INFO pipeline.s09_evaluate: val: 750 frames of 1 clips (every frame), 9403 label boxes of 72 vehicles
+20:40:45 INFO pipeline.s09_evaluate: label boxes per band: {'200-400': 3832, '0-200': 3214, '>400': 2357}; F1_macro over ['0-200', '200-400']
+20:40:45 INFO pipeline.s09_evaluate: n_step3 @0.11: {'F1_macro': 0.2285, 'DR_all': 0.2336, 'P_all': 0.2361, 'F1_all': 0.2349, 'FA/min_all': 568.72, 'FA/min_real_all': 13649.28, 'TTFD_mean_all': 2.09, 'TTFD_p90_all': 4.47, 'never_all': 0.681, 'mAP50_all': 0.105, 'DR_lo_all': 0.1104, 'DR_hi_all': 0.3447, 'P_lo_all': 0.1994, 'P_hi_all': 0.2773, 'FA/min_lo_all': 488.0219, 'FA/min_hi_all': 652.8945, 'DR_0-200': 0.2147, 'P_0-200': 0.2092, 'F1_0-200': 0.2119, 'FA/min_0-200': 208.64, 'FA/min_real_0-200': 5007.36, 'TTFD_mean_0-200': 1.42, 'TTFD_p90_0-200': 3.8, 'never_0-200': 0.6, 'mAP50_0-200': 0.1061, 'DR_lo_0-200': 0.0716, 'DR_hi_0-200': 0.3891, 'P_lo_0-200': 0.1359, 'P_hi_0-200': 0.301, 'FA/min_lo_0-200': 165.118, 'FA/min_hi_0-200': 253.1988, 'DR_200-400': 0.1973, 'P_200-400': 0.3234, 'F1_200-400': 0.2451, 'FA/min_200-400': 126.56, 'FA/min_real_200-400': 3037.44, 'TTFD_mean_200-400': 2.34, 'TTFD_p90_200-400': 4.67, 'never_200-400': 0.735, 'mAP50_200-400': 0.1101, 'DR_lo_200-400': 0.0596, 'DR_hi_200-400': 0.3214, 'P_lo_200-400': 0.2633, 'P_hi_200-400': 0.3914, 'FA/min_lo_200-400': 99.9902, 'FA/min_hi_200-400': 156.4902}
+20:40:45 INFO pipeline.s09_evaluate: n_step3 per clip @0.11:
+   clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+5382494     750        72         9403          0.2336          7109                       568.72
+20:40:45 INFO pipeline.s09_evaluate: n_step3 errors @0.11 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection full fp_background    321       24     0
+               fp_overlap        45      160     0
+               tp                15      291     0
+          tile fp_background   2217     1396  2919
+               fp_overlap        25        2     0
+               tp               675      465   751
+label     -    hit              690      756   751
+               miss_none       2493     2913  1598
+               miss_overlap      31      163     8
+20:40:47 INFO pipeline.s09_evaluate:   sheets: outputs/09_eval/val/n_step3/viz/labels_by_hit_n_step3.jpg, outputs/09_eval/val/n_step3/viz/false_alarms_n_step3.jpg
+20:41:01 INFO pipeline.s09_evaluate:   video: outputs/09_eval/val/n_step3/viz/5382494_n_step3.mp4
+20:41:01 INFO pipeline.s09_evaluate:   stills: outputs/09_eval/val/n_step3/viz
+20:41:02 INFO pipeline.s09_evaluate: n_step6 @0.26: {'F1_macro': 0.3949, 'DR_all': 0.3139, 'P_all': 0.3752, 'F1_all': 0.3418, 'FA/min_all': 393.28, 'FA/min_real_all': 9438.72, 'TTFD_mean_all': 1.75, 'TTFD_p90_all': 4.07, 'never_all': 0.556, 'mAP50_all': 0.2044, 'DR_lo_all': 0.1767, 'DR_hi_all': 0.4516, 'P_lo_all': 0.3164, 'P_hi_all': 0.4378, 'FA/min_lo_all': 338.5472, 'FA/min_hi_all': 459.6016, 'DR_0-200': 0.3696, 'P_0-200': 0.2494, 'F1_0-200': 0.2978, 'FA/min_0-200': 286.08, 'FA/min_real_0-200': 6865.92, 'TTFD_mean_0-200': 1.36, 'TTFD_p90_0-200': 4.02, 'never_0-200': 0.25, 'mAP50_0-200': 0.2339, 'DR_lo_0-200': 0.2133, 'DR_hi_0-200': 0.5408, 'P_lo_0-200': 0.1766, 'P_hi_0-200': 0.3324, 'FA/min_lo_0-200': 230.543, 'FA/min_hi_0-200': 352.2793, 'DR_200-400': 0.4238, 'P_200-400': 0.5861, 'F1_200-400': 0.4919, 'FA/min_200-400': 91.76, 'FA/min_real_200-400': 2202.24, 'TTFD_mean_200-400': 1.66, 'TTFD_p90_200-400': 3.01, 'never_200-400': 0.588, 'mAP50_200-400': 0.339, 'DR_lo_200-400': 0.1432, 'DR_hi_200-400': 0.5953, 'P_lo_200-400': 0.5022, 'P_hi_200-400': 0.6694, 'FA/min_lo_200-400': 68.6865, 'FA/min_hi_200-400': 116.56}
+20:41:02 INFO pipeline.s09_evaluate: n_step6 per clip @0.26:
+   clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+5382494     750        72         9403          0.3139          4916                       393.28
+20:41:02 INFO pipeline.s09_evaluate: n_step6 errors @0.26 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection full fp_background     44        0     0
+               fp_overlap         4        0     0
+          tile fp_background   3464     1120   193
+               fp_overlap        64       27     0
+               tp              1188     1624   140
+label     -    hit             1188     1624   140
+               miss_none       1958     2183  2209
+               miss_overlap      68       25     8
+20:41:04 INFO pipeline.s09_evaluate:   sheets: outputs/09_eval/val/n_step6/viz/labels_by_hit_n_step6.jpg, outputs/09_eval/val/n_step6/viz/false_alarms_n_step6.jpg
+20:41:18 INFO pipeline.s09_evaluate:   video: outputs/09_eval/val/n_step6/viz/5382494_n_step6.mp4
+20:41:18 INFO pipeline.s09_evaluate:   stills: outputs/09_eval/val/n_step6/viz
+20:41:18 INFO pipeline.s09_evaluate: n_step9 @0.05: {'F1_macro': 0.2482, 'DR_all': 0.1994, 'P_all': 0.3856, 'F1_all': 0.2629, 'FA/min_all': 239.04, 'FA/min_real_all': 5736.96, 'TTFD_mean_all': 2.49, 'TTFD_p90_all': 5.37, 'never_all': 0.722, 'mAP50_all': 0.1424, 'DR_lo_all': 0.0792, 'DR_hi_all': 0.3129, 'P_lo_all': 0.3377, 'P_hi_all': 0.4319, 'FA/min_lo_all': 200.234, 'FA/min_hi_all': 278.0831, 'DR_0-200': 0.1201, 'P_0-200': 0.272, 'F1_0-200': 0.1666, 'FA/min_0-200': 82.64, 'FA/min_real_0-200': 1983.36, 'TTFD_mean_0-200': 1.76, 'TTFD_p90_0-200': 3.72, 'never_0-200': 0.8, 'mAP50_0-200': 0.0896, 'DR_lo_0-200': 0.0444, 'DR_hi_0-200': 0.2334, 'P_lo_0-200': 0.1802, 'P_hi_0-200': 0.3752, 'FA/min_lo_0-200': 64.5104, 'FA/min_hi_0-200': 101.2339, 'DR_200-400': 0.249, 'P_200-400': 0.4885, 'F1_200-400': 0.3298, 'FA/min_200-400': 79.92, 'FA/min_real_200-400': 1918.08, 'TTFD_mean_200-400': 2.2, 'TTFD_p90_200-400': 4.32, 'never_200-400': 0.706, 'mAP50_200-400': 0.1889, 'DR_lo_200-400': 0.0691, 'DR_hi_200-400': 0.396, 'P_lo_200-400': 0.4174, 'P_hi_200-400': 0.5594, 'FA/min_lo_200-400': 58.2391, 'FA/min_hi_200-400': 103.9868}
+20:41:19 INFO pipeline.s09_evaluate: n_step9 per clip @0.05:
+   clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+5382494     750        72         9403          0.1994          2988                       239.04
+20:41:19 INFO pipeline.s09_evaluate: n_step9 errors @0.05 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection full fp_background    323       33     0
+               fp_overlap       185      332     0
+               tp                13      573     0
+          tile fp_background    489      633   956
+               fp_overlap        36        1     0
+               tp               373      381   535
+label     -    hit              386      954   535
+               miss_none       2804     2643  1816
+               miss_overlap      24      235     6
+20:41:20 INFO pipeline.s09_evaluate:   sheets: outputs/09_eval/val/n_step9/viz/labels_by_hit_n_step9.jpg, outputs/09_eval/val/n_step9/viz/false_alarms_n_step9.jpg
+20:41:34 INFO pipeline.s09_evaluate:   video: outputs/09_eval/val/n_step9/viz/5382494_n_step9.mp4
+20:41:34 INFO pipeline.s09_evaluate:   stills: outputs/09_eval/val/n_step9/viz
+20:41:34 INFO pipeline.s09_evaluate: val metrics:
+run                     n_step3    n_step6    n_step9
+threshold                0.1100     0.2600     0.0500
+F1_macro                 0.2285     0.3949     0.2482
+DR_all                   0.2336     0.3139     0.1994
+P_all                    0.2361     0.3752     0.3856
+F1_all                   0.2349     0.3418     0.2629
+FA/min_all             568.7200   393.2800   239.0400
+FA/min_real_all      13649.2800  9438.7200  5736.9600
+TTFD_mean_all            2.0900     1.7500     2.4900
+TTFD_p90_all             4.4700     4.0700     5.3700
+never_all                0.6810     0.5560     0.7220
+mAP50_all                0.1050     0.2044     0.1424
+DR_lo_all                0.1104     0.1767     0.0792
+DR_hi_all                0.3447     0.4516     0.3129
+P_lo_all                 0.1994     0.3164     0.3377
+P_hi_all                 0.2773     0.4378     0.4319
+FA/min_lo_all          488.0219   338.5472   200.2340
+FA/min_hi_all          652.8945   459.6016   278.0831
+DR_0-200                 0.2147     0.3696     0.1201
+P_0-200                  0.2092     0.2494     0.2720
+F1_0-200                 0.2119     0.2978     0.1666
+FA/min_0-200           208.6400   286.0800    82.6400
+FA/min_real_0-200     5007.3600  6865.9200  1983.3600
+TTFD_mean_0-200          1.4200     1.3600     1.7600
+TTFD_p90_0-200           3.8000     4.0200     3.7200
+never_0-200              0.6000     0.2500     0.8000
+mAP50_0-200              0.1061     0.2339     0.0896
+DR_lo_0-200              0.0716     0.2133     0.0444
+DR_hi_0-200              0.3891     0.5408     0.2334
+P_lo_0-200               0.1359     0.1766     0.1802
+P_hi_0-200               0.3010     0.3324     0.3752
+FA/min_lo_0-200        165.1180   230.5430    64.5104
+FA/min_hi_0-200        253.1988   352.2793   101.2339
+DR_200-400               0.1973     0.4238     0.2490
+P_200-400                0.3234     0.5861     0.4885
+F1_200-400               0.2451     0.4919     0.3298
+FA/min_200-400         126.5600    91.7600    79.9200
+FA/min_real_200-400   3037.4400  2202.2400  1918.0800
+TTFD_mean_200-400        2.3400     1.6600     2.2000
+TTFD_p90_200-400         4.6700     3.0100     4.3200
+never_200-400            0.7350     0.5880     0.7060
+mAP50_200-400            0.1101     0.3390     0.1889
+DR_lo_200-400            0.0596     0.1432     0.0691
+DR_hi_200-400            0.3214     0.5953     0.3960
+P_lo_200-400             0.2633     0.5022     0.4174
+P_hi_200-400             0.3914     0.6694     0.5594
+FA/min_lo_200-400       99.9902    68.6865    58.2391
+FA/min_hi_200-400      156.4902   116.5600   103.9868
+20:41:34 INFO pipeline.s09_evaluate: selected: n_step6 @0.26 (F1_macro 0.3949) -> outputs/09_eval/val/selected.json

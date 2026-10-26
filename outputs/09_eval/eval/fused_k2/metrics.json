@@ -1,0 +1,328 @@
+{
+  "threshold": 0.0,
+  "minutes": 2.71,
+  "frames": 2238,
+  "all": {
+    "label_boxes": 18977,
+    "detections": 17733,
+    "detection_rate": 0.887,
+    "precision": 0.9492,
+    "f1": 0.9171,
+    "false_alarms": 900,
+    "fa_per_min": 24.13,
+    "fa_per_min_real": 332.25,
+    "map50": 0.8784,
+    "vehicles": 183,
+    "ttfd_s": {
+      "mean": 0.37,
+      "median": 0.0,
+      "p90": 0.6,
+      "never_detected": 0.06
+    },
+    "ci95": {
+      "detection_rate": [
+        0.8475,
+        0.9199
+      ],
+      "ttfd_mean_s": [
+        0.1846,
+        0.6055
+      ],
+      "precision": [
+        0.9366,
+        0.9595
+      ],
+      "fa_per_min": [
+        17.9875,
+        31.0004
+      ]
+    }
+  },
+  "0-200": {
+    "label_boxes": 16418,
+    "detections": 15285,
+    "detection_rate": 0.9092,
+    "precision": 0.9766,
+    "f1": 0.9417,
+    "false_alarms": 358,
+    "fa_per_min": 9.6,
+    "fa_per_min_real": 132.16,
+    "map50": 0.9046,
+    "vehicles": 140,
+    "ttfd_s": {
+      "mean": 0.19,
+      "median": 0.0,
+      "p90": 0.5,
+      "never_detected": 0.029
+    },
+    "ci95": {
+      "detection_rate": [
+        0.8765,
+        0.9372
+      ],
+      "ttfd_mean_s": [
+        0.0963,
+        0.2868
+      ],
+      "precision": [
+        0.9663,
+        0.9844
+      ],
+      "fa_per_min": [
+        6.5536,
+        12.7012
+      ]
+    }
+  },
+  "200-400": {
+    "label_boxes": 2375,
+    "detections": 1989,
+    "detection_rate": 0.736,
+    "precision": 0.8788,
+    "f1": 0.8011,
+    "false_alarms": 241,
+    "fa_per_min": 6.46,
+    "fa_per_min_real": 88.97,
+    "map50": 0.7243,
+    "vehicles": 34,
+    "ttfd_s": {
+      "mean": 1.22,
+      "median": 0.15,
+      "p90": 3.21,
+      "never_detected": 0.118
+    },
+    "ci95": {
+      "detection_rate": [
+        0.58,
+        0.8815
+      ],
+      "ttfd_mean_s": [
+        0.2228,
+        2.6029
+      ],
+      "precision": [
+        0.8447,
+        0.9129
+      ],
+      "fa_per_min": [
+        3.7937,
+        9.6347
+      ]
+    }
+  },
+  ">400": {
+    "label_boxes": 184,
+    "detections": 459,
+    "detection_rate": 0.8587,
+    "precision": 0.3442,
+    "f1": 0.4914,
+    "false_alarms": 301,
+    "fa_per_min": 8.07,
+    "fa_per_min_real": 111.12,
+    "map50": 0.4347,
+    "vehicles": 9,
+    "ttfd_s": {
+      "mean": 0.17,
+      "median": 0.1,
+      "p90": 0.37,
+      "never_detected": 0.333
+    }
+  },
+  "f1_macro_bands": [
+    "0-200",
+    "200-400"
+  ],
+  "f1_macro": 0.8714,
+  "per_clip": {
+    "13215276": {
+      "frames": 228,
+      "vehicles": 1,
+      "label_boxes": 114,
+      "detection_rate": 0.9912,
+      "false_alarms": 0,
+      "fa_per_min": 0.0,
+      "fa_per_min_real": 0.0
+    },
+    "14313658": {
+      "frames": 297,
+      "vehicles": 0,
+      "label_boxes": 0,
+      "detection_rate": null,
+      "false_alarms": 0,
+      "fa_per_min": 0.0,
+      "fa_per_min_real": 0.0
+    },
+    "19851623": {
+      "frames": 178,
+      "vehicles": 99,
+      "label_boxes": 12132,
+      "detection_rate": 0.8962,
+      "false_alarms": 285,
+      "fa_per_min": 96.07,
+      "fa_per_min_real": 800.56
+    },
+    "30404666": {
+      "frames": 326,
+      "vehicles": 56,
+      "label_boxes": 3922,
+      "detection_rate": 0.8223,
+      "false_alarms": 456,
+      "fa_per_min": 83.93,
+      "fa_per_min_real": 838.43
+    },
+    "30973709": {
+      "frames": 67,
+      "vehicles": 8,
+      "label_boxes": 180,
+      "detection_rate": 1.0,
+      "false_alarms": 22,
+      "fa_per_min": 19.7,
+      "fa_per_min_real": 197.01
+    },
+    "32179597": {
+      "frames": 918,
+      "vehicles": 15,
+      "label_boxes": 2541,
+      "detection_rate": 0.9276,
+      "false_alarms": 133,
+      "fa_per_min": 8.69,
+      "fa_per_min_real": 260.78
+    },
+    "32814755": {
+      "frames": 224,
+      "vehicles": 4,
+      "label_boxes": 88,
+      "detection_rate": 0.9659,
+      "false_alarms": 4,
+      "fa_per_min": 1.07,
+      "fa_per_min_real": 12.84
+    }
+  },
+  "run": "fused_k2",
+  "iou_only_detection_rate": {
+    "all": 0.8884,
+    "0-200": 0.9094,
+    "200-400": 0.7457
+  },
+  "errors": [
+    {
+      "what": "detection",
+      "pass": "?",
+      "outcome": "fp_background",
+      "band": "0-200",
+      "n": 256
+    },
+    {
+      "what": "detection",
+      "pass": "?",
+      "outcome": "fp_background",
+      "band": "200-400",
+      "n": 192
+    },
+    {
+      "what": "detection",
+      "pass": "?",
+      "outcome": "fp_background",
+      "band": ">400",
+      "n": 297
+    },
+    {
+      "what": "detection",
+      "pass": "?",
+      "outcome": "fp_overlap",
+      "band": "0-200",
+      "n": 102
+    },
+    {
+      "what": "detection",
+      "pass": "?",
+      "outcome": "fp_overlap",
+      "band": "200-400",
+      "n": 49
+    },
+    {
+      "what": "detection",
+      "pass": "?",
+      "outcome": "fp_overlap",
+      "band": ">400",
+      "n": 4
+    },
+    {
+      "what": "detection",
+      "pass": "?",
+      "outcome": "tp",
+      "band": "0-200",
+      "n": 14927
+    },
+    {
+      "what": "detection",
+      "pass": "?",
+      "outcome": "tp",
+      "band": "200-400",
+      "n": 1748
+    },
+    {
+      "what": "detection",
+      "pass": "?",
+      "outcome": "tp",
+      "band": ">400",
+      "n": 158
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "hit",
+      "band": "0-200",
+      "n": 14927
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "hit",
+      "band": "200-400",
+      "n": 1748
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "hit",
+      "band": ">400",
+      "n": 158
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_none",
+      "band": "0-200",
+      "n": 1450
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_none",
+      "band": "200-400",
+      "n": 579
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_none",
+      "band": ">400",
+      "n": 26
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_overlap",
+      "band": "0-200",
+      "n": 41
+    },
+    {
+      "what": "label",
+      "pass": "-",
+      "outcome": "miss_overlap",
+      "band": "200-400",
+      "n": 48
+    }
+  ]
+}

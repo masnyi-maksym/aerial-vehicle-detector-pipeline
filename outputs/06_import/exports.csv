@@ -1,0 +1,17 @@
+source,task_id,clip_id,kind,updated,dumped,used
+datasets/annotations/cvat_eval/labels.zip:task_10576_annotations_2026_10_22_22_36_07_cvat for video 1.1.zip:annotations.xml,10576,19851623,video,2026-10-22 22:36:07.104914+00:00,2026-10-22 22:36:26.327159+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10582_annotations_2026_10_22_23_05_56_cvat for video 1.1 (1).zip:annotations.xml,10582,30973709,video,2026-10-22 23:05:56.751078+00:00,2026-10-22 23:06:28.321793+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10582_annotations_2026_10_22_23_05_56_cvat for images 1.1 (1).zip:annotations.xml,10582,30973709,images,2026-10-22 23:05:56.751078+00:00,2026-10-22 23:06:19.033566+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10581_annotations_2026_10_22_23_08_08_cvat for video 1.1.zip:annotations.xml,10581,32179597,video,2026-10-22 23:08:08.870799+00:00,2026-10-22 23:08:24.932843+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10581_annotations_2026_10_22_23_08_08_cvat for images 1.1.zip:annotations.xml,10581,32179597,images,2026-10-22 23:08:08.870799+00:00,2026-10-22 23:08:19.203979+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10582_annotations_2026_10_22_23_05_56_cvat for video 1.1.zip:annotations.xml,10582,30973709,video,2026-10-22 23:05:56.751078+00:00,2026-10-22 23:06:28.321793+00:00,False
+datasets/annotations/cvat_eval/labels.zip:task_10582_annotations_2026_10_22_23_05_56_cvat for images 1.1.zip:annotations.xml,10582,30973709,images,2026-10-22 23:05:56.751078+00:00,2026-10-22 23:06:19.033566+00:00,False
+datasets/annotations/cvat_eval/labels.zip:task_10580_annotations_2026_10_22_22_41_08_cvat for images 1.1.zip:annotations.xml,10580,32814755,images,2026-10-22 22:41:08.784076+00:00,2026-10-22 22:46:49.185632+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10580_annotations_2026_10_22_22_41_08_cvat for video 1.1.zip:annotations.xml,10580,32814755,video,2026-10-22 22:41:08.784076+00:00,2026-10-22 22:46:57.160769+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10578_annotations_2026_10_22_23_00_59_cvat for video 1.1.zip:annotations.xml,10578,30404666,video,2026-10-22 23:00:59.743022+00:00,2026-10-22 23:01:18.642784+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10578_annotations_2026_10_22_23_00_59_cvat for images 1.1.zip:annotations.xml,10578,30404666,images,2026-10-22 23:00:59.743022+00:00,2026-10-22 23:01:10.034730+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10579_annotations_2026_10_22_22_40_30_cvat for video 1.1.zip:annotations.xml,10579,14313658,video,2026-10-22 22:40:30.071562+00:00,2026-10-22 22:44:46.305204+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10579_annotations_2026_10_22_22_40_30_cvat for images 1.1.zip:annotations.xml,10579,14313658,images,2026-10-22 22:40:30.071562+00:00,2026-10-22 22:44:39.639264+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10577_annotations_2026_10_22_22_31_56_cvat for video 1.1.zip:annotations.xml,10577,13215276,video,2026-10-22 22:31:56.859444+00:00,2026-10-22 22:36:51.344378+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10577_annotations_2026_10_22_22_31_56_cvat for images 1.1.zip:annotations.xml,10577,13215276,images,2026-10-22 22:31:56.859444+00:00,2026-10-22 22:36:43.510587+00:00,True
+datasets/annotations/cvat_eval/labels.zip:task_10576_annotations_2026_10_22_22_36_07_cvat for images 1.1.zip:annotations.xml,10576,19851623,images,2026-10-22 22:36:07.104914+00:00,2026-10-22 22:36:34.215227+00:00,True

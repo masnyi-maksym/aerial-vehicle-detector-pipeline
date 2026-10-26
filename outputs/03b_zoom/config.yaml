@@ -1,0 +1,223 @@
+cli:
+  config: configs/pipeline.yaml
+  fused_path: None
+seed: 42
+paths:
+  datasets: datasets
+  clips: datasets/meta/clips.yaml
+  frames: datasets/frames
+  catalog: datasets/meta/frames.parquet
+  outputs: outputs
+frames:
+  jpeg_qscale: 2
+predict:
+  device: 0
+  train_frame_step: 3
+  tile_overlap: 0.2
+  edge_margin_px: 3
+  full_frame_pass: true
+  nms_iou: 0.5
+  viz_frames: 10
+  models:
+    yolo26x:
+      type: yolo
+      weights: yolo26x.pt
+      tile: 640
+      batch: 32
+      conf: 0.05
+      vote_conf: 0.15
+      classes:
+      - 2
+      - 5
+      - 7
+      quantize: 16
+    rtdetr_x:
+      type: rtdetr
+      weights: rtdetr-x.pt
+      tile: 640
+      batch: 32
+      conf: 0.05
+      vote_conf: 0.4
+      classes:
+      - 2
+      - 5
+      - 7
+      quantize: 16
+    gdino_base:
+      type: grounding_dino
+      weights: IDEA-Research/grounding-dino-base
+      tile: 800
+      batch: 16
+      dtype: float32
+      prompt: car. truck. bus. van.
+      decoys: []
+      conf: 0.2
+      text_threshold: 0.2
+      vote_conf: 0.3
+fuse:
+  predict_dir: outputs/02_predict
+  bands_m:
+  - 0
+  - 200
+  - 400
+  near_max_m: 200
+  iou_thr: 0.3
+  nwd_thr: 0.5
+  nwd_c: 12.8
+  container_frac: 0.9
+  container_min: 2
+  drop_nested_lone: true
+  viz_frames: 10
+zoom:
+  fused_path: outputs/03_fuse/fused.parquet
+  max_k: 2
+  target_px: 40
+  max_scale: 2.5
+  min_scale: 1.5
+  models:
+  - yolo26x
+  - rtdetr_x
+  - gdino_base
+  decoys:
+  - motorcycle
+  - traffic cone
+  - road barrier
+  - traffic sign
+  - roof
+  - swimming pool
+  viz_crops: 24
+track:
+  input_path: outputs/03b_zoom/fused_zoom.parquet
+  iou_thr: 0.1
+  nwd_thr: 0.2
+  max_gap: 3
+  min_track_s: 0.5
+  static_speed: 0.5
+  homography_max_side: 960
+  viz_seconds: 0
+recheck:
+  input_path: outputs/04_track/tracked.parquet
+  models:
+  - yolo26x
+  - rtdetr_x
+  classes:
+  - 1
+  - 2
+  - 3
+  - 5
+  - 7
+  groups:
+    vehicle:
+    - car
+    - bus
+    - truck
+    two_wheeler:
+    - bicycle
+    - motorcycle
+  conf: 0.1
+  crops_per_track: 3
+  context: 3.0
+  max_scale: 2.5
+  rotations:
+  - 0
+  - 90
+  viz_per_row: 10
+analysis:
+  input_path: outputs/04_track/tracked.parquet
+  recheck_path: outputs/04b_recheck/recheck.parquet
+  size_window_s: 1.0
+  size_min_fit: 6
+  score_bins: 8
+  crops_per_row: 10
+  video: true
+triage:
+  input_path: outputs/04_track/tracked.parquet
+  recheck_path: outputs/04b_recheck/recheck.parquet
+  export_roles:
+  - eval
+  video: true
+  two_wheeler_share: 0.5
+  score_sure: 0.34
+  score_likely: 0.18
+  size_range:
+  - 0.68
+  - 2.5
+  rescue_share: 0.67
+  rescue_conf: 0.3
+import:
+  exports_dir: datasets/annotations/cvat_eval
+  keep_labels:
+  - vehicle
+  roles:
+  - eval
+  triage_tracks: outputs/05_triage/tracks.parquet
+  gt_path: datasets/annotations/eval_gt.parquet
+  duplicate_iou: 0.5
+  part_inside: 0.8
+  video: true
+dataset:
+  boxes_path: outputs/04_track/tracked.parquet
+  tiers_path: outputs/05_triage/tracks.parquet
+  vehicle_tiers:
+  - A_sure
+  - B_likely
+  - C_rescued
+  out_dir: datasets/yolo
+  tile: 640
+  overlap: 0.2
+  min_visible: 0.4
+  empty_tile_share: 0.15
+  train_steps:
+  - 3
+  - 6
+  - 9
+  val_step: 3
+  rotate_cycle: true
+  jpeg_quality: 95
+train:
+  data_dir: datasets/yolo
+  device: 0
+  imgsz: 640
+  batch: 32
+  workers: 8
+  base_epochs: 20
+  patience: 0
+  augment:
+    fliplr: 0.5
+    flipud: 0.5
+    degrees: 0.0
+    mosaic: 1.0
+    scale: 0.5
+    close_mosaic: 5
+  runs:
+    n_step3:
+      model: yolo26n.pt
+      step: 3
+    n_step6:
+      model: yolo26n.pt
+      step: 6
+    n_step9:
+      model: yolo26n.pt
+      step: 9
+evaluate:
+  tile: 640
+  tile_overlap: 0.2
+  edge_margin_px: 3
+  full_frame_pass: true
+  nms_iou: 0.5
+  batch: 32
+  conf: 0.05
+  quantize: 16
+  match_iou: 0.3
+  select_bands:
+  - 0-200
+  - 200-400
+  select_min_boxes: 200
+  select_tie: 0.01
+  viz:
+    video_clips:
+    - '32179597'
+    example_clips:
+    - '32179597'
+    - '30404666'
+    examples_per_clip: 3

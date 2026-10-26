@@ -1,0 +1,4 @@
+run,model,step,epochs,train_tiles,minutes,weights,mAP50_val_tiles_best,mAP50-95_val_tiles_best
+n_step3,yolo26n.pt,3,20,8181,5.2,outputs/08_train/n_step3/weights/best.pt,0.1346,0.0974
+n_step6,yolo26n.pt,6,40,4097,6.1,outputs/08_train/n_step6/weights/best.pt,0.238,0.1537
+n_step9,yolo26n.pt,9,60,2731,7.0,outputs/08_train/n_step9/weights/best.pt,0.1562,0.1067

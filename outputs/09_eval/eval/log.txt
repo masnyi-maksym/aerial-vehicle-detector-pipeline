@@ -1,0 +1,277 @@
+20:41:35 INFO pipeline: Stage 09_eval/eval -> outputs/09_eval/eval (seed=42)
+20:41:35 INFO pipeline.s09_evaluate: best = n_step6 (from outputs/09_eval/val/selected.json)
+20:41:35 INFO pipeline.s09_evaluate: eval: 6424 frames of 7 clips (every frame), 52284 label boxes of 183 vehicles
+20:41:35 INFO pipeline.s09_evaluate: label boxes per band: {'0-200': 44705, '200-400': 7051, '>400': 528}; F1_macro over ['0-200', '200-400']
+20:41:35 INFO pipeline.s09_evaluate: raw_yolo26x: 22628 boxes on 2238 frames
+20:41:36 INFO pipeline.s09_evaluate: raw_yolo26x @0.15: {'F1_macro': 0.8016, 'DR_all': 0.7789, 'P_all': 0.9107, 'F1_all': 0.8397, 'FA/min_all': 38.87, 'FA/min_real_all': 535.28, 'TTFD_mean_all': 0.5, 'TTFD_p90_all': 1.72, 'never_all': 0.131, 'mAP50_all': 0.8466, 'DR_lo_all': 0.7185, 'DR_hi_all': 0.8277, 'P_lo_all': 0.8802, 'P_hi_all': 0.9356, 'FA/min_lo_all': 26.9951, 'FA/min_hi_all': 52.0088, 'DR_0-200': 0.7892, 'P_0-200': 0.9434, 'F1_0-200': 0.8594, 'FA/min_0-200': 20.86, 'FA/min_real_0-200': 287.21, 'TTFD_mean_0-200': 0.57, 'TTFD_p90_0-200': 1.79, 'never_0-200': 0.129, 'mAP50_0-200': 0.8613, 'DR_lo_0-200': 0.732, 'DR_hi_0-200': 0.8396, 'P_lo_0-200': 0.9216, 'P_hi_0-200': 0.9602, 'FA/min_lo_0-200': 14.8396, 'FA/min_hi_0-200': 27.4286, 'DR_200-400': 0.6985, 'P_200-400': 0.7953, 'F1_200-400': 0.7438, 'FA/min_200-400': 11.45, 'FA/min_real_200-400': 157.63, 'TTFD_mean_200-400': 0.29, 'TTFD_p90_200-400': 0.54, 'never_200-400': 0.118, 'mAP50_200-400': 0.7565, 'DR_lo_200-400': 0.5656, 'DR_hi_200-400': 0.8253, 'P_lo_200-400': 0.7558, 'P_hi_200-400': 0.8369, 'FA/min_lo_200-400': 7.0685, 'FA/min_hi_200-400': 16.7002}
+20:41:37 INFO pipeline.s09_evaluate: raw_yolo26x per clip @0.15:
+    clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+13215276     228         1          114          0.9912             0                         0.00
+14313658     297         0            0             NaN             0                         0.00
+19851623     178        99        12132          0.7375           158                        53.26
+30404666     326        56         3922          0.8154          1177                       216.63
+30973709      67         8          180          0.9833            27                        24.18
+32179597     918        15         2541          0.8894            83                         5.42
+32814755     224         4           88          0.9886             5                         1.34
+20:41:37 INFO pipeline.s09_evaluate: raw_yolo26x errors @0.15 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection full fp_background    175       31     0
+               fp_overlap        34        1     0
+               tp              2305       15     0
+          tile fp_background    495      351   240
+               fp_overlap        74       44     5
+               tp             10652     1644   166
+label     -    hit            12957     1659   166
+               miss_none       3356      670    18
+               miss_overlap     105       46     0
+20:41:37 INFO pipeline.s09_evaluate: raw_rtdetr_x: 237676 boxes on 2238 frames
+20:41:41 INFO pipeline.s09_evaluate: raw_rtdetr_x @0.40: {'F1_macro': 0.772, 'DR_all': 0.7974, 'P_all': 0.8524, 'F1_all': 0.824, 'FA/min_all': 70.24, 'FA/min_real_all': 967.2, 'TTFD_mean_all': 0.52, 'TTFD_p90_all': 1.3, 'never_all': 0.044, 'mAP50_all': 0.8933, 'DR_lo_all': 0.7483, 'DR_hi_all': 0.8462, 'P_lo_all': 0.828, 'P_hi_all': 0.8712, 'FA/min_lo_all': 52.0198, 'FA/min_hi_all': 88.7901, 'DR_0-200': 0.8208, 'P_0-200': 0.928, 'F1_0-200': 0.8711, 'FA/min_0-200': 28.04, 'FA/min_real_0-200': 386.14, 'TTFD_mean_0-200': 0.29, 'TTFD_p90_0-200': 0.96, 'never_0-200': 0.029, 'mAP50_0-200': 0.9432, 'DR_lo_0-200': 0.7727, 'DR_hi_0-200': 0.8718, 'P_lo_0-200': 0.9066, 'P_hi_0-200': 0.9432, 'FA/min_lo_0-200': 21.6971, 'FA/min_hi_0-200': 35.3218, 'DR_200-400': 0.6362, 'P_200-400': 0.7141, 'F1_200-400': 0.6729, 'FA/min_200-400': 16.22, 'FA/min_real_200-400': 223.34, 'TTFD_mean_200-400': 1.58, 'TTFD_p90_200-400': 3.31, 'never_200-400': 0.059, 'mAP50_200-400': 0.7188, 'DR_lo_200-400': 0.4503, 'DR_hi_200-400': 0.82, 'P_lo_200-400': 0.6682, 'P_hi_200-400': 0.7656, 'FA/min_lo_200-400': 10.3722, 'FA/min_hi_200-400': 23.2614}
+20:41:41 INFO pipeline.s09_evaluate: raw_rtdetr_x per clip @0.40:
+    clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+13215276     228         1          114          0.9912             2                         0.53
+14313658     297         0            0             NaN             0                         0.00
+19851623     178        99        12132          0.8071          1095                       369.10
+30404666     326        56         3922          0.7703          1265                       232.82
+30973709      67         8          180          0.9667            29                        25.97
+32179597     918        15         2541          0.7713           218                        14.25
+32814755     224         4           88          0.8295            11                         2.95
+20:41:41 INFO pipeline.s09_evaluate: raw_rtdetr_x errors @0.40 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection full fp_background    391        7     0
+               fp_overlap        48       16     0
+               tp              2162       70     0
+          tile fp_background    492      510   962
+               fp_overlap       115       72     7
+               tp             11314     1441   146
+label     -    hit            13476     1511   146
+               miss_none       2785      811    37
+               miss_overlap     157       53     1
+20:41:41 INFO pipeline.s09_evaluate: raw_gdino_base: 30579 boxes on 2238 frames
+20:41:42 INFO pipeline.s09_evaluate: raw_gdino_base @0.30: {'F1_macro': 0.8625, 'DR_all': 0.938, 'P_all': 0.887, 'F1_all': 0.9118, 'FA/min_all': 60.8, 'FA/min_real_all': 837.26, 'TTFD_mean_all': 0.09, 'TTFD_p90_all': 0.23, 'never_all': 0.049, 'mAP50_all': 0.9519, 'DR_lo_all': 0.9082, 'DR_hi_all': 0.961, 'P_lo_all': 0.8617, 'P_hi_all': 0.9049, 'FA/min_lo_all': 48.6338, 'FA/min_hi_all': 74.1054, 'DR_0-200': 0.9593, 'P_0-200': 0.9366, 'F1_0-200': 0.9478, 'FA/min_0-200': 28.58, 'FA/min_real_0-200': 393.53, 'TTFD_mean_0-200': 0.06, 'TTFD_p90_0-200': 0.05, 'never_0-200': 0.014, 'mAP50_0-200': 0.9737, 'DR_lo_0-200': 0.9414, 'DR_hi_0-200': 0.9744, 'P_lo_0-200': 0.9123, 'P_hi_0-200': 0.9547, 'FA/min_lo_0-200': 22.26, 'FA/min_hi_0-200': 35.4687, 'DR_200-400': 0.7979, 'P_200-400': 0.7577, 'F1_200-400': 0.7773, 'FA/min_200-400': 16.25, 'FA/min_real_200-400': 223.71, 'TTFD_mean_200-400': 0.24, 'TTFD_p90_200-400': 0.52, 'never_200-400': 0.147, 'mAP50_200-400': 0.8219, 'DR_lo_200-400': 0.6562, 'DR_hi_200-400': 0.923, 'P_lo_200-400': 0.7139, 'P_hi_200-400': 0.7982, 'FA/min_lo_200-400': 12.3367, 'FA/min_hi_200-400': 21.4145}
+20:41:43 INFO pipeline.s09_evaluate: raw_gdino_base per clip @0.30:
+    clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+13215276     228         1          114          1.0000             6                         1.58
+14313658     297         0            0             NaN             0                         0.00
+19851623     178        99        12132          0.9638           694                       233.93
+30404666     326        56         3922          0.8340           765                       140.80
+30973709      67         8          180          1.0000           125                       111.94
+32179597     918        15         2541          0.9677           637                        41.63
+32814755     224         4           88          0.9432            41                        10.98
+20:41:43 INFO pipeline.s09_evaluate: raw_gdino_base errors @0.30 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection full fp_background     89        0     0
+               fp_overlap        35        4     0
+               tp              1478       69     4
+          tile fp_background    691      426   569
+               fp_overlap       251      176    27
+               tp             14271     1826   152
+label     -    hit            15749     1895   156
+               miss_none        609      402    28
+               miss_overlap      60       78     0
+20:41:43 INFO pipeline.s09_evaluate: fused_all: 23274 boxes on 2238 frames
+20:41:44 INFO pipeline.s09_evaluate: fused_all @0.00: {'F1_macro': 0.8219, 'DR_all': 0.9615, 'P_all': 0.784, 'F1_all': 0.8637, 'FA/min_all': 134.8, 'FA/min_real_all': 1856.14, 'TTFD_mean_all': 0.04, 'TTFD_p90_all': 0.0, 'never_all': 0.0, 'mAP50_all': 0.9029, 'DR_lo_all': 0.9366, 'DR_hi_all': 0.9818, 'P_lo_all': 0.7448, 'P_hi_all': 0.814, 'FA/min_lo_all': 104.1357, 'FA/min_hi_all': 166.6365, 'DR_0-200': 0.9767, 'P_0-200': 0.8727, 'F1_0-200': 0.9218, 'FA/min_0-200': 62.71, 'FA/min_real_0-200': 863.47, 'TTFD_mean_0-200': 0.04, 'TTFD_p90_0-200': 0.0, 'never_0-200': 0.0, 'mAP50_0-200': 0.9439, 'DR_lo_0-200': 0.962, 'DR_hi_0-200': 0.9886, 'P_lo_0-200': 0.836, 'P_hi_0-200': 0.8992, 'FA/min_lo_0-200': 50.1764, 'FA/min_hi_0-200': 76.5043, 'DR_200-400': 0.8552, 'P_200-400': 0.6249, 'F1_200-400': 0.7221, 'FA/min_200-400': 32.68, 'FA/min_real_200-400': 450.01, 'TTFD_mean_200-400': 0.09, 'TTFD_p90_200-400': 0.18, 'never_200-400': 0.0, 'mAP50_200-400': 0.7605, 'DR_lo_200-400': 0.7197, 'DR_hi_200-400': 0.9768, 'P_lo_200-400': 0.5764, 'P_hi_200-400': 0.6763, 'FA/min_lo_200-400': 23.0909, 'FA/min_hi_200-400': 44.4232}
+20:41:44 INFO pipeline.s09_evaluate: fused_all per clip @0.00:
+    clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+13215276     228         1          114          1.0000             7                         1.84
+14313658     297         0            0             NaN             0                         0.00
+19851623     178        99        12132          0.9779          1589                       535.62
+30404666     326        56         3922          0.8998          2530                       465.64
+30973709      67         8          180          1.0000           153                       137.01
+32179597     918        15         2541          0.9725           696                        45.49
+32814755     224         4           88          1.0000            53                        14.20
+20:41:44 INFO pipeline.s09_evaluate: fused_all errors @0.00 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection ?    fp_background   2002     1086  1458
+               fp_overlap       337      133    12
+               tp             16035     2031   180
+label     -    hit            16035     2031   180
+               miss_none        356      277     4
+               miss_overlap      27       67     0
+20:41:44 INFO pipeline.s09_evaluate: fused_k2: 17733 boxes on 2238 frames
+20:41:45 INFO pipeline.s09_evaluate: fused_k2 @0.00: {'F1_macro': 0.8714, 'DR_all': 0.887, 'P_all': 0.9492, 'F1_all': 0.9171, 'FA/min_all': 24.13, 'FA/min_real_all': 332.25, 'TTFD_mean_all': 0.37, 'TTFD_p90_all': 0.6, 'never_all': 0.06, 'mAP50_all': 0.8784, 'DR_lo_all': 0.8475, 'DR_hi_all': 0.9199, 'P_lo_all': 0.9366, 'P_hi_all': 0.9595, 'FA/min_lo_all': 17.9875, 'FA/min_hi_all': 31.0004, 'DR_0-200': 0.9092, 'P_0-200': 0.9766, 'F1_0-200': 0.9417, 'FA/min_0-200': 9.6, 'FA/min_real_0-200': 132.16, 'TTFD_mean_0-200': 0.19, 'TTFD_p90_0-200': 0.5, 'never_0-200': 0.029, 'mAP50_0-200': 0.9046, 'DR_lo_0-200': 0.8765, 'DR_hi_0-200': 0.9372, 'P_lo_0-200': 0.9663, 'P_hi_0-200': 0.9844, 'FA/min_lo_0-200': 6.5536, 'FA/min_hi_0-200': 12.7012, 'DR_200-400': 0.736, 'P_200-400': 0.8788, 'F1_200-400': 0.8011, 'FA/min_200-400': 6.46, 'FA/min_real_200-400': 88.97, 'TTFD_mean_200-400': 1.22, 'TTFD_p90_200-400': 3.21, 'never_200-400': 0.118, 'mAP50_200-400': 0.7243, 'DR_lo_200-400': 0.58, 'DR_hi_200-400': 0.8815, 'P_lo_200-400': 0.8447, 'P_hi_200-400': 0.9129, 'FA/min_lo_200-400': 3.7937, 'FA/min_hi_200-400': 9.6347}
+20:41:45 INFO pipeline.s09_evaluate: fused_k2 per clip @0.00:
+    clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+13215276     228         1          114          0.9912             0                         0.00
+14313658     297         0            0             NaN             0                         0.00
+19851623     178        99        12132          0.8962           285                        96.07
+30404666     326        56         3922          0.8223           456                        83.93
+30973709      67         8          180          1.0000            22                        19.70
+32179597     918        15         2541          0.9276           133                         8.69
+32814755     224         4           88          0.9659             4                         1.07
+20:41:45 INFO pipeline.s09_evaluate: fused_k2 errors @0.00 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection ?    fp_background    256      192   297
+               fp_overlap       102       49     4
+               tp             14927     1748   158
+label     -    hit            14927     1748   158
+               miss_none       1450      579    26
+               miss_overlap      41       48     0
+20:41:45 INFO pipeline.s09_evaluate: zoom_k2: 17925 boxes on 2238 frames
+20:41:46 INFO pipeline.s09_evaluate: zoom_k2 @0.00: {'F1_macro': 0.8689, 'DR_all': 0.8881, 'P_all': 0.9402, 'F1_all': 0.9134, 'FA/min_all': 28.74, 'FA/min_real_all': 395.74, 'TTFD_mean_all': 0.36, 'TTFD_p90_all': 0.6, 'never_all': 0.044, 'mAP50_all': 0.8785, 'DR_lo_all': 0.8486, 'DR_hi_all': 0.9206, 'P_lo_all': 0.9251, 'P_hi_all': 0.952, 'FA/min_lo_all': 21.1161, 'FA/min_hi_all': 37.0604, 'DR_0-200': 0.9092, 'P_0-200': 0.9766, 'F1_0-200': 0.9417, 'FA/min_0-200': 9.6, 'FA/min_real_0-200': 132.16, 'TTFD_mean_0-200': 0.19, 'TTFD_p90_0-200': 0.5, 'never_0-200': 0.029, 'mAP50_0-200': 0.9046, 'DR_lo_0-200': 0.8765, 'DR_hi_0-200': 0.9372, 'P_lo_0-200': 0.9663, 'P_hi_0-200': 0.9844, 'FA/min_lo_0-200': 6.5536, 'FA/min_hi_0-200': 12.7012, 'DR_200-400': 0.7368, 'P_200-400': 0.8655, 'F1_200-400': 0.796, 'FA/min_200-400': 7.29, 'FA/min_real_200-400': 100.41, 'TTFD_mean_200-400': 1.22, 'TTFD_p90_200-400': 3.21, 'never_200-400': 0.118, 'mAP50_200-400': 0.7228, 'DR_lo_200-400': 0.5805, 'DR_hi_200-400': 0.8833, 'P_lo_200-400': 0.8295, 'P_hi_200-400': 0.9031, 'FA/min_lo_200-400': 4.262, 'FA/min_hi_200-400': 10.9246}
+20:41:47 INFO pipeline.s09_evaluate: zoom_k2 per clip @0.00:
+    clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+13215276     228         1          114          0.9912             0                         0.00
+14313658     297         0            0             NaN             0                         0.00
+19851623     178        99        12132          0.8965           348                       117.30
+30404666     326        56         3922          0.8266           565                       103.99
+30973709      67         8          180          1.0000            22                        19.70
+32179597     918        15         2541          0.9276           133                         8.69
+32814755     224         4           88          0.9659             4                         1.07
+20:41:47 INFO pipeline.s09_evaluate: zoom_k2 errors @0.00 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection ?    fp_background    256      223   438
+               fp_overlap       102       49     4
+               tp             14927     1750   176
+label     -    hit            14927     1750   176
+               miss_none       1450      577     8
+               miss_overlap      41       48     0
+20:41:50 INFO pipeline.s09_evaluate: autolabel: 50505 boxes on 6424 frames
+20:41:53 INFO pipeline.s09_evaluate: autolabel @0.00: {'F1_macro': 0.9021, 'DR_all': 0.9278, 'P_all': 0.9605, 'F1_all': 0.9439, 'FA/min_all': 18.64, 'FA/min_real_all': 737.45, 'TTFD_mean_all': 0.1, 'TTFD_p90_all': 0.0, 'never_all': 0.082, 'mAP50_all': 0.9246, 'DR_lo_all': 0.8861, 'DR_hi_all': 0.9616, 'P_lo_all': 0.9391, 'P_hi_all': 0.9776, 'FA/min_lo_all': 10.572, 'FA/min_hi_all': 27.8645, 'DR_0-200': 0.9455, 'P_0-200': 0.9912, 'F1_0-200': 0.9678, 'FA/min_0-200': 3.52, 'FA/min_real_0-200': 139.29, 'TTFD_mean_0-200': 0.06, 'TTFD_p90_0-200': 0.0, 'never_0-200': 0.079, 'mAP50_0-200': 0.9433, 'DR_lo_0-200': 0.9115, 'DR_hi_0-200': 0.974, 'P_lo_0-200': 0.985, 'P_hi_0-200': 0.9954, 'FA/min_lo_0-200': 1.7806, 'FA/min_hi_0-200': 5.5584, 'DR_200-400': 0.8102, 'P_200-400': 0.864, 'F1_200-400': 0.8363, 'FA/min_200-400': 8.4, 'FA/min_real_200-400': 332.15, 'TTFD_mean_200-400': 0.33, 'TTFD_p90_200-400': 0.02, 'never_200-400': 0.118, 'mAP50_200-400': 0.7982, 'DR_lo_200-400': 0.6245, 'DR_hi_200-400': 0.9714, 'P_lo_200-400': 0.8159, 'P_hi_200-400': 0.9183, 'FA/min_lo_200-400': 4.2004, 'FA/min_hi_200-400': 13.3186}
+20:41:53 INFO pipeline.s09_evaluate: autolabel per clip @0.00:
+    clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+13215276    1366         1          679          1.0000             0                         0.00
+14313658    1781         0            0             NaN             0                         0.00
+19851623     534        99        36198          0.9395            55                         6.18
+30404666     976        56        11654          0.8700          1811                       111.33
+30973709     401         8         1040          1.0000            60                         8.98
+32179597     918        15         2541          0.9725            70                         4.58
+32814755     448         4          172          1.0000             0                         0.00
+20:41:53 INFO pipeline.s09_evaluate: autolabel errors @0.00 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection ?    fp_background    269      797   720
+               fp_overlap       108      102     0
+               tp             42268     5713   528
+label     -    hit            42268     5713   528
+               miss_none       2310     1155     0
+               miss_overlap     127      183     0
+20:41:59 INFO pipeline.s09_evaluate: n_step6 @0.26: {'F1_macro': 0.5672, 'DR_all': 0.7504, 'P_all': 0.5593, 'F1_all': 0.6409, 'FA/min_all': 288.71, 'FA/min_real_all': 11420.53, 'TTFD_mean_all': 0.35, 'TTFD_p90_all': 0.36, 'never_all': 0.115, 'mAP50_all': 0.6548, 'DR_lo_all': 0.6841, 'DR_hi_all': 0.816, 'P_lo_all': 0.5183, 'P_hi_all': 0.5885, 'FA/min_lo_all': 219.486, 'FA/min_hi_all': 367.2618, 'DR_0-200': 0.7978, 'P_0-200': 0.6016, 'F1_0-200': 0.6859, 'FA/min_0-200': 220.6, 'FA/min_real_0-200': 8726.39, 'TTFD_mean_0-200': 0.21, 'TTFD_p90_0-200': 0.08, 'never_0-200': 0.043, 'mAP50_0-200': 0.7086, 'DR_lo_0-200': 0.7297, 'DR_hi_0-200': 0.8627, 'P_lo_0-200': 0.5558, 'P_hi_0-200': 0.6327, 'FA/min_lo_0-200': 167.0103, 'FA/min_hi_0-200': 275.6412, 'DR_200-400': 0.5018, 'P_200-400': 0.4055, 'F1_200-400': 0.4485, 'FA/min_200-400': 48.45, 'FA/min_real_200-400': 1916.41, 'TTFD_mean_200-400': 1.15, 'TTFD_p90_200-400': 0.55, 'never_200-400': 0.324, 'mAP50_200-400': 0.3571, 'DR_lo_200-400': 0.3147, 'DR_hi_200-400': 0.6847, 'P_lo_200-400': 0.3682, 'P_hi_200-400': 0.4383, 'FA/min_lo_200-400': 36.3546, 'FA/min_hi_200-400': 62.8287}
+20:42:00 INFO pipeline.s09_evaluate: n_step6 per clip @0.26:
+    clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+13215276    1366         1          679          1.0000           827                        36.33
+14313658    1781         0            0             NaN             3                         0.10
+19851623     534        99        36198          0.8418         16973                      1907.08
+30404666     976        56        11654          0.3751          3381                       207.85
+30973709     401         8         1040          0.9971           459                        68.68
+32179597     918        15         2541          0.9874          9091                       594.18
+32814755     448         4          172          0.9477           177                        23.71
+20:42:00 INFO pipeline.s09_evaluate: n_step6 errors @0.26 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection full fp_background   1262       17     0
+               fp_overlap       786       25     0
+               tp              2695        2     0
+          tile fp_background  18639     4812  2105
+               fp_overlap      2932      333     0
+               tp             32970     3536    29
+label     -    hit            35665     3538    29
+               miss_none       7334     3389   494
+               miss_overlap    1706      124     5
+20:42:02 INFO pipeline.s09_evaluate: n_step6@stage_frames @0.26: {'F1_macro': 0.514, 'DR_all': 0.7673, 'P_all': 0.4745, 'F1_all': 0.5864, 'FA/min_all': 432.44, 'FA/min_real_all': 5954.58, 'TTFD_mean_all': 0.42, 'TTFD_p90_all': 0.51, 'never_all': 0.126, 'mAP50_all': 0.6329, 'DR_lo_all': 0.6979, 'DR_hi_all': 0.8317, 'P_lo_all': 0.4149, 'P_hi_all': 0.5256, 'FA/min_lo_all': 356.5291, 'FA/min_hi_all': 506.0724, 'DR_0-200': 0.8135, 'P_0-200': 0.5073, 'F1_0-200': 0.6249, 'FA/min_0-200': 347.72, 'FA/min_real_0-200': 4788.03, 'TTFD_mean_0-200': 0.23, 'TTFD_p90_0-200': 0.19, 'never_0-200': 0.057, 'mAP50_0-200': 0.6823, 'DR_lo_0-200': 0.7435, 'DR_hi_0-200': 0.8745, 'P_lo_0-200': 0.444, 'P_hi_0-200': 0.5605, 'FA/min_lo_0-200': 285.2673, 'FA/min_hi_0-200': 400.7145, 'DR_200-400': 0.5023, 'P_200-400': 0.3364, 'F1_200-400': 0.403, 'FA/min_200-400': 63.08, 'FA/min_real_200-400': 868.64, 'TTFD_mean_200-400': 1.48, 'TTFD_p90_200-400': 1.12, 'never_200-400': 0.324, 'mAP50_200-400': 0.3273, 'DR_lo_200-400': 0.3153, 'DR_hi_200-400': 0.6858, 'P_lo_200-400': 0.2806, 'P_hi_200-400': 0.3887, 'FA/min_lo_200-400': 50.382, 'FA/min_hi_200-400': 77.507}
+20:42:03 INFO pipeline.s09_evaluate: n_step6@stage_frames per clip @0.26:
+    clip  frames  vehicles  label_boxes  detection_rate  false_alarms  FA/min (FP x 60 / N_frames)
+13215276     228         1          114          1.0000           140                        36.84
+14313658     297         0            0             NaN             0                         0.00
+19851623     178        99        12132          0.8408          5602                      1888.31
+30404666     326        56         3922          0.3766          1134                       208.71
+30973709      67         8          180          0.9944            70                        62.69
+32179597     918        15         2541          0.9874          9091                       594.18
+32814755     224         4           88          0.9432            93                        24.91
+20:42:03 INFO pipeline.s09_evaluate: n_step6@stage_frames errors @0.26 (boxes per band):
+band                          0-200  200-400  >400
+what      pass outcome                            
+detection full fp_background    915        9     0
+               fp_overlap       277       11     0
+               tp              2376        1     0
+          tile fp_background   9510     2221   807
+               fp_overlap      2268      112     0
+               tp             10980     1192    13
+label     -    hit            13356     1193    13
+               miss_none       2486     1138   169
+               miss_overlap     576       44     2
+20:42:06 INFO pipeline.s09_evaluate:   sheets: outputs/09_eval/eval/n_step6/viz/labels_by_hit_n_step6.jpg, outputs/09_eval/eval/n_step6/viz/false_alarms_n_step6.jpg
+20:42:45 INFO pipeline.s09_evaluate:   video: outputs/09_eval/eval/n_step6/viz/13215276_n_step6.mp4
+20:43:37 INFO pipeline.s09_evaluate:   video: outputs/09_eval/eval/n_step6/viz/14313658_n_step6.mp4
+20:43:49 INFO pipeline.s09_evaluate:   video: outputs/09_eval/eval/n_step6/viz/19851623_n_step6.mp4
+20:44:12 INFO pipeline.s09_evaluate:   video: outputs/09_eval/eval/n_step6/viz/30404666_n_step6.mp4
+20:44:21 INFO pipeline.s09_evaluate:   video: outputs/09_eval/eval/n_step6/viz/30973709_n_step6.mp4
+20:44:40 INFO pipeline.s09_evaluate:   video: outputs/09_eval/eval/n_step6/viz/32179597_n_step6.mp4
+20:44:51 INFO pipeline.s09_evaluate:   video: outputs/09_eval/eval/n_step6/viz/32814755_n_step6.mp4
+20:44:51 INFO pipeline.s09_evaluate:   stills: outputs/09_eval/eval/n_step6/viz
+20:46:39 INFO pipeline.s09_evaluate:   story video: outputs/09_eval/eval/n_step6/viz/story_13215276.mp4
+20:48:57 INFO pipeline.s09_evaluate:   story video: outputs/09_eval/eval/n_step6/viz/story_14313658.mp4
+20:49:28 INFO pipeline.s09_evaluate:   story video: outputs/09_eval/eval/n_step6/viz/story_19851623.mp4
+20:50:26 INFO pipeline.s09_evaluate:   story video: outputs/09_eval/eval/n_step6/viz/story_30404666.mp4
+20:50:51 INFO pipeline.s09_evaluate:   story video: outputs/09_eval/eval/n_step6/viz/story_30973709.mp4
+20:51:37 INFO pipeline.s09_evaluate:   story video: outputs/09_eval/eval/n_step6/viz/story_32179597.mp4
+20:52:06 INFO pipeline.s09_evaluate:   story video: outputs/09_eval/eval/n_step6/viz/story_32814755.mp4
+20:52:06 INFO pipeline.s09_evaluate: stages table -> outputs/09_eval/eval/table_stages.md
+| Stage | DR 0-200 | DR 200-400 | P 0-200 | P 200-400 | FA/min 0-200 | FA/min 200-400 | mAP@0.5 all | frames |
+|---|---|---|---|---|---|---|---|---|
+| YOLO26x alone | 0.79 | 0.70 | 0.94 | 0.80 | 20.86 | 11.45 | 0.85 | 2238 |
+| RT-DETR-x alone | 0.82 | 0.64 | 0.93 | 0.71 | 28.04 | 16.22 | 0.89 | 2238 |
+| Grounding DINO alone | 0.96 | 0.80 | 0.94 | 0.76 | 28.58 | 16.25 | 0.95 | 2238 |
+| 3 models fused, all boxes (k>=1) | 0.98 | 0.86 | 0.87 | 0.62 | 62.71 | 32.68 | 0.90 | 2238 |
+| fused, >= 2 models agree (k>=2) | 0.91 | 0.74 | 0.98 | 0.88 | 9.60 | 6.46 | 0.88 | 2238 |
+| + zoom re-check, k>=2 | 0.91 | 0.74 | 0.98 | 0.87 | 9.60 | 7.29 | 0.88 | 2238 |
+| + tracks and triage = auto labels | 0.95 | 0.81 | 0.99 | 0.86 | 3.52 | 8.40 | 0.92 | 6424 |
+| trained n_step6 @ 0.26 | 0.80 | 0.50 | 0.60 | 0.41 | 220.60 | 48.45 | 0.65 | 6424 |
+| trained n_step6 @ 0.26, stage frames only | 0.81 | 0.50 | 0.51 | 0.34 | 347.72 | 63.08 | 0.63 | 2238 |
+
+FA/min = FP x 60 / N_frames (task formula). Stages 02-03b ran on every step-th frame (~10 fps) and are scored on those frames; the auto labels and the trained model on every frame (the 'stage frames only' row puts the model on the same frames as the stages). mAP of the fused rows ranks boxes by the mean confidence of the models that voted.
+
+20:52:06 INFO pipeline.s09_evaluate: eval metrics:
+run                  raw_yolo26x  raw_rtdetr_x  raw_gdino_base  fused_all  fused_k2   zoom_k2  autolabel     n_step6  n_step6@stage_frames
+threshold                 0.1500        0.4000          0.3000     0.0000    0.0000    0.0000     0.0000      0.2600                0.2600
+F1_macro                  0.8016        0.7720          0.8625     0.8219    0.8714    0.8689     0.9021      0.5672                0.5140
+DR_all                    0.7789        0.7974          0.9380     0.9615    0.8870    0.8881     0.9278      0.7504                0.7673
+P_all                     0.9107        0.8524          0.8870     0.7840    0.9492    0.9402     0.9605      0.5593                0.4745
+F1_all                    0.8397        0.8240          0.9118     0.8637    0.9171    0.9134     0.9439      0.6409                0.5864
+FA/min_all               38.8700       70.2400         60.8000   134.8000   24.1300   28.7400    18.6400    288.7100              432.4400
+FA/min_real_all         535.2800      967.2000        837.2600  1856.1400  332.2500  395.7400   737.4500  11420.5300             5954.5800
+TTFD_mean_all             0.5000        0.5200          0.0900     0.0400    0.3700    0.3600     0.1000      0.3500                0.4200
+TTFD_p90_all              1.7200        1.3000          0.2300     0.0000    0.6000    0.6000     0.0000      0.3600                0.5100
+never_all                 0.1310        0.0440          0.0490     0.0000    0.0600    0.0440     0.0820      0.1150                0.1260
+mAP50_all                 0.8466        0.8933          0.9519     0.9029    0.8784    0.8785     0.9246      0.6548                0.6329
+DR_lo_all                 0.7185        0.7483          0.9082     0.9366    0.8475    0.8486     0.8861      0.6841                0.6979
+DR_hi_all                 0.8277        0.8462          0.9610     0.9818    0.9199    0.9206     0.9616      0.8160                0.8317
+P_lo_all                  0.8802        0.8280          0.8617     0.7448    0.9366    0.9251     0.9391      0.5183                0.4149
+P_hi_all                  0.9356        0.8712          0.9049     0.8140    0.9595    0.9520     0.9776      0.5885                0.5256
+FA/min_lo_all            26.9951       52.0198         48.6338   104.1357   17.9875   21.1161    10.5720    219.4860              356.5291
+FA/min_hi_all            52.0088       88.7901         74.1054   166.6365   31.0004   37.0604    27.8645    367.2618              506.0724
+DR_0-200                  0.7892        0.8208          0.9593     0.9767    0.9092    0.9092     0.9455      0.7978                0.8135
+P_0-200                   0.9434        0.9280          0.9366     0.8727    0.9766    0.9766     0.9912      0.6016                0.5073
+F1_0-200                  0.8594        0.8711          0.9478     0.9218    0.9417    0.9417     0.9678      0.6859                0.6249
+FA/min_0-200             20.8600       28.0400         28.5800    62.7100    9.6000    9.6000     3.5200    220.6000              347.7200
+FA/min_real_0-200       287.2100      386.1400        393.5300   863.4700  132.1600  132.1600   139.2900   8726.3900             4788.0300
+TTFD_mean_0-200           0.5700        0.2900          0.0600     0.0400    0.1900    0.1900     0.0600      0.2100                0.2300
+TTFD_p90_0-200            1.7900        0.9600          0.0500     0.0000    0.5000    0.5000     0.0000      0.0800                0.1900
+never_0-200               0.1290        0.0290          0.0140     0.0000    0.0290    0.0290     0.0790      0.0430                0.0570
+mAP50_0-200               0.8613        0.9432          0.9737     0.9439    0.9046    0.9046     0.9433      0.7086                0.6823
+DR_lo_0-200               0.7320        0.7727          0.9414     0.9620    0.8765    0.8765     0.9115      0.7297                0.7435
+DR_hi_0-200               0.8396        0.8718          0.9744     0.9886    0.9372    0.9372     0.9740      0.8627                0.8745
+P_lo_0-200                0.9216        0.9066          0.9123     0.8360    0.9663    0.9663     0.9850      0.5558                0.4440
+P_hi_0-200                0.9602        0.9432          0.9547     0.8992    0.9844    0.9844     0.9954      0.6327                0.5605
+FA/min_lo_0-200          14.8396       21.6971         22.2600    50.1764    6.5536    6.5536     1.7806    167.0103              285.2673
+FA/min_hi_0-200          27.4286       35.3218         35.4687    76.5043   12.7012   12.7012     5.5584    275.6412              400.7145
+DR_200-400                0.6985        0.6362          0.7979     0.8552    0.7360    0.7368     0.8102      0.5018                0.5023
+P_200-400                 0.7953        0.7141          0.7577     0.6249    0.8788    0.8655     0.8640      0.4055                0.3364
+F1_200-400                0.7438        0.6729          0.7773     0.7221    0.8011    0.7960     0.8363      0.4485                0.4030
+FA/min_200-400           11.4500       16.2200         16.2500    32.6800    6.4600    7.2900     8.4000     48.4500               63.0800
+FA/min_real_200-400     157.6300      223.3400        223.7100   450.0100   88.9700  100.4100   332.1500   1916.4100              868.6400
+TTFD_mean_200-400         0.2900        1.5800          0.2400     0.0900    1.2200    1.2200     0.3300      1.1500                1.4800
+TTFD_p90_200-400          0.5400        3.3100          0.5200     0.1800    3.2100    3.2100     0.0200      0.5500                1.1200
+never_200-400             0.1180        0.0590          0.1470     0.0000    0.1180    0.1180     0.1180      0.3240                0.3240
+mAP50_200-400             0.7565        0.7188          0.8219     0.7605    0.7243    0.7228     0.7982      0.3571                0.3273
+DR_lo_200-400             0.5656        0.4503          0.6562     0.7197    0.5800    0.5805     0.6245      0.3147                0.3153
+DR_hi_200-400             0.8253        0.8200          0.9230     0.9768    0.8815    0.8833     0.9714      0.6847                0.6858
+P_lo_200-400              0.7558        0.6682          0.7139     0.5764    0.8447    0.8295     0.8159      0.3682                0.2806
+P_hi_200-400              0.8369        0.7656          0.7982     0.6763    0.9129    0.9031     0.9183      0.4383                0.3887
+FA/min_lo_200-400         7.0685       10.3722         12.3367    23.0909    3.7937    4.2620     4.2004     36.3546               50.3820
+FA/min_hi_200-400        16.7002       23.2614         21.4145    44.4232    9.6347   10.9246    13.3186     62.8287               77.5070

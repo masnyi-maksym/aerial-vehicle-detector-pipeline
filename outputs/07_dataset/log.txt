@@ -1,0 +1,7 @@
+19:44:22 INFO pipeline: Stage 07_dataset -> outputs/07_dataset (seed=42)
+19:44:53 INFO pipeline.s07_dataset: step 3: {'frames': 572, 'tiles': 8181, 'tiles_by_rotation_deg': {0: 2071, 90: 2025, 180: 2026, 270: 2059}, 'empty_tiles': 1049, 'boxes': 33339}
+19:44:53 INFO pipeline.s07_dataset: step 6: {'frames': 287, 'tiles': 4097, 'tiles_by_rotation_deg': {0: 1043, 90: 1025, 180: 1028, 270: 1001}, 'empty_tiles': 526, 'boxes': 16694}
+19:44:53 INFO pipeline.s07_dataset: step 9: {'frames': 191, 'tiles': 2731, 'tiles_by_rotation_deg': {0: 698, 90: 699, 180: 678, 270: 656}, 'empty_tiles': 348, 'boxes': 11092}
+19:44:53 INFO pipeline.s07_dataset: val: {'frames': 250, 'tiles': 3073, 'empty_tiles': 820, 'boxes': 4789}
+19:44:53 INFO pipeline: Stats: outputs/07_dataset/stats.json
+19:44:53 INFO pipeline.s07_dataset: Dataset -> datasets/yolo (data_step<s>.yaml)

@@ -1,0 +1,12 @@
+{
+  "weights": "outputs/08_train/n_step9/weights/best.pt",
+  "sha1": "85a1da3c3f35bad4aaf9f9ba13a6e030664f97cf",
+  "frames": 750,
+  "tile": 640,
+  "tile_overlap": 0.2,
+  "edge_margin_px": 3,
+  "full_frame_pass": true,
+  "nms_iou": 0.5,
+  "conf": 0.05,
+  "quantize": 16
+}

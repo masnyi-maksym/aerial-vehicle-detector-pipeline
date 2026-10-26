@@ -1,0 +1,105 @@
+18:20:07 INFO pipeline: Stage 02_predict -> outputs/02_predict (seed=42)
+18:20:07 INFO pipeline.s02_predict: Selected 3060 frames (steps {'8968356': 3, '5382494': 3, '8457857': 3, '3405804': 3, '32179597': 1, '19851623': 3, '30973709': 6, '14313658': 6, '13215276': 6, '32814755': 2, '30404666': 3}): {'13215276': 228, '14313658': 297, '19851623': 178, '30404666': 326, '30973709': 67, '32179597': 918, '32814755': 224, '3405804': 245, '5382494': 250, '8457857': 135, '8968356': 192}
+18:20:08 INFO pipeline.s02_predict: yolo26x: 3060 frames, tile 640 px
+18:20:20 INFO pipeline.s02_predict: yolo26x: 100/3060 frames, 0.10 s/frame
+18:20:30 INFO pipeline.s02_predict: yolo26x: 200/3060 frames, 0.10 s/frame
+18:20:40 INFO pipeline.s02_predict: yolo26x: 300/3060 frames, 0.10 s/frame
+18:20:49 INFO pipeline.s02_predict: yolo26x: 400/3060 frames, 0.10 s/frame
+18:20:59 INFO pipeline.s02_predict: yolo26x: 500/3060 frames, 0.10 s/frame
+18:21:09 INFO pipeline.s02_predict: yolo26x: 600/3060 frames, 0.10 s/frame
+18:21:19 INFO pipeline.s02_predict: yolo26x: 700/3060 frames, 0.10 s/frame
+18:21:30 INFO pipeline.s02_predict: yolo26x: 800/3060 frames, 0.10 s/frame
+18:21:40 INFO pipeline.s02_predict: yolo26x: 900/3060 frames, 0.10 s/frame
+18:21:50 INFO pipeline.s02_predict: yolo26x: 1000/3060 frames, 0.10 s/frame
+18:22:01 INFO pipeline.s02_predict: yolo26x: 1100/3060 frames, 0.10 s/frame
+18:22:11 INFO pipeline.s02_predict: yolo26x: 1200/3060 frames, 0.10 s/frame
+18:22:21 INFO pipeline.s02_predict: yolo26x: 1300/3060 frames, 0.10 s/frame
+18:22:31 INFO pipeline.s02_predict: yolo26x: 1400/3060 frames, 0.10 s/frame
+18:22:40 INFO pipeline.s02_predict: yolo26x: 1500/3060 frames, 0.10 s/frame
+18:22:50 INFO pipeline.s02_predict: yolo26x: 1600/3060 frames, 0.10 s/frame
+18:23:00 INFO pipeline.s02_predict: yolo26x: 1700/3060 frames, 0.10 s/frame
+18:23:10 INFO pipeline.s02_predict: yolo26x: 1800/3060 frames, 0.10 s/frame
+18:23:20 INFO pipeline.s02_predict: yolo26x: 1900/3060 frames, 0.10 s/frame
+18:23:30 INFO pipeline.s02_predict: yolo26x: 2000/3060 frames, 0.10 s/frame
+18:23:40 INFO pipeline.s02_predict: yolo26x: 2100/3060 frames, 0.10 s/frame
+18:23:50 INFO pipeline.s02_predict: yolo26x: 2200/3060 frames, 0.10 s/frame
+18:24:00 INFO pipeline.s02_predict: yolo26x: 2300/3060 frames, 0.10 s/frame
+18:24:10 INFO pipeline.s02_predict: yolo26x: 2400/3060 frames, 0.10 s/frame
+18:24:21 INFO pipeline.s02_predict: yolo26x: 2500/3060 frames, 0.10 s/frame
+18:24:31 INFO pipeline.s02_predict: yolo26x: 2600/3060 frames, 0.10 s/frame
+18:24:41 INFO pipeline.s02_predict: yolo26x: 2700/3060 frames, 0.10 s/frame
+18:24:51 INFO pipeline.s02_predict: yolo26x: 2800/3060 frames, 0.10 s/frame
+18:25:00 INFO pipeline.s02_predict: yolo26x: 2900/3060 frames, 0.10 s/frame
+18:25:03 INFO pipeline.s02_predict: yolo26x: 3000/3060 frames, 0.03 s/frame
+18:25:05 INFO pipeline.s02_predict: yolo26x: 54369 boxes -> outputs/02_predict/yolo26x.parquet
+18:25:05 INFO pipeline.s02_predict: yolo26x: estimated full run {'configured_steps': 4.9, 'every_frame': 14.1} min
+18:25:05 INFO pipeline: Stats: outputs/02_predict/stats.json
+18:25:05 INFO pipeline.s02_predict: rtdetr_x: 3060 frames, tile 640 px
+18:25:19 INFO pipeline.s02_predict: rtdetr_x: 100/3060 frames, 0.12 s/frame
+18:25:30 INFO pipeline.s02_predict: rtdetr_x: 200/3060 frames, 0.12 s/frame
+18:25:42 INFO pipeline.s02_predict: rtdetr_x: 300/3060 frames, 0.12 s/frame
+18:25:54 INFO pipeline.s02_predict: rtdetr_x: 400/3060 frames, 0.12 s/frame
+18:26:05 INFO pipeline.s02_predict: rtdetr_x: 500/3060 frames, 0.12 s/frame
+18:26:17 INFO pipeline.s02_predict: rtdetr_x: 600/3060 frames, 0.12 s/frame
+18:26:30 INFO pipeline.s02_predict: rtdetr_x: 700/3060 frames, 0.12 s/frame
+18:26:42 INFO pipeline.s02_predict: rtdetr_x: 800/3060 frames, 0.12 s/frame
+18:26:54 INFO pipeline.s02_predict: rtdetr_x: 900/3060 frames, 0.12 s/frame
+18:27:07 INFO pipeline.s02_predict: rtdetr_x: 1000/3060 frames, 0.12 s/frame
+18:27:19 INFO pipeline.s02_predict: rtdetr_x: 1100/3060 frames, 0.12 s/frame
+18:27:31 INFO pipeline.s02_predict: rtdetr_x: 1200/3060 frames, 0.12 s/frame
+18:27:42 INFO pipeline.s02_predict: rtdetr_x: 1300/3060 frames, 0.12 s/frame
+18:27:54 INFO pipeline.s02_predict: rtdetr_x: 1400/3060 frames, 0.12 s/frame
+18:28:06 INFO pipeline.s02_predict: rtdetr_x: 1500/3060 frames, 0.12 s/frame
+18:28:18 INFO pipeline.s02_predict: rtdetr_x: 1600/3060 frames, 0.12 s/frame
+18:28:30 INFO pipeline.s02_predict: rtdetr_x: 1700/3060 frames, 0.12 s/frame
+18:28:41 INFO pipeline.s02_predict: rtdetr_x: 1800/3060 frames, 0.12 s/frame
+18:28:53 INFO pipeline.s02_predict: rtdetr_x: 1900/3060 frames, 0.12 s/frame
+18:29:05 INFO pipeline.s02_predict: rtdetr_x: 2000/3060 frames, 0.12 s/frame
+18:29:17 INFO pipeline.s02_predict: rtdetr_x: 2100/3060 frames, 0.12 s/frame
+18:29:29 INFO pipeline.s02_predict: rtdetr_x: 2200/3060 frames, 0.12 s/frame
+18:29:40 INFO pipeline.s02_predict: rtdetr_x: 2300/3060 frames, 0.12 s/frame
+18:29:53 INFO pipeline.s02_predict: rtdetr_x: 2400/3060 frames, 0.13 s/frame
+18:30:07 INFO pipeline.s02_predict: rtdetr_x: 2500/3060 frames, 0.14 s/frame
+18:30:19 INFO pipeline.s02_predict: rtdetr_x: 2600/3060 frames, 0.12 s/frame
+18:30:32 INFO pipeline.s02_predict: rtdetr_x: 2700/3060 frames, 0.13 s/frame
+18:30:44 INFO pipeline.s02_predict: rtdetr_x: 2800/3060 frames, 0.12 s/frame
+18:30:54 INFO pipeline.s02_predict: rtdetr_x: 2900/3060 frames, 0.12 s/frame
+18:30:59 INFO pipeline.s02_predict: rtdetr_x: 3000/3060 frames, 0.05 s/frame
+18:31:02 INFO pipeline.s02_predict: rtdetr_x: 653723 boxes -> outputs/02_predict/rtdetr_x.parquet
+18:31:02 INFO pipeline.s02_predict: rtdetr_x: estimated full run {'configured_steps': 5.9, 'every_frame': 17.0} min
+18:31:02 INFO pipeline: Stats: outputs/02_predict/stats.json
+18:31:05 INFO pipeline.s02_predict: gdino_base: 3060 frames, tile 800 px
+18:33:03 INFO pipeline.s02_predict: gdino_base: 100/3060 frames, 1.17 s/frame
+18:35:00 INFO pipeline.s02_predict: gdino_base: 200/3060 frames, 1.17 s/frame
+18:36:58 INFO pipeline.s02_predict: gdino_base: 300/3060 frames, 1.18 s/frame
+18:38:56 INFO pipeline.s02_predict: gdino_base: 400/3060 frames, 1.18 s/frame
+18:40:54 INFO pipeline.s02_predict: gdino_base: 500/3060 frames, 1.18 s/frame
+18:42:53 INFO pipeline.s02_predict: gdino_base: 600/3060 frames, 1.20 s/frame
+18:44:53 INFO pipeline.s02_predict: gdino_base: 700/3060 frames, 1.20 s/frame
+18:46:52 INFO pipeline.s02_predict: gdino_base: 800/3060 frames, 1.19 s/frame
+18:48:50 INFO pipeline.s02_predict: gdino_base: 900/3060 frames, 1.19 s/frame
+18:50:49 INFO pipeline.s02_predict: gdino_base: 1000/3060 frames, 1.19 s/frame
+18:52:47 INFO pipeline.s02_predict: gdino_base: 1100/3060 frames, 1.18 s/frame
+18:54:46 INFO pipeline.s02_predict: gdino_base: 1200/3060 frames, 1.18 s/frame
+18:56:44 INFO pipeline.s02_predict: gdino_base: 1300/3060 frames, 1.18 s/frame
+18:58:43 INFO pipeline.s02_predict: gdino_base: 1400/3060 frames, 1.18 s/frame
+19:00:41 INFO pipeline.s02_predict: gdino_base: 1500/3060 frames, 1.18 s/frame
+19:02:39 INFO pipeline.s02_predict: gdino_base: 1600/3060 frames, 1.18 s/frame
+19:04:37 INFO pipeline.s02_predict: gdino_base: 1700/3060 frames, 1.18 s/frame
+19:06:35 INFO pipeline.s02_predict: gdino_base: 1800/3060 frames, 1.18 s/frame
+19:08:34 INFO pipeline.s02_predict: gdino_base: 1900/3060 frames, 1.18 s/frame
+19:10:32 INFO pipeline.s02_predict: gdino_base: 2000/3060 frames, 1.18 s/frame
+19:12:30 INFO pipeline.s02_predict: gdino_base: 2100/3060 frames, 1.18 s/frame
+19:14:28 INFO pipeline.s02_predict: gdino_base: 2200/3060 frames, 1.18 s/frame
+19:16:27 INFO pipeline.s02_predict: gdino_base: 2300/3060 frames, 1.19 s/frame
+19:18:27 INFO pipeline.s02_predict: gdino_base: 2400/3060 frames, 1.20 s/frame
+19:20:27 INFO pipeline.s02_predict: gdino_base: 2500/3060 frames, 1.20 s/frame
+19:22:25 INFO pipeline.s02_predict: gdino_base: 2600/3060 frames, 1.18 s/frame
+19:24:23 INFO pipeline.s02_predict: gdino_base: 2700/3060 frames, 1.19 s/frame
+19:26:22 INFO pipeline.s02_predict: gdino_base: 2800/3060 frames, 1.19 s/frame
+19:27:55 INFO pipeline.s02_predict: gdino_base: 2900/3060 frames, 1.18 s/frame
+19:28:32 INFO pipeline.s02_predict: gdino_base: 3000/3060 frames, 0.38 s/frame
+19:28:55 INFO pipeline.s02_predict: gdino_base: 82920 boxes -> outputs/02_predict/gdino_base.parquet
+19:28:55 INFO pipeline.s02_predict: gdino_base: estimated full run {'configured_steps': 57.8, 'every_frame': 167.6} min
+19:28:55 INFO pipeline: Stats: outputs/02_predict/stats.json
+19:28:55 INFO pipeline.s02_predict: Viz: 10 frames -> outputs/02_predict/viz

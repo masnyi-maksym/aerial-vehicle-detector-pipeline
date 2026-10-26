@@ -1,0 +1,1314 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <name>13215276</name>
+      <size>228</size>
+      <mode>interpolation</mode>
+      <labels>
+        <label>
+          <name>vehicle</name>
+          <attributes>
+            <attribute>
+              <name>auto</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>tier</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+            <attribute>
+              <name>k</name>
+              <mutable>True</mutable>
+              <input_type>number</input_type>
+              <default_value>0</default_value>
+              <values>0
+3
+1</values>
+            </attribute>
+            <attribute>
+              <name>k_zoom</name>
+              <mutable>True</mutable>
+              <input_type>number</input_type>
+              <default_value>0</default_value>
+              <values>0
+3
+1</values>
+            </attribute>
+            <attribute>
+              <name>models</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+            <attribute>
+              <name>flag</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+            <attribute>
+              <name>decoy</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>suspect</name>
+          <attributes>
+            <attribute>
+              <name>auto</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>tier</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+            <attribute>
+              <name>k</name>
+              <mutable>True</mutable>
+              <input_type>number</input_type>
+              <default_value>0</default_value>
+              <values>0
+3
+1</values>
+            </attribute>
+            <attribute>
+              <name>k_zoom</name>
+              <mutable>True</mutable>
+              <input_type>number</input_type>
+              <default_value>0</default_value>
+              <values>0
+3
+1</values>
+            </attribute>
+            <attribute>
+              <name>models</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+            <attribute>
+              <name>flag</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+            <attribute>
+              <name>decoy</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>two_wheeler</name>
+          <attributes>
+            <attribute>
+              <name>auto</name>
+              <mutable>True</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false</values>
+            </attribute>
+            <attribute>
+              <name>tier</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+            <attribute>
+              <name>k</name>
+              <mutable>True</mutable>
+              <input_type>number</input_type>
+              <default_value>0</default_value>
+              <values>0
+3
+1</values>
+            </attribute>
+            <attribute>
+              <name>k_zoom</name>
+              <mutable>True</mutable>
+              <input_type>number</input_type>
+              <default_value>0</default_value>
+              <values>0
+3
+1</values>
+            </attribute>
+            <attribute>
+              <name>models</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+            <attribute>
+              <name>flag</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+            <attribute>
+              <name>decoy</name>
+              <mutable>True</mutable>
+              <input_type>text</input_type>
+              <default_value />
+              <values />
+            </attribute>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+  </meta>
+  <track id="0" label="vehicle" source="auto">
+    <box frame="114" outside="0" occluded="0" keyframe="1" xtl="0.93" ytl="1178.18" xbr="20.50" ybr="1242.20" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">1</attribute>
+      <attribute name="k_zoom">1</attribute>
+      <attribute name="models">gdino_base</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="115" outside="0" occluded="0" keyframe="1" xtl="0.22" ytl="1162.94" xbr="54.59" ybr="1249.09" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="116" outside="0" occluded="0" keyframe="1" xtl="0.15" ytl="1153.03" xbr="87.55" ybr="1239.56" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="117" outside="0" occluded="0" keyframe="1" xtl="0.16" ytl="1143.50" xbr="119.73" ybr="1230.09" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="118" outside="0" occluded="0" keyframe="1" xtl="0.24" ytl="1135.38" xbr="150.68" ybr="1222.37" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="119" outside="0" occluded="0" keyframe="1" xtl="1.65" ytl="1127.47" xbr="180.01" ybr="1213.96" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="120" outside="0" occluded="0" keyframe="1" xtl="30.78" ytl="1119.77" xbr="208.48" ybr="1205.61" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="121" outside="0" occluded="0" keyframe="1" xtl="60.19" ytl="1111.75" xbr="236.88" ybr="1197.83" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="122" outside="0" occluded="0" keyframe="1" xtl="89.55" ytl="1103.53" xbr="264.17" ybr="1189.40" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="123" outside="0" occluded="0" keyframe="1" xtl="117.65" ytl="1096.52" xbr="292.76" ybr="1182.74" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="124" outside="0" occluded="0" keyframe="1" xtl="146.09" ytl="1089.99" xbr="320.57" ybr="1175.13" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="125" outside="0" occluded="0" keyframe="1" xtl="175.10" ytl="1082.27" xbr="348.42" ybr="1167.52" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="126" outside="0" occluded="0" keyframe="1" xtl="205.64" ytl="1074.60" xbr="378.17" ybr="1159.67" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="127" outside="0" occluded="0" keyframe="1" xtl="236.15" ytl="1067.15" xbr="407.88" ybr="1152.76" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="128" outside="0" occluded="0" keyframe="1" xtl="267.56" ytl="1060.82" xbr="437.78" ybr="1144.96" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="129" outside="0" occluded="0" keyframe="1" xtl="298.62" ytl="1053.40" xbr="467.72" ybr="1138.26" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="130" outside="0" occluded="0" keyframe="1" xtl="328.63" ytl="1046.58" xbr="497.36" ybr="1131.10" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="131" outside="0" occluded="0" keyframe="1" xtl="359.78" ytl="1039.66" xbr="527.47" ybr="1124.85" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="132" outside="0" occluded="0" keyframe="1" xtl="391.32" ytl="1032.93" xbr="558.35" ybr="1117.81" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="133" outside="0" occluded="0" keyframe="1" xtl="426.59" ytl="1026.61" xbr="592.85" ybr="1111.25" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="134" outside="0" occluded="0" keyframe="1" xtl="462.65" ytl="1019.29" xbr="628.87" ybr="1104.15" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="135" outside="0" occluded="0" keyframe="1" xtl="501.79" ytl="1010.64" xbr="665.46" ybr="1097.96" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="136" outside="0" occluded="0" keyframe="1" xtl="536.30" ytl="1004.63" xbr="699.93" ybr="1089.21" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="137" outside="0" occluded="0" keyframe="1" xtl="572.96" ytl="998.30" xbr="735.47" ybr="1082.25" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="138" outside="0" occluded="0" keyframe="1" xtl="609.59" ytl="991.22" xbr="770.95" ybr="1075.63" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="139" outside="0" occluded="0" keyframe="1" xtl="645.76" ytl="984.86" xbr="806.60" ybr="1069.11" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="140" outside="0" occluded="0" keyframe="1" xtl="681.75" ytl="978.79" xbr="841.69" ybr="1062.59" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="141" outside="0" occluded="0" keyframe="1" xtl="717.30" ytl="971.96" xbr="876.43" ybr="1056.21" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="142" outside="0" occluded="0" keyframe="1" xtl="752.64" ytl="966.09" xbr="911.13" ybr="1049.91" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="143" outside="0" occluded="0" keyframe="1" xtl="787.96" ytl="960.24" xbr="945.93" ybr="1044.35" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="144" outside="0" occluded="0" keyframe="1" xtl="822.31" ytl="955.01" xbr="980.15" ybr="1038.95" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="145" outside="0" occluded="0" keyframe="1" xtl="856.94" ytl="949.38" xbr="1013.81" ybr="1033.53" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="146" outside="0" occluded="0" keyframe="1" xtl="891.77" ytl="945.11" xbr="1047.20" ybr="1029.10" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="147" outside="0" occluded="0" keyframe="1" xtl="925.92" ytl="940.22" xbr="1081.31" ybr="1024.40" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="148" outside="0" occluded="0" keyframe="1" xtl="960.11" ytl="935.26" xbr="1114.49" ybr="1019.55" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="149" outside="0" occluded="0" keyframe="1" xtl="994.19" ytl="931.14" xbr="1147.88" ybr="1014.98" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="150" outside="0" occluded="0" keyframe="1" xtl="1028.01" ytl="926.20" xbr="1181.29" ybr="1010.43" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="151" outside="0" occluded="0" keyframe="1" xtl="1061.40" ytl="922.44" xbr="1214.69" ybr="1006.51" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="152" outside="0" occluded="0" keyframe="1" xtl="1095.16" ytl="918.78" xbr="1247.99" ybr="1002.39" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="153" outside="0" occluded="0" keyframe="1" xtl="1128.38" ytl="915.17" xbr="1280.88" ybr="999.06" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="154" outside="0" occluded="0" keyframe="1" xtl="1161.85" ytl="911.52" xbr="1314.08" ybr="995.54" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="155" outside="0" occluded="0" keyframe="1" xtl="1195.29" ytl="907.91" xbr="1346.37" ybr="992.25" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="156" outside="0" occluded="0" keyframe="1" xtl="1228.55" ytl="905.07" xbr="1379.54" ybr="989.11" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="157" outside="0" occluded="0" keyframe="1" xtl="1262.09" ytl="901.62" xbr="1411.83" ybr="985.96" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="158" outside="0" occluded="0" keyframe="1" xtl="1294.72" ytl="898.70" xbr="1444.29" ybr="983.42" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="159" outside="0" occluded="0" keyframe="1" xtl="1327.43" ytl="896.49" xbr="1476.77" ybr="980.75" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="160" outside="0" occluded="0" keyframe="1" xtl="1360.64" ytl="894.22" xbr="1509.45" ybr="978.54" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="161" outside="0" occluded="0" keyframe="1" xtl="1393.49" ytl="891.83" xbr="1542.04" ybr="976.75" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="162" outside="0" occluded="0" keyframe="1" xtl="1425.94" ytl="890.49" xbr="1574.54" ybr="974.86" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="163" outside="0" occluded="0" keyframe="1" xtl="1458.59" ytl="888.07" xbr="1606.88" ybr="973.24" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="164" outside="0" occluded="0" keyframe="1" xtl="1489.99" ytl="886.29" xbr="1637.05" ybr="971.40" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="165" outside="0" occluded="0" keyframe="1" xtl="1520.50" ytl="884.81" xbr="1668.97" ybr="971.93" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="166" outside="0" occluded="0" keyframe="1" xtl="1550.05" ytl="884.27" xbr="1697.39" ybr="969.29" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="167" outside="0" occluded="0" keyframe="1" xtl="1576.83" ytl="883.45" xbr="1724.01" ybr="968.74" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="168" outside="0" occluded="0" keyframe="1" xtl="1602.00" ytl="882.29" xbr="1749.06" ybr="967.75" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="169" outside="0" occluded="0" keyframe="1" xtl="1625.27" ytl="881.68" xbr="1772.16" ybr="966.87" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="170" outside="0" occluded="0" keyframe="1" xtl="1648.33" ytl="880.86" xbr="1795.44" ybr="967.00" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="171" outside="0" occluded="0" keyframe="1" xtl="1670.86" ytl="880.49" xbr="1817.42" ybr="966.06" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="172" outside="0" occluded="0" keyframe="1" xtl="1692.32" ytl="880.12" xbr="1839.31" ybr="965.90" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="173" outside="0" occluded="0" keyframe="1" xtl="1714.12" ytl="879.46" xbr="1861.31" ybr="965.01" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="174" outside="0" occluded="0" keyframe="1" xtl="1735.64" ytl="878.75" xbr="1882.24" ybr="964.84" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="175" outside="0" occluded="0" keyframe="1" xtl="1756.18" ytl="878.90" xbr="1902.91" ybr="964.34" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="176" outside="0" occluded="0" keyframe="1" xtl="1775.40" ytl="878.30" xbr="1921.75" ybr="964.09" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="177" outside="0" occluded="0" keyframe="1" xtl="1791.28" ytl="878.25" xbr="1937.38" ybr="964.08" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="178" outside="0" occluded="0" keyframe="1" xtl="1805.39" ytl="877.84" xbr="1951.75" ybr="963.52" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="179" outside="0" occluded="0" keyframe="1" xtl="1819.07" ytl="877.41" xbr="1965.15" ybr="963.66" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="180" outside="0" occluded="0" keyframe="1" xtl="1832.89" ytl="877.23" xbr="1978.80" ybr="963.31" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="181" outside="0" occluded="0" keyframe="1" xtl="1847.08" ytl="877.34" xbr="1993.01" ybr="963.36" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="182" outside="0" occluded="0" keyframe="1" xtl="1862.28" ytl="877.58" xbr="2007.78" ybr="963.32" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="183" outside="0" occluded="0" keyframe="1" xtl="1877.09" ytl="877.29" xbr="2023.14" ybr="963.17" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="184" outside="0" occluded="0" keyframe="1" xtl="1893.28" ytl="877.05" xbr="2039.40" ybr="963.15" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="185" outside="0" occluded="0" keyframe="1" xtl="1911.02" ytl="877.14" xbr="2056.63" ybr="962.87" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="186" outside="0" occluded="0" keyframe="1" xtl="1929.84" ytl="876.90" xbr="2075.65" ybr="963.52" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="187" outside="0" occluded="0" keyframe="1" xtl="1950.04" ytl="877.29" xbr="2096.12" ybr="963.93" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="188" outside="0" occluded="0" keyframe="1" xtl="1973.11" ytl="877.75" xbr="2118.81" ybr="964.34" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="189" outside="0" occluded="0" keyframe="1" xtl="1996.76" ytl="878.83" xbr="2142.57" ybr="965.29" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="190" outside="0" occluded="0" keyframe="1" xtl="2020.86" ytl="879.37" xbr="2166.80" ybr="965.81" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="191" outside="0" occluded="0" keyframe="1" xtl="2044.34" ytl="879.19" xbr="2191.01" ybr="970.75" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="192" outside="0" occluded="0" keyframe="1" xtl="2071.17" ytl="880.53" xbr="2216.94" ybr="967.77" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="193" outside="0" occluded="0" keyframe="1" xtl="2097.13" ytl="881.65" xbr="2242.55" ybr="968.66" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="194" outside="0" occluded="0" keyframe="1" xtl="2122.16" ytl="882.56" xbr="2268.25" ybr="969.88" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="195" outside="0" occluded="0" keyframe="1" xtl="2148.80" ytl="883.66" xbr="2294.52" ybr="970.96" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="196" outside="0" occluded="0" keyframe="1" xtl="2175.34" ytl="884.85" xbr="2321.56" ybr="972.75" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="197" outside="0" occluded="0" keyframe="1" xtl="2201.75" ytl="886.57" xbr="2348.09" ybr="974.40" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="198" outside="0" occluded="0" keyframe="1" xtl="2228.69" ytl="887.97" xbr="2375.51" ybr="976.31" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="199" outside="0" occluded="0" keyframe="1" xtl="2255.47" ytl="889.37" xbr="2402.52" ybr="978.04" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="200" outside="0" occluded="0" keyframe="1" xtl="2282.62" ytl="891.51" xbr="2429.26" ybr="980.08" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="201" outside="0" occluded="0" keyframe="1" xtl="2309.83" ytl="893.09" xbr="2456.40" ybr="982.47" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="202" outside="0" occluded="0" keyframe="1" xtl="2337.18" ytl="895.50" xbr="2483.49" ybr="985.07" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="203" outside="0" occluded="0" keyframe="1" xtl="2363.68" ytl="897.43" xbr="2510.72" ybr="986.96" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="204" outside="0" occluded="0" keyframe="1" xtl="2391.33" ytl="900.22" xbr="2538.01" ybr="989.84" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="205" outside="0" occluded="0" keyframe="1" xtl="2419.00" ytl="901.89" xbr="2565.25" ybr="991.66" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="206" outside="0" occluded="0" keyframe="1" xtl="2445.53" ytl="905.00" xbr="2592.95" ybr="994.93" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="207" outside="0" occluded="0" keyframe="1" xtl="2472.65" ytl="907.62" xbr="2620.51" ybr="998.16" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="208" outside="0" occluded="0" keyframe="1" xtl="2500.62" ytl="910.72" xbr="2648.59" ybr="1001.64" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="209" outside="0" occluded="0" keyframe="1" xtl="2528.64" ytl="913.54" xbr="2676.92" ybr="1005.08" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="210" outside="0" occluded="0" keyframe="1" xtl="2557.68" ytl="916.08" xbr="2705.63" ybr="1012.19" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="211" outside="0" occluded="0" keyframe="1" xtl="2586.38" ytl="919.90" xbr="2735.74" ybr="1012.14" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="212" outside="0" occluded="0" keyframe="1" xtl="2616.12" ytl="923.66" xbr="2765.46" ybr="1016.24" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="213" outside="0" occluded="0" keyframe="1" xtl="2645.41" ytl="927.19" xbr="2794.64" ybr="1019.94" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="214" outside="0" occluded="0" keyframe="1" xtl="2675.08" ytl="930.85" xbr="2824.60" ybr="1024.19" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="215" outside="0" occluded="0" keyframe="1" xtl="2705.55" ytl="934.72" xbr="2855.01" ybr="1028.70" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="216" outside="0" occluded="0" keyframe="1" xtl="2734.64" ytl="938.49" xbr="2885.38" ybr="1032.66" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="217" outside="0" occluded="0" keyframe="1" xtl="2764.22" ytl="942.42" xbr="2914.77" ybr="1036.36" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="218" outside="0" occluded="0" keyframe="1" xtl="2793.79" ytl="946.14" xbr="2944.99" ybr="1040.91" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="219" outside="0" occluded="0" keyframe="1" xtl="2822.88" ytl="949.77" xbr="2974.53" ybr="1044.98" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="220" outside="0" occluded="0" keyframe="1" xtl="2851.20" ytl="953.76" xbr="3002.95" ybr="1049.79" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="221" outside="0" occluded="0" keyframe="1" xtl="2877.42" ytl="958.07" xbr="3029.51" ybr="1053.99" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="222" outside="0" occluded="0" keyframe="1" xtl="2891.93" ytl="960.12" xbr="3044.84" ybr="1056.63" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="223" outside="0" occluded="0" keyframe="1" xtl="2897.82" ytl="960.57" xbr="3050.51" ybr="1057.25" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="224" outside="0" occluded="0" keyframe="1" xtl="2898.37" ytl="960.61" xbr="3051.06" ybr="1057.14" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="225" outside="0" occluded="0" keyframe="1" xtl="2898.34" ytl="960.57" xbr="3051.10" ybr="1057.13" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="226" outside="0" occluded="0" keyframe="1" xtl="2898.63" ytl="960.33" xbr="3050.89" ybr="1056.88" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="227" outside="0" occluded="0" keyframe="1" xtl="2898.78" ytl="960.03" xbr="3050.88" ybr="1056.13" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">A_sure</attribute>
+      <attribute name="k">3</attribute>
+      <attribute name="k_zoom">3</attribute>
+      <attribute name="models">gdino_base+rtdetr_x+yolo26x</attribute>
+      <attribute name="flag">stable_static</attribute>
+      <attribute name="decoy" />
+    </box>
+  </track>
+  <track id="1" label="suspect" source="auto">
+    <box frame="143" outside="0" occluded="0" keyframe="1" xtl="3389.21" ytl="0.00" xbr="3474.04" ybr="26.53" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">suspect</attribute>
+      <attribute name="k">1</attribute>
+      <attribute name="k_zoom">1</attribute>
+      <attribute name="models">gdino_base</attribute>
+      <attribute name="flag">flicker</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="144" outside="1" occluded="0" keyframe="1" xtl="3389.21" ytl="0.00" xbr="3474.04" ybr="26.53" z_order="0" />
+  </track>
+  <track id="2" label="suspect" source="auto">
+    <box frame="151" outside="0" occluded="0" keyframe="1" xtl="2617.81" ytl="2000.62" xbr="3154.69" ybr="2160.00" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">suspect</attribute>
+      <attribute name="k">1</attribute>
+      <attribute name="k_zoom">1</attribute>
+      <attribute name="models">rtdetr_x</attribute>
+      <attribute name="flag">flicker</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="152" outside="1" occluded="0" keyframe="1" xtl="2617.81" ytl="2000.62" xbr="3154.69" ybr="2160.00" z_order="0" />
+  </track>
+  <track id="3" label="suspect" source="auto">
+    <box frame="159" outside="0" occluded="0" keyframe="1" xtl="2834.84" ytl="2052.27" xbr="3196.41" ybr="2160.00" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">suspect</attribute>
+      <attribute name="k">1</attribute>
+      <attribute name="k_zoom">1</attribute>
+      <attribute name="models">rtdetr_x</attribute>
+      <attribute name="flag">flicker</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="160" outside="1" occluded="0" keyframe="1" xtl="2834.84" ytl="2052.27" xbr="3196.41" ybr="2160.00" z_order="0" />
+  </track>
+  <track id="4" label="suspect" source="auto">
+    <box frame="162" outside="0" occluded="0" keyframe="1" xtl="3236.40" ytl="1296.08" xbr="3283.94" ybr="1330.36" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">suspect</attribute>
+      <attribute name="k">1</attribute>
+      <attribute name="k_zoom">1</attribute>
+      <attribute name="models">gdino_base</attribute>
+      <attribute name="flag">flicker</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="163" outside="1" occluded="0" keyframe="1" xtl="3236.40" ytl="1296.08" xbr="3283.94" ybr="1330.36" z_order="0" />
+  </track>
+  <track id="5" label="two_wheeler" source="auto">
+    <box frame="169" outside="0" occluded="0" keyframe="1" xtl="2333.58" ytl="1342.27" xbr="2411.29" ybr="1423.09" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">two_wheeler</attribute>
+      <attribute name="k">1</attribute>
+      <attribute name="k_zoom">1</attribute>
+      <attribute name="models">gdino_base</attribute>
+      <attribute name="flag">flicker</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="170" outside="1" occluded="0" keyframe="1" xtl="2333.58" ytl="1342.27" xbr="2411.29" ybr="1423.09" z_order="0" />
+  </track>
+  <track id="6" label="suspect" source="auto">
+    <box frame="170" outside="0" occluded="0" keyframe="1" xtl="3469.52" ytl="1356.33" xbr="3519.70" ybr="1394.08" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">suspect</attribute>
+      <attribute name="k">1</attribute>
+      <attribute name="k_zoom">1</attribute>
+      <attribute name="models">gdino_base</attribute>
+      <attribute name="flag">flicker</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="171" outside="0" occluded="0" keyframe="1" xtl="3493.37" ytl="1362.47" xbr="3543.55" ybr="1400.90" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">suspect</attribute>
+      <attribute name="k">0</attribute>
+      <attribute name="k_zoom">0</attribute>
+      <attribute name="models">tracker</attribute>
+      <attribute name="flag">interpolated</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="172" outside="0" occluded="0" keyframe="1" xtl="3517.22" ytl="1368.61" xbr="3567.39" ybr="1407.72" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">suspect</attribute>
+      <attribute name="k">0</attribute>
+      <attribute name="k_zoom">0</attribute>
+      <attribute name="models">tracker</attribute>
+      <attribute name="flag">interpolated</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="173" outside="0" occluded="0" keyframe="1" xtl="3541.07" ytl="1374.75" xbr="3591.24" ybr="1414.53" z_order="0">
+      <attribute name="auto">true</attribute>
+      <attribute name="tier">suspect</attribute>
+      <attribute name="k">1</attribute>
+      <attribute name="k_zoom">1</attribute>
+      <attribute name="models">gdino_base</attribute>
+      <attribute name="flag">flicker</attribute>
+      <attribute name="decoy" />
+    </box>
+    <box frame="174" outside="1" occluded="0" keyframe="1" xtl="3541.07" ytl="1374.75" xbr="3591.24" ybr="1414.53" z_order="0" />
+  </track>
+</annotations>

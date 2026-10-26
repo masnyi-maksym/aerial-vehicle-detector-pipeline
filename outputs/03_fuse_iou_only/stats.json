@@ -1,0 +1,323 @@
+{
+  "13215276": {
+    "frames": 227,
+    "boxes_per_frame": 0.5,
+    "k_share": {
+      "k3": 0.934,
+      "k2": 0.0,
+      "k1": 0.066
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 0.5,
+        "k2": 0.0,
+        "k1": 0.03
+      },
+      "200-400": {
+        "k3": 0.0,
+        "k2": 0.0,
+        "k1": 0.0
+      }
+    },
+    "lone_boxes_by_model": {
+      "gdino_base": 6,
+      "rtdetr_x": 2
+    },
+    "containers_per_frame": 0.0,
+    "nested_kept_per_frame": 0.0
+  },
+  "19851623": {
+    "frames": 178,
+    "boxes_per_frame": 75.5,
+    "k_share": {
+      "k3": 0.574,
+      "k2": 0.256,
+      "k1": 0.17
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 40.69,
+        "k2": 16.38,
+        "k1": 6.83
+      },
+      "200-400": {
+        "k3": 2.67,
+        "k2": 1.58,
+        "k1": 1.63
+      },
+      ">400": {
+        "k3": 0.0,
+        "k2": 1.38,
+        "k1": 4.38
+      }
+    },
+    "lone_boxes_by_model": {
+      "gdino_base": 1244,
+      "rtdetr_x": 879,
+      "yolo26x": 161
+    },
+    "containers_per_frame": 0.13,
+    "nested_kept_per_frame": 0.07
+  },
+  "30404666": {
+    "frames": 326,
+    "boxes_per_frame": 18.5,
+    "k_share": {
+      "k3": 0.476,
+      "k2": 0.135,
+      "k1": 0.389
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 5.65,
+        "k2": 1.27,
+        "k1": 3.62
+      },
+      "200-400": {
+        "k3": 2.76,
+        "k2": 1.0,
+        "k1": 2.43
+      },
+      ">400": {
+        "k3": 0.41,
+        "k2": 0.23,
+        "k1": 1.14
+      }
+    },
+    "lone_boxes_by_model": {
+      "yolo26x": 894,
+      "rtdetr_x": 869,
+      "gdino_base": 584
+    },
+    "containers_per_frame": 0.06,
+    "nested_kept_per_frame": 0.07
+  },
+  "30973709": {
+    "frames": 67,
+    "boxes_per_frame": 5.0,
+    "k_share": {
+      "k3": 0.529,
+      "k2": 0.078,
+      "k1": 0.393
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 2.63,
+        "k2": 0.37,
+        "k1": 1.94
+      },
+      "200-400": {
+        "k3": 0.0,
+        "k2": 0.01,
+        "k1": 0.01
+      }
+    },
+    "lone_boxes_by_model": {
+      "gdino_base": 110,
+      "rtdetr_x": 11,
+      "yolo26x": 10
+    },
+    "containers_per_frame": 0.0,
+    "nested_kept_per_frame": 0.1
+  },
+  "32179597": {
+    "frames": 918,
+    "boxes_per_frame": 3.4,
+    "k_share": {
+      "k3": 0.585,
+      "k2": 0.201,
+      "k1": 0.214
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 2.02,
+        "k2": 0.69,
+        "k1": 0.58
+      },
+      "200-400": {
+        "k3": 0.0,
+        "k2": 0.0,
+        "k1": 0.13
+      },
+      ">400": {
+        "k3": 0.0,
+        "k2": 0.0,
+        "k1": 0.02
+      }
+    },
+    "lone_boxes_by_model": {
+      "gdino_base": 510,
+      "rtdetr_x": 146,
+      "yolo26x": 21
+    },
+    "containers_per_frame": 0.0,
+    "nested_kept_per_frame": 0.06
+  },
+  "32814755": {
+    "frames": 224,
+    "boxes_per_frame": 0.6,
+    "k_share": {
+      "k3": 0.496,
+      "k2": 0.135,
+      "k1": 0.369
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 0.31,
+        "k2": 0.08,
+        "k1": 0.08
+      },
+      "200-400": {
+        "k3": 0.0,
+        "k2": 0.0,
+        "k1": 0.04
+      },
+      ">400": {
+        "k3": 0.0,
+        "k2": 0.0,
+        "k1": 0.11
+      }
+    },
+    "lone_boxes_by_model": {
+      "gdino_base": 38,
+      "rtdetr_x": 7,
+      "yolo26x": 7
+    },
+    "containers_per_frame": 0.01,
+    "nested_kept_per_frame": 0.01
+  },
+  "3405804": {
+    "frames": 245,
+    "boxes_per_frame": 65.3,
+    "k_share": {
+      "k3": 0.315,
+      "k2": 0.247,
+      "k1": 0.438
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 20.38,
+        "k2": 13.86,
+        "k1": 19.24
+      },
+      "200-400": {
+        "k3": 0.22,
+        "k2": 2.24,
+        "k1": 8.38
+      },
+      ">400": {
+        "k3": 0.0,
+        "k2": 0.03,
+        "k1": 0.99
+      }
+    },
+    "lone_boxes_by_model": {
+      "gdino_base": 4092,
+      "rtdetr_x": 1624,
+      "yolo26x": 1293
+    },
+    "containers_per_frame": 1.18,
+    "nested_kept_per_frame": 0.42
+  },
+  "5382494": {
+    "frames": 250,
+    "boxes_per_frame": 20.3,
+    "k_share": {
+      "k3": 0.437,
+      "k2": 0.154,
+      "k1": 0.409
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 3.1,
+        "k2": 1.36,
+        "k1": 3.12
+      },
+      "200-400": {
+        "k3": 3.56,
+        "k2": 0.96,
+        "k1": 2.39
+      },
+      ">400": {
+        "k3": 2.22,
+        "k2": 0.81,
+        "k1": 2.8
+      }
+    },
+    "lone_boxes_by_model": {
+      "gdino_base": 881,
+      "rtdetr_x": 771,
+      "yolo26x": 427
+    },
+    "containers_per_frame": 0.12,
+    "nested_kept_per_frame": 0.1
+  },
+  "8457857": {
+    "frames": 135,
+    "boxes_per_frame": 32.8,
+    "k_share": {
+      "k3": 0.756,
+      "k2": 0.107,
+      "k1": 0.137
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 16.43,
+        "k2": 2.95,
+        "k1": 3.04
+      },
+      "200-400": {
+        "k3": 8.32,
+        "k2": 0.51,
+        "k1": 1.05
+      },
+      ">400": {
+        "k3": 0.05,
+        "k2": 0.07,
+        "k1": 0.39
+      }
+    },
+    "lone_boxes_by_model": {
+      "rtdetr_x": 297,
+      "gdino_base": 178,
+      "yolo26x": 131
+    },
+    "containers_per_frame": 1.41,
+    "nested_kept_per_frame": 1.65
+  },
+  "8968356": {
+    "frames": 192,
+    "boxes_per_frame": 41.9,
+    "k_share": {
+      "k3": 0.48,
+      "k2": 0.261,
+      "k1": 0.259
+    },
+    "k_per_frame_by_band": {
+      "0-200": {
+        "k3": 1.36,
+        "k2": 0.28,
+        "k1": 0.95
+      },
+      "200-400": {
+        "k3": 18.1,
+        "k2": 5.56,
+        "k1": 5.26
+      },
+      ">400": {
+        "k3": 0.64,
+        "k2": 5.11,
+        "k1": 4.65
+      }
+    },
+    "lone_boxes_by_model": {
+      "rtdetr_x": 1132,
+      "gdino_base": 634,
+      "yolo26x": 318
+    },
+    "containers_per_frame": 0.23,
+    "nested_kept_per_frame": 0.16
+  },
+  "nested_lone_dropped": 883,
+  "frames_without_boxes": 530
+}

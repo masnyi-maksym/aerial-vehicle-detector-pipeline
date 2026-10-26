@@ -1,0 +1,5 @@
+20:40:34 INFO pipeline: Stage 03_fuse_iou_only -> outputs/03_fuse_iou_only (seed=42)
+20:40:34 INFO pipeline.s03_fuse: Fusing 3044 frames from outputs/02_predict, votes per model: {'gdino_base': 46625, 'rtdetr_x': 41653, 'yolo26x': 36243}
+20:40:41 INFO pipeline.s03_fuse: Fused boxes: 56815 (dropped 883 nested lone), k: {1: 17277, 2: 12253, 3: 27285}
+20:40:41 INFO pipeline: Stats: outputs/03_fuse_iou_only/stats.json
+20:40:41 INFO pipeline.s03_fuse: Viz: 10 frames -> outputs/03_fuse_iou_only/viz

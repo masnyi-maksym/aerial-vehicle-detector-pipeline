@@ -1,0 +1,234 @@
+{
+  "13215276": {
+    "role": "eval",
+    "exported": true,
+    "frames": 228,
+    "tracks": {
+      "suspect": 5,
+      "A_sure": 1,
+      "two_wheeler": 1
+    },
+    "boxes": {
+      "vehicle": 114,
+      "suspect": 8,
+      "two_wheeler": 1
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 1
+    }
+  },
+  "14313658": {
+    "role": "eval",
+    "exported": true,
+    "frames": 297,
+    "tracks": {},
+    "boxes": {},
+    "vehicle_tracks_by_band": {}
+  },
+  "19851623": {
+    "role": "eval",
+    "exported": true,
+    "frames": 178,
+    "tracks": {
+      "suspect": 245,
+      "A_sure": 60,
+      "B_likely": 58,
+      "C_rescued": 13,
+      "two_wheeler": 3
+    },
+    "boxes": {
+      "vehicle": 11573,
+      "suspect": 2298,
+      "two_wheeler": 6
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 123,
+      "200-400": 7,
+      ">400": 1
+    }
+  },
+  "30404666": {
+    "role": "eval",
+    "exported": true,
+    "frames": 326,
+    "tracks": {
+      "suspect": 620,
+      "B_likely": 49,
+      "A_sure": 41,
+      "two_wheeler": 22,
+      "C_rescued": 13
+    },
+    "boxes": {
+      "vehicle": 4169,
+      "suspect": 2745,
+      "two_wheeler": 36
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 52,
+      "200-400": 33,
+      ">400": 18
+    }
+  },
+  "30973709": {
+    "role": "eval",
+    "exported": true,
+    "frames": 67,
+    "tracks": {
+      "suspect": 20,
+      "A_sure": 9,
+      "two_wheeler": 2,
+      "C_rescued": 1
+    },
+    "boxes": {
+      "vehicle": 201,
+      "suspect": 174,
+      "two_wheeler": 2
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 10
+    }
+  },
+  "32179597": {
+    "role": "eval",
+    "exported": true,
+    "frames": 918,
+    "tracks": {
+      "suspect": 128,
+      "A_sure": 13,
+      "B_likely": 9,
+      "C_rescued": 3,
+      "two_wheeler": 2
+    },
+    "boxes": {
+      "vehicle": 2619,
+      "suspect": 728,
+      "two_wheeler": 9
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 25
+    }
+  },
+  "32814755": {
+    "role": "eval",
+    "exported": true,
+    "frames": 224,
+    "tracks": {
+      "suspect": 16,
+      "A_sure": 4,
+      "B_likely": 1
+    },
+    "boxes": {
+      "vehicle": 89,
+      "suspect": 75
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 5
+    }
+  },
+  "3405804": {
+    "role": "train",
+    "exported": false,
+    "frames": 245,
+    "tracks": {
+      "suspect": 821,
+      "two_wheeler": 352,
+      "A_sure": 58,
+      "B_likely": 51,
+      "C_rescued": 31
+    },
+    "boxes": {
+      "vehicle": 7705,
+      "suspect": 6485,
+      "two_wheeler": 4162
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 137,
+      "200-400": 3
+    }
+  },
+  "5382494": {
+    "role": "val",
+    "exported": false,
+    "frames": 250,
+    "tracks": {
+      "suspect": 460,
+      "A_sure": 46,
+      "B_likely": 34,
+      "C_rescued": 18,
+      "two_wheeler": 5
+    },
+    "boxes": {
+      "vehicle": 3407,
+      "suspect": 2315,
+      "two_wheeler": 36
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 36,
+      "200-400": 42,
+      ">400": 20
+    }
+  },
+  "8457857": {
+    "role": "train",
+    "exported": false,
+    "frames": 135,
+    "tracks": {
+      "suspect": 123,
+      "A_sure": 99,
+      "B_likely": 35,
+      "C_rescued": 19
+    },
+    "boxes": {
+      "vehicle": 4140,
+      "suspect": 575
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 122,
+      "200-400": 30,
+      ">400": 1
+    }
+  },
+  "8968356": {
+    "role": "train",
+    "exported": false,
+    "frames": 192,
+    "tracks": {
+      "suspect": 197,
+      "A_sure": 130,
+      "B_likely": 61,
+      "C_rescued": 11
+    },
+    "boxes": {
+      "vehicle": 7255,
+      "suspect": 1299
+    },
+    "vehicle_tracks_by_band": {
+      "0-200": 22,
+      "200-400": 142,
+      ">400": 38
+    }
+  },
+  "_tracks_by_role": {
+    "eval": {
+      "A_sure": 128,
+      "B_likely": 117,
+      "C_rescued": 30,
+      "suspect": 1034,
+      "two_wheeler": 30
+    },
+    "train": {
+      "A_sure": 287,
+      "B_likely": 147,
+      "C_rescued": 61,
+      "suspect": 1141,
+      "two_wheeler": 352
+    },
+    "val": {
+      "A_sure": 46,
+      "B_likely": 34,
+      "C_rescued": 18,
+      "suspect": 460,
+      "two_wheeler": 5
+    }
+  }
+}

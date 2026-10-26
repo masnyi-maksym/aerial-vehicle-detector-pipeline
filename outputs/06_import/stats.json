@@ -1,0 +1,237 @@
+{
+  "19851623": {
+    "task_id": "10576",
+    "export": "datasets/annotations/cvat_eval/labels.zip:task_10576_annotations_2026_10_22_22_36_07_cvat for video 1.1.zip:annotations.xml",
+    "frames": 178,
+    "double_boxes_dropped": {
+      "duplicate": 127,
+      "container": 25
+    },
+    "labelled_boxes": 12132,
+    "boxes_all_frames": 36198,
+    "vehicles": 99,
+    "gt_tracks": 143,
+    "gt_boxes": 12284,
+    "manual_tracks": 17,
+    "auto_tracks_by_tier": {
+      "A_sure": 60,
+      "B_likely": 53,
+      "C_rescued": 13
+    },
+    "pre_label_tracks_by_tier": {
+      "suspect": 245,
+      "A_sure": 60,
+      "B_likely": 58,
+      "C_rescued": 13,
+      "two_wheeler": 3
+    },
+    "survival_by_tier": {
+      "A_sure": 1.0,
+      "B_likely": 0.914,
+      "C_rescued": 1.0
+    },
+    "gt_vehicles_by_band": {
+      "0-200": 85,
+      "200-400": 12,
+      ">400": 2
+    }
+  },
+  "13215276": {
+    "task_id": "10577",
+    "export": "datasets/annotations/cvat_eval/labels.zip:task_10577_annotations_2026_10_22_22_31_56_cvat for video 1.1.zip:annotations.xml",
+    "frames": 228,
+    "double_boxes_dropped": {},
+    "labelled_boxes": 114,
+    "boxes_all_frames": 679,
+    "vehicles": 1,
+    "gt_tracks": 1,
+    "gt_boxes": 114,
+    "manual_tracks": 0,
+    "auto_tracks_by_tier": {
+      "A_sure": 1
+    },
+    "pre_label_tracks_by_tier": {
+      "suspect": 5,
+      "A_sure": 1,
+      "two_wheeler": 1
+    },
+    "survival_by_tier": {
+      "A_sure": 1.0
+    },
+    "gt_vehicles_by_band": {
+      "0-200": 1
+    }
+  },
+  "30404666": {
+    "task_id": "10578",
+    "export": "datasets/annotations/cvat_eval/labels.zip:task_10578_annotations_2026_10_22_23_00_59_cvat for video 1.1.zip:annotations.xml",
+    "frames": 326,
+    "double_boxes_dropped": {
+      "inside": 17,
+      "duplicate": 10,
+      "container": 5
+    },
+    "labelled_boxes": 3922,
+    "boxes_all_frames": 11654,
+    "vehicles": 56,
+    "gt_tracks": 73,
+    "gt_boxes": 3954,
+    "manual_tracks": 7,
+    "auto_tracks_by_tier": {
+      "A_sure": 38,
+      "B_likely": 19,
+      "C_rescued": 9
+    },
+    "pre_label_tracks_by_tier": {
+      "suspect": 620,
+      "B_likely": 49,
+      "A_sure": 41,
+      "two_wheeler": 22,
+      "C_rescued": 13
+    },
+    "survival_by_tier": {
+      "B_likely": 0.388,
+      "A_sure": 0.927,
+      "C_rescued": 0.692
+    },
+    "gt_vehicles_by_band": {
+      "0-200": 27,
+      "200-400": 22,
+      ">400": 7
+    }
+  },
+  "14313658": {
+    "task_id": "10579",
+    "export": "datasets/annotations/cvat_eval/labels.zip:task_10579_annotations_2026_10_22_22_40_30_cvat for video 1.1.zip:annotations.xml",
+    "frames": 297,
+    "double_boxes_dropped": {},
+    "labelled_boxes": 0,
+    "boxes_all_frames": 0,
+    "vehicles": 0,
+    "gt_tracks": 0,
+    "gt_boxes": 0,
+    "gt_vehicles_by_band": {}
+  },
+  "32814755": {
+    "task_id": "10580",
+    "export": "datasets/annotations/cvat_eval/labels.zip:task_10580_annotations_2026_10_22_22_41_08_cvat for video 1.1.zip:annotations.xml",
+    "frames": 224,
+    "double_boxes_dropped": {
+      "inside": 1
+    },
+    "labelled_boxes": 88,
+    "boxes_all_frames": 172,
+    "vehicles": 4,
+    "gt_tracks": 5,
+    "gt_boxes": 89,
+    "manual_tracks": 0,
+    "auto_tracks_by_tier": {
+      "A_sure": 4,
+      "B_likely": 1
+    },
+    "pre_label_tracks_by_tier": {
+      "suspect": 16,
+      "A_sure": 4,
+      "B_likely": 1
+    },
+    "survival_by_tier": {
+      "A_sure": 1.0,
+      "B_likely": 1.0
+    },
+    "gt_vehicles_by_band": {
+      "0-200": 4
+    }
+  },
+  "32179597": {
+    "task_id": "10581",
+    "export": "datasets/annotations/cvat_eval/labels.zip:task_10581_annotations_2026_10_22_23_08_08_cvat for video 1.1.zip:annotations.xml",
+    "frames": 918,
+    "double_boxes_dropped": {
+      "inside": 2
+    },
+    "labelled_boxes": 2541,
+    "boxes_all_frames": 2541,
+    "vehicles": 15,
+    "gt_tracks": 17,
+    "gt_boxes": 2543,
+    "manual_tracks": 2,
+    "auto_tracks_by_tier": {
+      "A_sure": 11,
+      "B_likely": 3,
+      "C_rescued": 1
+    },
+    "pre_label_tracks_by_tier": {
+      "suspect": 128,
+      "A_sure": 13,
+      "B_likely": 9,
+      "C_rescued": 3,
+      "two_wheeler": 2
+    },
+    "survival_by_tier": {
+      "A_sure": 0.846,
+      "B_likely": 0.333,
+      "C_rescued": 0.333
+    },
+    "gt_vehicles_by_band": {
+      "0-200": 15
+    }
+  },
+  "30973709": {
+    "task_id": "10582",
+    "export": "datasets/annotations/cvat_eval/labels.zip:task_10582_annotations_2026_10_22_23_05_56_cvat for video 1.1 (1).zip:annotations.xml",
+    "frames": 67,
+    "double_boxes_dropped": {},
+    "labelled_boxes": 180,
+    "boxes_all_frames": 1040,
+    "vehicles": 8,
+    "gt_tracks": 8,
+    "gt_boxes": 180,
+    "manual_tracks": 2,
+    "auto_tracks_by_tier": {
+      "A_sure": 6
+    },
+    "pre_label_tracks_by_tier": {
+      "suspect": 20,
+      "A_sure": 9,
+      "two_wheeler": 2,
+      "C_rescued": 1
+    },
+    "survival_by_tier": {
+      "A_sure": 0.667,
+      "C_rescued": 0.0
+    },
+    "gt_vehicles_by_band": {
+      "0-200": 8
+    }
+  },
+  "_total": {
+    "clips": 7,
+    "vehicles": 183,
+    "gt_tracks": 191,
+    "gt_boxes": 52284,
+    "gt_vehicles_by_band": {
+      "0-200": 140,
+      "200-400": 34,
+      ">400": 9
+    },
+    "missing_clips": [],
+    "pre_label_survival": {
+      "A_sure": {
+        "pre": 128,
+        "kept": 120,
+        "share": 0.938
+      },
+      "B_likely": {
+        "pre": 117,
+        "kept": 76,
+        "share": 0.65
+      },
+      "C_rescued": {
+        "pre": 30,
+        "kept": 23,
+        "share": 0.767
+      }
+    },
+    "manual_tracks": 28
+  }
+}

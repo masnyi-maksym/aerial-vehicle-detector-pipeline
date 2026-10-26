@@ -1,0 +1,9 @@
+19:29:05 INFO pipeline: Stage 03b_zoom -> outputs/03b_zoom (seed=42)
+19:29:05 INFO pipeline.s03b_zoom: Zoom candidates: 7072 of 57018 boxes (k<=2, upscale >= 1.5x)
+19:29:55 INFO pipeline.s03b_zoom: yolo26x: 7072 boxes in 1043 frames, 49.5 s
+19:30:45 INFO pipeline.s03b_zoom: rtdetr_x: 7072 boxes in 1043 frames, 49.9 s
+19:36:28 INFO pipeline.s03b_zoom: gdino_base: 7072 boxes in 1043 frames, 340.7 s
+19:36:28 INFO pipeline.s03b_zoom: Gained a vote by zoom: {'k1': 0.198, 'k2': 0.138}
+19:36:28 INFO pipeline.s03b_zoom: Decoy label at zoom: {'k1': 0.007, 'k2': 0.013}
+19:36:28 INFO pipeline: Stats: outputs/03b_zoom/stats.json
+19:36:28 INFO pipeline.s03b_zoom: Viz: 24 crops -> outputs/03b_zoom/viz/crops.jpg

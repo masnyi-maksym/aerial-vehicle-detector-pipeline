@@ -1,0 +1,13 @@
+19:43:22 INFO pipeline: Stage 06_import -> outputs/06_import (seed=42)
+19:43:23 INFO pipeline.s06_import: 16 exports found, 14 used (latest per task and kind)
+19:43:26 INFO pipeline.s06_import: 19851623: 99 vehicles (143 tracks after review, 17 added by hand), 36198 boxes (152 double boxes dropped), by band {'0-200': 85, '200-400': 12, '>400': 2}
+19:43:26 INFO pipeline.s06_import: 13215276: 1 vehicles (1 tracks after review, 0 added by hand), 679 boxes (0 double boxes dropped), by band {'0-200': 1}
+19:43:27 INFO pipeline.s06_import: 30404666: 56 vehicles (73 tracks after review, 7 added by hand), 11654 boxes (32 double boxes dropped), by band {'0-200': 27, '200-400': 22, '>400': 7}
+19:43:27 INFO pipeline.s06_import: 14313658: 0 vehicles (0 tracks after review, 0 added by hand), 0 boxes (0 double boxes dropped), by band {}
+19:43:27 INFO pipeline.s06_import: 32814755: 4 vehicles (5 tracks after review, 0 added by hand), 172 boxes (1 double boxes dropped), by band {'0-200': 4}
+19:43:27 INFO pipeline.s06_import: 32179597: 15 vehicles (17 tracks after review, 2 added by hand), 2541 boxes (2 double boxes dropped), by band {'0-200': 15}
+19:43:27 INFO pipeline.s06_import: 30973709: 8 vehicles (8 tracks after review, 2 added by hand), 1040 boxes (0 double boxes dropped), by band {'0-200': 8}
+19:43:28 INFO pipeline.s06_import: Pre-label tracks kept by the reviewer, per tier: {'A_sure': {'pre': 128, 'kept': 120, 'share': 0.938}, 'B_likely': {'pre': 117, 'kept': 76, 'share': 0.65}, 'C_rescued': {'pre': 30, 'kept': 23, 'share': 0.767}}
+19:43:28 INFO pipeline: Stats: outputs/06_import/stats.json
+19:43:28 INFO pipeline.s06_import: Ground truth: {'clips': 7, 'vehicles': 183, 'gt_tracks': 191, 'gt_boxes': 52284, 'gt_vehicles_by_band': {'0-200': 140, '200-400': 34, '>400': 9}, 'missing_clips': [], 'pre_label_survival': {'A_sure': {'pre': 128, 'kept': 120, 'share': 0.938}, 'B_likely': {'pre': 117, 'kept': 76, 'share': 0.65}, 'C_rescued': {'pre': 30, 'kept': 23, 'share': 0.767}}, 'manual_tracks': 28} -> datasets/annotations/eval_gt.parquet
+19:44:22 INFO pipeline.s06_import: Ground-truth videos (green auto, cyan hand-drawn, thin red dropped doubles) -> outputs/06_import/viz
