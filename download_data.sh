@@ -52,29 +52,45 @@ if [[ $CHECK -eq 1 ]]; then
   exit 0
 fi
 
+size_of() { [[ -f "$1" ]] && wc -c < "$1" | tr -d ' ' || echo 0; }
+
 if [[ -z "$ARCHIVE" ]]; then
   # Direct link behind Drive's "file is too large to scan for viruses, download anyway" button.
+  # Google serves the bytes only to range requests (a plain GET returns the warning page again),
+  # so every request asks for "bytes=<already downloaded>-" and appends to the file.
   URL="${DATA_URL:-https://drive.usercontent.google.com/download?id=${ID}&export=download&confirm=t}"
   ARCHIVE="$DEST/aerial-vehicle-detector-pipeline.tar"
-  RETRY=(--retry 10 --retry-delay 5)
-  if curl --help all 2>/dev/null | grep -q -- "--retry-all-errors"; then RETRY+=(--retry-all-errors); fi
-  # total size from a 1-byte range request ("Content-Range: bytes 0-0/<total>"); empty if unknown
+  HDR="$(mktemp)"
+  trap 'rm -f "$HDR"' EXIT
+  # total size from a 1-byte range request ("Content-Range: bytes 0-0/<total>")
   REMOTE=$(curl -sSL -r 0-0 -D - -o /dev/null "$URL" 2>/dev/null | tr -d '\r' \
            | awk -F/ 'tolower($0) ~ /^content-range:/ {s = $2} END {print s}') || REMOTE=""
-  LOCAL=$([[ -f "$ARCHIVE" ]] && wc -c < "$ARCHIVE" | tr -d ' ' || echo 0)
-  if [[ -n "$REMOTE" && "$LOCAL" == "$REMOTE" ]]; then
-    echo "archive already downloaded: $ARCHIVE"
-  else
-    echo "downloading the archive (${REMOTE:-~23 GB} bytes) to $ARCHIVE; run again to resume if it stops"
-    curl -L --fail --progress-bar -C - "${RETRY[@]}" -o "$ARCHIVE" "$URL" || {
-      echo "download stopped (curl exit $?): run the script again to resume" >&2
-      exit 1
-    }
-    LOCAL=$(wc -c < "$ARCHIVE" | tr -d ' ')
-    if [[ -n "$REMOTE" && "$LOCAL" != "$REMOTE" ]]; then
-      echo "downloaded $LOCAL of $REMOTE bytes: run the script again to resume" >&2
-      exit 1
+  if [[ -z "$REMOTE" ]]; then
+    echo "Google did not report the archive size (daily download limit?)." >&2
+    echo "Try again later, or download it in a browser from https://drive.google.com/open?id=$ID" >&2
+    echo "and run: bash download_data.sh --archive <path to the .tar>" >&2
+    exit 1
+  fi
+  # a leftover that is not the start of a tar (e.g. a saved HTML page) cannot be resumed
+  if [[ -f "$ARCHIVE" ]] && ! is_tar "$ARCHIVE"; then rm -f "$ARCHIVE"; fi
+  echo "downloading the archive ($REMOTE bytes) to $ARCHIVE; run again to resume if it stops"
+  for attempt in $(seq 1 20); do
+    LOCAL=$(size_of "$ARCHIVE")
+    [[ "$LOCAL" -lt "$REMOTE" ]] || break
+    [[ "$LOCAL" -eq 0 ]] || echo "resuming from byte $LOCAL (attempt $attempt)"
+    curl -L --progress-bar -r "${LOCAL}-" -D "$HDR" "$URL" >> "$ARCHIVE" || true
+    STATUS=$(tr -d '\r' < "$HDR" | awk 'toupper($1) ~ /^HTTP/ {c = $2} END {print c}')
+    if [[ "$STATUS" != "206" ]]; then
+      # not a partial-content answer: cut off whatever was appended and wait a little
+      dd if=/dev/null of="$ARCHIVE" bs=1 seek="$LOCAL" 2>/dev/null
+      echo "server answered ${STATUS:-nothing} instead of 206, retrying in 10 s" >&2
+      sleep 10
     fi
+  done
+  LOCAL=$(size_of "$ARCHIVE")
+  if [[ "$LOCAL" -ne "$REMOTE" ]]; then
+    echo "downloaded $LOCAL of $REMOTE bytes: run the script again to resume" >&2
+    exit 1
   fi
   DOWNLOADED=1
 fi
