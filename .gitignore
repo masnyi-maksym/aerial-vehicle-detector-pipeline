@@ -1,5 +1,5 @@
 # Files listed below are not in git: they live in the project archive on Google Drive, and
-# `bash download_data.sh` restores them (full list: data_manifest.txt).
+# `bash restore_data.sh` unpacks them (full list: data_manifest.txt).
 
 # local environment
 .venv/
